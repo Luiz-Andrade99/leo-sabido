@@ -2,6 +2,10 @@
 
 Jogo educativo de plataforma 2D para navegador, do 1º ao 6º ano do Ensino Fundamental. Gratuito, sem anúncios, sem contas e sem coleta de dados pessoais.
 
+**▶ Jogar agora (computador, tablet e celular): https://luiz-andrade99.github.io/leo-sabido/**
+
+O link é atualizado sozinho a cada envio para a branch `main` (workflow "Publicar no GitHub Pages").
+
 > **Estado atual: v0.9.0-alpha.1 (funciona em computador, tablet e celular) — os seis anos jogáveis com 5 fases cada (30 fases)** (Floresta dos Números, Vila das Descobertas, Caverna dos Enigmas, Castelo das Estratégias, Cidade dos Inventores e Laboratório do Saber), 216 desafios com 67.834 variações verificadas e de 4 a 5 tipos de desafio por ano. A estrutura pedida para a versão 1.0 está completa e é conferida pelo `npm run validate:content`. **Todos os desafios estão em revisão pedagógica** — por isso o build de produção ainda é bloqueado de propósito.
 
 ## Requisitos

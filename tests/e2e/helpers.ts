@@ -15,7 +15,8 @@ export async function open(page: Page, query = '', clearStorage = true): Promise
   });
   // Cada teste começa num navegador limpo; só é preciso apagar o salvamento se a página já abriu o jogo antes.
   if (clearStorage && page.url().startsWith('http')) await page.evaluate(() => localStorage.clear());
-  await page.goto(`/?teste=1&seed=1&animacoes=reduzidas${query}`);
+  // Caminho relativo: funciona também quando o jogo está numa subpasta (ex.: GitHub Pages /leo-sabido/).
+  await page.goto(`./?teste=1&seed=1&animacoes=reduzidas${query}`);
   await page.waitForFunction(() => window.__leo?.ready === true);
   return errors;
 }
