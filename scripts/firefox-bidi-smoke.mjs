@@ -72,7 +72,8 @@ try {
   const waitFor = async (expression, timeout = 20_000) => {
     const end = Date.now() + timeout;
     while (Date.now() < end) {
-      if (await js(`(() => { try { return !!(${expression}); } catch { return false; } })()`)) return true;
+      // A página pode recarregar no meio (service worker da voz): erro de contexto conta como "ainda não".
+      if (await js(`(() => { try { return !!(${expression}); } catch { return false; } })()`).catch(() => false)) return true;
       await sleep(100);
     }
     throw new Error(`Esperou demais por: ${expression}`);
@@ -184,6 +185,17 @@ try {
   const vozes = await js(`new Promise((r) => { const f = () => r(speechSynthesis.getVoices().filter((v) => v.lang.startsWith('pt')).map((v) => v.name)); speechSynthesis.getVoices().length ? f() : (speechSynthesis.onvoiceschanged = f, setTimeout(f, 2000)); })`);
   check('narração disponível', typeof (await js(`typeof speechSynthesis`)) === 'string', `vozes pt: ${(vozes ?? []).join(', ') || 'nenhuma no modo sem janela'}`);
   check('sem erros no console', errors.length === 0, errors.slice(0, 3).join(' | '));
+
+  // --faber: a voz Faber (Piper) gerada no próprio navegador
+  if (process.argv.includes('--faber')) {
+    await send('browsingContext.navigate', { context, url: `${BASE}/?teste=1&seed=1&voz=faber`, wait: 'complete' });
+    await waitFor('crossOriginIsolated && window.__leo?.ready === true', 30_000);
+    await sleep(500);
+    await waitFor('crossOriginIsolated && window.__leo?.ready === true', 30_000);
+    await js('window.__leo.faber.carregar(() => {})');
+    const r = await js(`(async () => { const t = performance.now(); const pcm = await window.__leo.faber.gerar('Para abrir a porta, descubra: quanto é três quartos de oito?'); let pico = 0; for (const v of pcm) pico = Math.max(pico, Math.abs(v)); return { ms: performance.now() - t, s: pcm.length / 22050, pico, p: window.__leo.faber.ultimoTempo }; })()`);
+    check('voz Faber gera a frase do desafio', r.s > 2.5 && r.pico > 0.05, `${Math.round(r.ms)} ms para ${r.s.toFixed(2)} s de áudio; fonemas ${Math.round(r.p.fonemas)} ms, modelo ${Math.round(r.p.modelo)} ms`);
+  }
 } catch (e) {
   check(`erro: ${e.message}`, false);
 } finally {

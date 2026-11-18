@@ -7,3 +7,6 @@ dist-disp/
 test-results-*/
 entregas/*.zip
 .claude/
+
+public/voz/
+.superpowers/

@@ -12,6 +12,8 @@ export interface LaunchOptions {
   apoio: Apoio;
   /** true se ?apoio= veio na URL (sobrepõe a configuração salva). */
   apoioFromUrl: boolean;
+  /** ?voz=faber: liga a voz Faber mesmo com ?teste=1 (nos testes ela fica desligada por padrão). */
+  vozFaber: boolean;
 }
 
 export function readLaunchOptions(search: string): LaunchOptions {
@@ -27,5 +29,6 @@ export function readLaunchOptions(search: string): LaunchOptions {
     debugPhysics: q.get('debug') === '1',
     apoio: validApoio ? apoio : 'padrao',
     apoioFromUrl: validApoio,
+    vozFaber: q.get('voz') === 'faber',
   };
 }

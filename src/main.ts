@@ -11,6 +11,7 @@ import type { LeoTestHooks } from './scenes/testHooks';
 import { mountHud } from './ui/hud';
 import { mountScreens } from './ui/screens';
 import './ui/styles.css';
+import { FaberCliente } from './voz/faber';
 
 const options = readLaunchOptions(window.location.search);
 const state = initState();
@@ -60,6 +61,7 @@ function installTestHooks(): void {
     apexReset: () => lvl().testApexReset(),
     solution: (painel) => lvl().testSolution(painel),
     save: () => structuredClone(getState().save),
+    faber: options.vozFaber ? new FaberCliente() : undefined,
   };
   window.__leo = hooks;
 }

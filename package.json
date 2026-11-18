@@ -11,6 +11,7 @@
     "preview": "vite preview --port 4173 --strictPort",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "voz:baixar": "node scripts/baixar-voz.mjs",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "gen:levels": "tsx scripts/gen-levels.ts",
@@ -19,6 +20,8 @@
     "gen:art": "tsx scripts/gen-art.ts"
   },
   "dependencies": {
+    "@diffusionstudio/piper-wasm": "1.0.0",
+    "onnxruntime-web": "1.31.1",
     "phaser": "4.2.1",
     "zod": "4.6.7"
   },

@@ -80,4 +80,6 @@ export interface LeoTestHooks {
   /** Sorteia (se preciso) o desafio do painel e devolve a resposta. */
   solution(painel: string): TestSolution | null;
   save(): Save;
+  /** Voz Faber, só com ?teste=1&voz=faber. */
+  faber?: import('../voz/faber').FaberCliente;
 }

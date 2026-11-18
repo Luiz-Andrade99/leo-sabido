@@ -6,7 +6,29 @@
     <meta name="description" content="Leo Sabido: Aventuras do Conhecimento — jogo educativo de plataforma." />
     <title>Leo Sabido</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    
+    <script>
+      // Isolamento de origem para a voz Faber usar vários núcleos (ver coi-sw.js).
+      // Na primeira visita o worker é instalado e a página recarrega uma única vez.
+      (function () {
+        var q = new URLSearchParams(location.search);
+        if (q.get('teste') === '1' && q.get('voz') !== 'faber') return;
+        if (window.crossOriginIsolated || !('serviceWorker' in navigator) || !window.isSecureContext) return;
+        navigator.serviceWorker
+          .register('./coi-sw.js')
+          .then(function () {
+            try {
+              if (sessionStorage.getItem('leo-coi')) return;
+              sessionStorage.setItem('leo-coi', '1');
+            } catch (e) {
+              return;
+            }
+            navigator.serviceWorker.ready.then(function () {
+              location.reload();
+            });
+          })
+          .catch(function () {});
+      })();
+    </script>
   </head>
   <body>
     <main id="app" aria-label="Leo Sabido: Aventuras do Conhecimento">
