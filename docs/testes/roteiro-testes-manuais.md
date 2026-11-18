@@ -9,6 +9,17 @@ Use em cada navegador/dispositivo. Marque ✅ (ok), ❌ (falhou — registre em 
 | Data / testador | | | | | | | |
 | Executado? | | ✅ automático (17/11/2026) | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 
+## A2. Voz do narrador (Faber) em aparelho real
+
+| Verificação | Meta | Resultado por aparelho |
+|---|---|---|
+| Na primeira visita aparece "Baixando a voz do narrador…"; anotar quanto tempo leva até "Leo (natural) — recomendado" em Configurações | Anotar (depende da internet) | |
+| Na segunda visita (recarregar), tempo até "recomendado" | ≤ 15 s | |
+| 1º ano, abrir um desafio: tempo do clique até a primeira palavra | ≤ 3 s num aparelho médio | |
+| A voz soa natural, sem cortes entre as frases | Sim | |
+| O som da voz respeita o volume "Voz (narração)" e some com o volume em zero | Sim | |
+| Sem internet (modo avião), depois de baixada: a voz continua funcionando | Sim | |
+
 ## B. Fluxo
 1. [ ] Abertura mostra título, Leo e 4 botões.
 2. [ ] "Jogar" na primeira vez mostra a história; "Pular história" funciona; "Ouvir" lê em voz alta.

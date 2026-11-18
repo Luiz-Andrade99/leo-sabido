@@ -20,6 +20,10 @@ jobs:
       - run: npm run validate:content
       - run: npm run typecheck
       - run: npm test
+      - uses: actions/cache@v4
+        with:
+          path: public/voz/faber.onnx*
+          key: voz-faber-04ca88f5
       - name: Navegadores do Playwright
         run: npx playwright install --with-deps chromium firefox webkit
       - name: Testes E2E (Chromium, Firefox e WebKit)

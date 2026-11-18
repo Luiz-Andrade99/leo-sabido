@@ -30,7 +30,16 @@ Toda a arte foi **criada para o Leo Sabido** e é gerada por código em [`script
 
 Não há arquivos de som. Todos os efeitos (pulo, cristal, bandeira, painel, acerto, erro suave, dica, mecanismo, conclusão, reaparecimento) e as músicas de fundo (menu e caverna, pentatônicas e generativas) são **sintetizados em tempo real** pelo próprio código em [`src/audio/audio.ts`](../src/audio/audio.ts), com Web Audio. Autoria: equipe do projeto. Licença: a mesma do código.
 
-Narração: voz sintética do próprio aparelho (Web Speech API, pt-BR). Nenhum áudio é baixado.
+## Narração: voz Faber (gerada no aparelho)
+
+O narrador usa a voz neural **Faber** (Piper, pt-BR), gerada no próprio aparelho. Os arquivos são servidos pelo próprio site (pasta `voz/`) e **não ficam no repositório**: `npm run voz:baixar` baixa o modelo da revisão fixada e confere o SHA-256. Quando a Faber não está disponível, o jogo usa a voz sintética do aparelho (Web Speech API).
+
+| Arquivo(s) | O que é | Autoria / origem | Licença |
+|---|---|---|---|
+| `voz/faber.onnx`, `voz/faber.onnx.json` | Modelo de voz pt_BR "faber" (medium) | [rhasspy/piper-voices](https://huggingface.co/rhasspy/piper-voices), revisão `04ca88f5`. Dataset de [OHF-Voice/voice-datasets](https://github.com/OHF-Voice/voice-datasets). Ajustado a partir do modelo inglês hifi_tts_92 (voz de Cori Samuel, leitora 92 do Hi-Fi TTS) | Dataset CC0; modelo-base Hi-Fi TTS CC BY 4.0 (atribuição acima) |
+| `voz/piper_phonemize.{js,wasm,data}` | Conversão de texto em fonemas (espeak-ng compilado para WebAssembly) | [@diffusionstudio/piper-wasm](https://github.com/diffusion-studio/piper-wasm) 1.0.0, a partir de [rhasspy/piper](https://github.com/rhasspy/piper) e [espeak-ng](https://github.com/espeak-ng/espeak-ng) | Pacote MIT; **contém espeak-ng, GPL-3.0**: distribuído como arquivo separado, sem modificações. O código-fonte está nos links ao lado |
+| `voz/ort/ort-wasm-simd-threaded.{wasm,mjs}` | Motor de inferência ONNX | [onnxruntime-web](https://github.com/microsoft/onnxruntime) 1.31.1 | MIT |
+| `coi-sw.js` | Service worker que só acrescenta cabeçalhos de isolamento (para a voz usar vários núcleos) | Equipe do projeto | A mesma do código |
 
 ## Fontes
 
@@ -42,5 +51,7 @@ Nenhuma fonte embarcada: o jogo usa as fontes do sistema (Segoe UI / system-ui).
 |---|---|---|
 | phaser | 4.2.1 | MIT |
 | zod | 4.6.7 | MIT |
+| onnxruntime-web | 1.31.1 | MIT |
+| @diffusionstudio/piper-wasm | 1.0.0 | MIT (contém espeak-ng, GPL-3.0) |
 
 Ferramentas de desenvolvimento (não vão para o jogo): Vite 8.3.8, TypeScript 7.0.2, Vitest 5.1.0, Playwright 1.65.1, @axe-core/playwright 4.14.0 (MPL-2.0, só nos testes), tsx 4.23.15.

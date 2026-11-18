@@ -2,6 +2,17 @@
 
 Formato: [versionamento semântico](https://semver.org/lang/pt-BR/). Versões `alpha` são protótipos de homologação, com conteúdo em revisão pedagógica.
 
+## 0.10.0-alpha.1 — 18/11/2026 · Voz humana do narrador (Faber)
+- **Narrador com voz neural Faber** (Piper, pt-BR), gerada no próprio aparelho: mesma voz humana em computador, tablet e celular, inclusive nos desafios sorteados. É grátis, sem conta, e nada é enviado para fora.
+- **Download automático** na primeira visita (cerca de 92 MB, só uma vez, com aviso discreto). Depois fica guardada no aparelho e funciona sem internet. Enquanto carrega, ou se o aparelho não aguentar, o narrador usa a voz do navegador.
+- **Rapidez:**
+  - fala frase por frase, começando a tocar enquanto gera as próximas;
+  - prepara antes a história, as placas e o desafio de que o Leo se aproxima;
+  - usa vários núcleos do processador, graças a um service worker de isolamento (`coi-sw.js`).
+- **Configurações:** "Voz do narrador" ganhou a opção "Leo (natural)", com o estado (baixando, recomendado ou não disponível). Dá para voltar à voz do navegador.
+- **Publicação:** o modelo não fica no repositório. `npm run voz:baixar` (chamado pelo `npm run build`) baixa a revisão fixada e confere o SHA-256. O GitHub Actions guarda o modelo em cache.
+- **Testes:** 203 unitários, E2E da voz (`tests/e2e/voz-faber.spec.ts`) e verificação da Faber no Firefox (`--faber`).
+
 ## 0.9.0-alpha.1 — 18/11/2026 · Plataformas e voz
 - **Voz do narrador mais natural:** escolhe sozinho a voz mais humana do aparelho (vozes "Natural" do Edge, Google no Chrome/Android, "Aprimoradas" no iPhone/iPad/Mac); opção "Voz do narrador" com "Testar voz" nas Configurações; símbolos lidos por extenso (3/4 → "3 quartos", × → "vezes", R$ 7 → "7 reais", 08:30 → "8 horas e 30 minutos"); fala frase a frase.
 - **Celular e tablet:** placas com instruções de toque em vez de teclas; barra sem dicas de teclado; barra e janela de desafio compactas em telas baixas (o "Verificar" não fica mais cortado); botão de toque mais robusto no Safari.

@@ -27,6 +27,11 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
+      # Modelo da voz Faber (60 MB): baixado da revisão fixada e conferido pelo SHA-256 em scripts/baixar-voz.mjs.
+      - uses: actions/cache@v4
+        with:
+          path: public/voz/faber.onnx*
+          key: voz-faber-04ca88f5
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

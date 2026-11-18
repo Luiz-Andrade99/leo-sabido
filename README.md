@@ -6,6 +6,19 @@ Jogo educativo de plataforma 2D para navegador, do 1º ao 6º ano do Ensino Fund
 
 O link é atualizado sozinho a cada envio para a branch `main` (workflow "Publicar no GitHub Pages").
 
+### Voz do narrador
+
+O narrador fala com a voz neural **Faber** (Piper, pt-BR), gerada no próprio aparelho:
+- é grátis, sem conta e não envia nada para fora;
+- na primeira visita, o jogo baixa a voz sozinho (cerca de 92 MB, só uma vez) e a guarda no aparelho;
+- enquanto carrega, ou em aparelhos sem suporte, usa a voz do navegador;
+- em **Configurações → Voz do narrador**, "Leo (natural)" mostra o estado, e dá para escolher a voz do navegador.
+
+Para desenvolver:
+- `npm run voz:baixar` prepara `public/voz/` (o modelo não fica no git). O `npm run build` já roda esse comando.
+- Nos testes automáticos (`?teste=1`), a Faber fica desligada. Para ligá-la, acrescente `&voz=faber`.
+- Detalhes e licenças: [inventário de assets](docs/inventario-assets.md) e [relatório da voz](docs/relatorios/voz-faber.md).
+
 > **Estado atual: v0.9.0-alpha.1 (funciona em computador, tablet e celular) — os seis anos jogáveis com 5 fases cada (30 fases)** (Floresta dos Números, Vila das Descobertas, Caverna dos Enigmas, Castelo das Estratégias, Cidade dos Inventores e Laboratório do Saber), 216 desafios com 67.834 variações verificadas e de 4 a 5 tipos de desafio por ano. A estrutura pedida para a versão 1.0 está completa e é conferida pelo `npm run validate:content`. **Todos os desafios estão em revisão pedagógica** — por isso o build de produção ainda é bloqueado de propósito.
 
 ## Requisitos
