@@ -119,6 +119,34 @@ export class AudioManager {
     return this.volumes.voz;
   }
 
+  /** Toca áudio PCM (voz Faber) no volume da voz. Sem áudio liberado, termina na hora sem tocar. */
+  playPcm(pcm: Float32Array, taxa: number): { fim: Promise<void>; parar(): void } {
+    const ctx = this.ctx;
+    if (!ctx || !this.master || this.volumes.voz <= 0 || !pcm.length) return { fim: Promise.resolve(), parar: () => {} };
+    const buf = ctx.createBuffer(1, pcm.length, taxa);
+    buf.copyToChannel(pcm as Float32Array<ArrayBuffer>, 0);
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    const g = ctx.createGain();
+    g.gain.value = this.volumes.voz;
+    src.connect(g).connect(this.master);
+    let acabar!: () => void;
+    const fim = new Promise<void>((r) => (acabar = r));
+    src.onended = () => acabar();
+    src.start();
+    return {
+      fim,
+      parar: () => {
+        try {
+          src.stop();
+        } catch {
+          /* já parou */
+        }
+        acabar();
+      },
+    };
+  }
+
   private applyVolumes(): void {
     if (!this.ctx || !this.musicBus || !this.sfxBus) return;
     const t = this.ctx.currentTime;

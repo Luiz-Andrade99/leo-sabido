@@ -93,7 +93,24 @@ function chosenVoice(): SpeechSynthesisVoice | undefined {
   return (pref && ranked.find((v) => v.name === pref)) || ranked[0];
 }
 
+/** Quem fala de fato: o narrador (Faber com plano B) se estiver ligado; senão, a voz do navegador. */
+let impl: { falar(t: string): void; parar(): void } | null = null;
+export function definirNarrador(n: { falar(t: string): void; parar(): void }): void {
+  impl = n;
+}
+
 export function speak(text: string): void {
+  if (impl) impl.falar(text);
+  else falarNavegador(text);
+}
+
+export function stopSpeaking(): void {
+  if (impl) impl.parar();
+  else pararNavegador();
+}
+
+/** Narração pela voz sintética do navegador. */
+export function falarNavegador(text: string): void {
   if (!canSpeak() || audio.voiceVolume <= 0) return;
   const synth = window.speechSynthesis;
   synth.cancel();
@@ -113,6 +130,6 @@ export function speak(text: string): void {
   }
 }
 
-export function stopSpeaking(): void {
+export function pararNavegador(): void {
   if (canSpeak()) window.speechSynthesis.cancel();
 }

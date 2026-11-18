@@ -12,6 +12,7 @@ import { mountHud } from './ui/hud';
 import { mountScreens } from './ui/screens';
 import './ui/styles.css';
 import { FaberCliente } from './voz/faber';
+import './voz/narrador'; // liga o narrador (Faber com plano B) ao speak()
 
 const options = readLaunchOptions(window.location.search);
 const state = initState();
