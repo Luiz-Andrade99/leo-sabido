@@ -8,7 +8,7 @@ import * as ort from 'onnxruntime-web/wasm';
 export type PedidoFaber = { tipo: 'carregar'; base: string } | { tipo: 'gerar'; id: number; texto: string };
 export type RespostaFaber =
   | { tipo: 'progresso'; fracao: number }
-  | { tipo: 'pronta' }
+  | { tipo: 'pronta'; etapas?: Record<string, number> }
   | { tipo: 'audio'; id: number; pcm: Float32Array; ms: { fonemas: number; modelo: number } }
   | { tipo: 'erro'; id?: number; mensagem: string };
 
@@ -46,20 +46,26 @@ async function obter(cache: Cache, url: string, aoBaixar: (n: number) => void): 
   if (salvo) return salvo.blob();
   const r = await fetch(url);
   if (!r.ok || !r.body) throw new Error(`HTTP ${r.status} em ${url}`);
-  const partes: Uint8Array[] = [];
-  const leitor = r.body.getReader();
-  for (;;) {
-    const { done, value } = await leitor.read();
-    if (done) break;
-    partes.push(value);
-    aoBaixar(value.byteLength);
-  }
-  const blob = new Blob(partes as BlobPart[], { type: r.headers.get('content-type') ?? 'application/octet-stream' });
-  await cache.put(url, new Response(blob));
-  return blob;
+  // O corpo vai direto para o cache (em fluxo), contando os bytes para a barra de progresso.
+  // cache.put só grava se o corpo chegar inteiro: download interrompido não deixa arquivo pela metade.
+  const contador = new TransformStream<Uint8Array, Uint8Array>({
+    transform(parte, ctrl) {
+      aoBaixar(parte.byteLength);
+      ctrl.enqueue(parte);
+    },
+  });
+  await cache.put(url, new Response(r.body.pipeThrough(contador), { headers: r.headers }));
+  const salvoAgora = await cache.match(url);
+  if (!salvoAgora) throw new Error(`não foi possível guardar ${url}`);
+  return salvoAgora.blob();
 }
 
 async function carregar(base: string): Promise<void> {
+  const t0 = performance.now();
+  const etapas: Record<string, number> = {};
+  const marcar = (nome: string): void => {
+    etapas[nome] = Math.round(performance.now() - t0);
+  };
   const cache = await caches.open(CACHE);
   const total = GRANDES.reduce((s, [, n]) => s + n, 0);
   let baixado = 0;
@@ -80,6 +86,7 @@ async function carregar(base: string): Promise<void> {
     obter(cache, `${base}piper_phonemize.js`, () => {}),
     obter(cache, `${base}piper_phonemize.wasm`, () => {}),
   ]);
+  marcar('arquivos');
   cfg = JSON.parse(await cfgBlob.text()) as ConfigModelo;
   urlData = URL.createObjectURL(data);
   urlWasmFonemas = URL.createObjectURL(wasmFonemas);
@@ -89,10 +96,14 @@ async function carregar(base: string): Promise<void> {
   // Threads só existem com isolamento de origem (COOP/COEP); sem ele, uma thread.
   ort.env.wasm.numThreads = ctx.crossOriginIsolated ? Math.min(4, navigator.hardwareConcurrency || 1) : 1;
   ort.env.wasm.wasmPaths = { mjs: `${base}ort/ort-wasm-simd-threaded.mjs`, wasm: URL.createObjectURL(wasmOrt) };
-  sessao = await ort.InferenceSession.create(new Uint8Array(await modelo.arrayBuffer()), { executionProviders: ['wasm'] });
+  const bytes = new Uint8Array(await modelo.arrayBuffer());
+  marcar('leitura');
+  sessao = await ort.InferenceSession.create(bytes, { executionProviders: ['wasm'], graphOptimizationLevel: 'disabled' });
+  marcar('sessao');
   // Aquecimento: a primeira execução prepara o espeak-ng e o modelo; assim a primeira fala de verdade sai mais rápido.
   await sintetizar('Olá.');
-  enviar({ tipo: 'pronta' });
+  marcar('aquecimento');
+  enviar({ tipo: 'pronta', etapas });
 }
 
 /** Uma instância só do espeak-ng: criar uma por frase custa ~1 s (carrega 17 MB de dados de pronúncia). */

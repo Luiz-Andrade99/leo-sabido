@@ -5,7 +5,7 @@ import { defaultSave, exportSave, importSave } from '../core/save';
 import { ACTIONS, ACTION_LABELS, DEFAULT_BINDINGS, keyFromCode, keyLabel, remapKey, type Action } from '../core/settings';
 import { readLaunchOptions } from '../core/launch';
 import { getState } from '../core/state';
-import { faberEstado, iniciarFaber, onFaberEstado, rotuloFaber } from '../voz/narrador';
+import { faberEstado, iniciarFaber, narrador, onFaberEstado, rotuloFaber } from '../voz/narrador';
 import { button, el } from './dom';
 import { canSpeak, onVoicesChanged, rankedVoices, speak, stopSpeaking, voiceScore } from './speech';
 
@@ -86,6 +86,8 @@ const STORY = [
 
 export function introScreen(onDone: () => void): HTMLElement {
   let i = 0;
+  // Voz Faber: gera antes as falas da história (o botão "Ouvir" e a narração tocam na hora).
+  for (const s of STORY) narrador.preparar(s.texto);
   const img = leoImg();
   const text = el('p', { className: 'story-text', attrs: { 'aria-live': 'polite' } });
   const counter = el('p', { className: 'fine' });

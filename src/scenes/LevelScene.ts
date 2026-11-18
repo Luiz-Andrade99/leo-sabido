@@ -16,6 +16,7 @@ import { getProp } from '../levels/tiled';
 import { Leo } from '../player/Leo';
 import { announce, setCrystals, showHud } from '../ui/hud';
 import { speak } from '../ui/speech';
+import { narrador } from '../voz/narrador';
 import { mountTouch, textoParaToque, touchWanted } from '../ui/touch';
 import { themeFor, type WorldTheme } from './themes';
 import { EV, type LevelResultEvent, type LevelStartData } from './events';
@@ -46,6 +47,8 @@ interface Sign {
 
 const INTERACT_RANGE_X = 44;
 const INTERACT_RANGE_Y = 48;
+/** A esta distância de um painel (6 tiles), a instrução do desafio já é gerada pela voz Faber. */
+const PREPARAR_VOZ_PX = 6 * TILE_SIZE;
 /** No modo assistido as plataformas móveis ficam mais lentas. */
 const ASSIST_SLOWDOWN = 1.6;
 
@@ -74,6 +77,7 @@ export class LevelScene extends Phaser.Scene {
   private crystals: Crystal[] = [];
   private panels: ChallengePanel[] = [];
   private signs: Sign[] = [];
+  private vozPreparada = new Set<ChallengePanel>();
   private respawnPoint = { x: 0, y: 0 };
   private spawnPoint = { x: 0, y: 0 };
   private goalPoint = { x: 0, y: 0 };
@@ -103,6 +107,7 @@ export class LevelScene extends Phaser.Scene {
     this.crystals = [];
     this.panels = [];
     this.signs = [];
+    this.vozPreparada = new Set();
     this.dialog = null;
     this.respawns = 0;
     this.physicsSteps = 0;
@@ -300,6 +305,8 @@ export class LevelScene extends Phaser.Scene {
     this.updateCollectHud();
     this.mountTouchIfWanted();
     announce(`${this.data_.titulo}${this.assist ? ' · modo assistido' : ''}`, 4000);
+    // Voz Faber: gera antes as falas das placas (só quando a narração está ligada).
+    if (this.narra()) for (const s of this.signs) narrador.preparar(s.texto);
 
     this.ready = true;
     this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => {
@@ -325,10 +332,22 @@ export class LevelScene extends Phaser.Scene {
       const near = Math.abs(this.leo.x - s.x) < 72 && Math.abs(this.leo.y - s.y) < 64;
       if (near && !s.near) {
         announce(`📜 ${s.texto}`, 6000);
-        if (getState().settings.narracaoAuto || this.data_.ano === 1) speak(s.texto);
+        if (this.narra()) speak(s.texto);
       }
       s.near = near;
       s.bubble.setVisible(near);
+    }
+
+    // Voz Faber: chegando perto de um painel, prepara a instrução do desafio dele.
+    if (this.narra()) {
+      for (const p of this.panels) {
+        if (p.mechanism.activated || this.vozPreparada.has(p)) continue;
+        if (Math.abs(this.leo.x - p.x) < PREPARAR_VOZ_PX && Math.abs(this.leo.y - p.y) < PREPARAR_VOZ_PX) {
+          this.vozPreparada.add(p);
+          const session = this.ensureSession(p);
+          if (session) narrador.preparar(session.narracao);
+        }
+      }
     }
 
     const near = this.panels.find((p) => Math.abs(this.leo.x - p.x) < INTERACT_RANGE_X && Math.abs(this.leo.y - p.y) < INTERACT_RANGE_Y) ?? null;
@@ -371,6 +390,11 @@ export class LevelScene extends Phaser.Scene {
     if (!item) return null;
     panel.session = new ChallengeSession(item, resolveItem(item, this.rng), st.settings.apoio);
     return panel.session;
+  }
+
+  /** A narração automática está ligada (configuração ou 1º ano, que lê tudo em voz alta)? */
+  private narra(): boolean {
+    return getState().settings.narracaoAuto || this.data_.ano === 1;
   }
 
   private openChallenge(panel: ChallengePanel): void {

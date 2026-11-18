@@ -82,4 +82,6 @@ export interface LeoTestHooks {
   save(): Save;
   /** Voz Faber, só com ?teste=1&voz=faber. */
   faber?: import('../voz/faber').FaberCliente;
+  /** Quantas frases o narrador já tem geradas e guardadas. */
+  vozCache(): number;
 }

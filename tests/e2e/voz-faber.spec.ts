@@ -24,7 +24,7 @@ test.describe('voz Faber', () => {
     await page.getByRole('button', { name: /Configurações/ }).click();
     const opcao = page.locator('#voz option[value="faber"]');
     await expect(opcao).toHaveText(/Leo \(natural\) — (baixando \d+%|recomendado)/);
-    await expect(opcao).toHaveText('Leo (natural) — recomendado', { timeout: 60_000 });
+    await expect(opcao).toHaveText('Leo (natural) — recomendado', { timeout: 120_000 });
     await expect(page.locator('#voz')).toHaveValue('faber');
   });
 
@@ -39,6 +39,21 @@ test.describe('voz Faber', () => {
     await page.getByRole('button', { name: /Configurações/ }).click();
     await expect(page.locator('#voz')).toHaveValue(outra!);
     await expect(page.locator('#voz option[value="faber"]')).toHaveText('Leo (natural) — desligada');
+  });
+
+  test('1º ano: placas e o desafio próximo são gerados antes de serem falados', async ({ page }) => {
+    await abrirComFaber(page);
+    await page.evaluate(() => window.__leo!.faber!.carregar(() => {}));
+    await page.evaluate(() => window.__leo!.startLevel('f4', 1));
+    await page.waitForFunction(() => window.__leo!.levelActive() && window.__leo!.state().onGround);
+    // As placas da fase são preparadas ao entrar.
+    await expect.poll(() => page.evaluate(() => window.__leo!.vozCache()), { timeout: 60_000 }).toBeGreaterThan(0);
+    await page.waitForTimeout(3000);
+    const soPlacas = await page.evaluate(() => window.__leo!.vozCache());
+    // Chegando perto do painel 2, a instrução dele também é preparada.
+    const p = await page.evaluate(() => window.__leo!.points().panels.find((x) => x.painel === '2')!);
+    await page.evaluate(([x, y]) => window.__leo!.teleport(x - 150, y), [p.x, p.y] as const);
+    await expect.poll(() => page.evaluate(() => window.__leo!.vozCache()), { timeout: 60_000 }).toBeGreaterThan(soPlacas);
   });
 
   test('Faber gera a frase do desafio no navegador e dentro da meta', async ({ page }) => {

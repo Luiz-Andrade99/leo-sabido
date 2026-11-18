@@ -10,7 +10,8 @@ self.addEventListener('activate', (e) => e.waitUntil(self.clients.claim()));
 self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.cache === 'only-if-cached' && req.mode !== 'same-origin') return;
-  if (new URL(req.url).origin !== self.location.origin) return;
+  const url = new URL(req.url);
+  if (url.origin !== self.location.origin) return;
   e.respondWith(
     fetch(req).then((res) => {
       if (res.status === 0) return res;

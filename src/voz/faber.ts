@@ -26,6 +26,8 @@ export class FaberCliente {
   private carregando: Promise<void> | null = null;
   /** Tempos da última frase gerada (diagnóstico). */
   ultimoTempo = { fonemas: 0, modelo: 0 };
+  /** Tempos do carregamento, em ms desde o início (diagnóstico). */
+  etapasCarga: Record<string, number> = {};
 
   carregar(onProgresso: (p: FaberProgresso) => void): Promise<void> {
     if (this.carregando) return this.carregando;
@@ -36,6 +38,7 @@ export class FaberCliente {
         const m = ev.data;
         if (m.tipo === 'progresso') onProgresso({ estado: 'baixando', fracao: m.fracao });
         else if (m.tipo === 'pronta') {
+          this.etapasCarga = m.etapas ?? {};
           onProgresso({ estado: 'pronta', fracao: 1 });
           resolve();
         } else if (m.tipo === 'audio') {

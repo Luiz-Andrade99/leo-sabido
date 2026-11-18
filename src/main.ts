@@ -11,7 +11,7 @@ import type { LeoTestHooks } from './scenes/testHooks';
 import { mountHud } from './ui/hud';
 import { mountScreens } from './ui/screens';
 import './ui/styles.css';
-import { faberCliente, iniciarFaber, montarAvisosVoz } from './voz/narrador';
+import { faberCliente, iniciarFaber, montarAvisosVoz, narrador } from './voz/narrador';
 
 const options = readLaunchOptions(window.location.search);
 const state = initState();
@@ -66,6 +66,7 @@ function installTestHooks(): void {
     solution: (painel) => lvl().testSolution(painel),
     save: () => structuredClone(getState().save),
     faber: options.vozFaber ? (faberCliente() ?? undefined) : undefined,
+    vozCache: () => narrador.tamanhoCache,
   };
   window.__leo = hooks;
 }
