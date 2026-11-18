@@ -7,7 +7,7 @@ Formato: [versionamento semântico](https://semver.org/lang/pt-BR/). Versões `a
 - **Celular e tablet:** placas com instruções de toque em vez de teclas; barra sem dicas de teclado; barra e janela de desafio compactas em telas baixas (o "Verificar" não fica mais cortado); botão de toque mais robusto no Safari.
 - **Testes em outras plataformas:** Firefox 146 instalado (12 verificações via WebDriver BiDi, `scripts/firefox-bidi-smoke.mjs`), Safari/WebKit (suíte completa), iPhone 14, iPad, Pixel 7 e Galaxy Tab S4 emulados (`PW_DEVICES=1`, `tests/e2e/dispositivos.spec.ts`).
 - Pacote do site para hospedagem estática: `entregas/leo-sabido-site-v0.9.zip`.
-- Testes: 185 unitários e 46 de ponta a ponta (mais 14 de dispositivos).
+- Testes: 185 unitários; 44 de ponta a ponta no Edge e no Safari/WebKit; 14 em celulares e tablets emulados; 12 verificações no Firefox.
 
 ## 0.8.0-alpha.1 — 18/11/2026 · Ampliação para a estrutura da versão 1.0
 - **30 fases:** cada mundo ganhou as fases 4 e 5; a engrenagem passou da fase 3 para a fase 5. Fase 3 de cada mundo agora termina num portal (placas e objetivos atualizados).

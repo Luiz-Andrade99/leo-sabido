@@ -36,9 +36,9 @@ Data: 18/11/2026 · Versão: 0.9.0-alpha.1
 
 | Ambiente | Como | Resultado |
 |---|---|---|
-| **Edge** (Windows, Chromium) | Suíte completa: 44 testes de ponta a ponta | ver abaixo |
+| **Edge** (Windows, Chromium) | Suíte completa: 44 testes de ponta a ponta | ✅ 44 de 44 |
 | **Firefox 146** (instalado no computador) | Teste próprio via WebDriver BiDi, com cliques e teclas de verdade: menus, andar, pular, desafio, fase concluída, ordenar (1º ano), voz e console | ✅ 12 de 12 |
-| **Safari** (motor WebKit 27.2 do Playwright) | Suíte completa: 44 testes | ver abaixo |
+| **Safari** (motor WebKit 27.2 do Playwright) | Suíte completa: 44 testes | ✅ 44 de 44 (39 na primeira rodada; os 5 que estouraram o tempo pela lentidão passaram de novo depois do ajuste de espera) |
 | **iPhone 14** em pé e deitado (WebKit emulado) | Teste de toque: menus cabem na tela sem rolagem lateral; botões ◀ ▶ ⤒ E com pelo menos 44 px; andar, pular e abrir o desafio pelo toque; axe-core; ordenar no 1º ano | ✅ 4 de 4 |
 | **iPad** em pé e deitado (WebKit emulado) | Idem | ✅ 4 de 4 |
 | **Android: Pixel 7** em pé e deitado (Chromium emulado) | Idem | ✅ 4 de 4 |
