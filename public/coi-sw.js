@@ -12,6 +12,9 @@ self.addEventListener('fetch', (e) => {
   if (req.cache === 'only-if-cached' && req.mode !== 'same-origin') return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+  // Binários grandes da voz (lidos pelo worker com fetch): vão direto, sem passar por aqui.
+  // Os scripts (.js/.mjs) continuam passando, porque as threads precisam dos cabeçalhos.
+  if (/\/voz\/.*\.(onnx|data|wasm)$/.test(url.pathname)) return;
   e.respondWith(
     fetch(req).then((res) => {
       if (res.status === 0) return res;
