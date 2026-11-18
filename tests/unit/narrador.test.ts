@@ -121,6 +121,18 @@ describe('Narrador', () => {
     expect(saida.tocadas).toEqual([4]);
   });
 
+  it('falar uma frase que já está sendo preparada usa esse mesmo resultado, sem gerar de novo', async () => {
+    n.preparar('Abc.');
+    await tick();
+    expect(motor.pedidos.map((p) => p.frase)).toEqual(['Abc.']); // em geração
+    n.falar('Abc.');
+    await tick();
+    expect(motor.pedidos.map((p) => p.frase)).toEqual(['Abc.']); // nada novo na fila
+    await motor.terminar();
+    expect(motor.pedidos).toEqual([]);
+    expect(saida.tocadas).toEqual([4]);
+  });
+
   it('a fala tem prioridade sobre o que está sendo preparado', async () => {
     n.preparar('Um. Dois. Três.');
     await tick();

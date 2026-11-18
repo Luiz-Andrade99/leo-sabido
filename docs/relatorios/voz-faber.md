@@ -14,11 +14,18 @@ Os arquivos vêm do próprio site e ficam guardados no aparelho (Cache Storage).
 
 Frase do desafio: "Para abrir a porta, descubra: quanto é três quartos de oito?", com cerca de 3,9 s de áudio.
 
-| Situação | Edge | Firefox 146 |
-|---|---|---|
-| Uma thread só (sem isolamento de origem) | 5,5 a 6,4 s ❌ | 4,0 s ❌ |
-| Vários núcleos (service worker de isolamento) | **0,7 a 2,1 s** ✅ (até 3,6 s com o computador ocupado) | **1,3 s** ✅ |
-| Conversão em fonemas | ~1 s por frase → **0,05 s**, reaproveitando uma única instância do espeak-ng | 0,03 s |
+| Situação | Edge | Firefox 146 | Safari (WebKit do Playwright) |
+|---|---|---|---|
+| Uma thread só (sem isolamento de origem) | 5,5 a 6,4 s ❌ | 4,0 s ❌ | não medido |
+| Vários núcleos (service worker de isolamento) | **0,7 a 2,3 s** ✅ (até 3,6 s com o computador ocupado) | **1,3 s** ✅ | **0,97 s** ✅ |
+| Conversão em fonemas | ~1 s por frase → **0,05 s**, reaproveitando uma única instância do espeak-ng | 0,03 s | 0,04 s |
+
+**Testes automáticos (verificação final):**
+- 204 unitários;
+- Edge: suíte completa com 49 que passaram e 2 ignorados (os de toque);
+- 14 em celulares e tablets emulados;
+- testes da voz: 6 de 6 no Edge e 6 de 6 no WebKit;
+- Firefox: 13 verificações, incluindo a Faber.
 
 Meta do plano: ≤ 2,5 s. Foi atingida depois de duas mudanças: o isolamento de origem, que libera vários núcleos, e o reaproveitamento do espeak-ng.
 
@@ -49,6 +56,6 @@ A montagem custa cerca de 7 s também com uma thread só e também no formato `.
 ## Limites honestos
 
 - **Celulares reais:** os tempos acima são de um computador. Num celular médio a geração deve ser 2 a 4 vezes mais lenta. O roteiro [A2](../testes/roteiro-testes-manuais.md) pede para medir num aparelho real.
-- **Safari/iPhone:** não foi medido. O WebKit emulado no Windows não representa o desempenho de um iPhone, e o isolamento de origem por service worker depende de suporte do Safari (disponível nas versões atuais).
+- **Safari/iPhone:** o motor do Safari (WebKit do Playwright) passou nos testes da voz neste computador, com isolamento de origem e 0,97 s por frase. Isso não mede um iPhone de verdade, que precisa ser conferido pelo roteiro A2.
 - **Tamanho:** a primeira visita baixa cerca de 92 MB. O motor ONNX ocupa 14 MB, mais que os ~11 MB estimados no desenho.
 - **Licença:** o `piper_phonemize` contém o espeak-ng (GPL-3.0). Ele é distribuído como arquivo separado, e o código-fonte está indicado no [inventário de assets](../inventario-assets.md).

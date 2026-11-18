@@ -42,6 +42,8 @@ export class Narrador {
   private filaFala: Pedido[] = [];
   private filaPreparo: Pedido[] = [];
   private emAndamento: Pedido | null = null;
+  /** A frase em geração agora e o resultado prometido (para não gerar a mesma frase duas vezes). */
+  private voo: { frase: string; pcm: Promise<Float32Array> } | null = null;
   private geracao = 0;
   private tocando: { parar(): void } | null = null;
 
@@ -111,6 +113,8 @@ export class Narrador {
       this.cache.set(frase, salvo);
       return Promise.resolve(salvo);
     }
+    // Já em geração neste momento? Usa o mesmo resultado em vez de gerar de novo.
+    if (this.voo?.frase === frase) return this.voo.pcm;
     // Já sendo preparada? Promove para a fala.
     const iPrep = this.filaPreparo.findIndex((p) => p.frase === frase);
     return new Promise<Float32Array>((ok, erro) => {
@@ -132,15 +136,19 @@ export class Narrador {
     const p = this.filaFala.shift() ?? this.filaPreparo.shift();
     if (!p) return;
     this.emAndamento = p;
-    motor.gerar(p.frase).then(
-      (pcm) => {
-        this.guardar(p.frase, pcm);
+    const pcm = motor.gerar(p.frase);
+    this.voo = { frase: p.frase, pcm };
+    pcm.then(
+      (audio) => {
+        this.guardar(p.frase, audio);
         this.emAndamento = null;
-        p.ok(pcm);
+        this.voo = null;
+        p.ok(audio);
         this.proximo(motor);
       },
       (e: Error) => {
         this.emAndamento = null;
+        this.voo = null;
         p.erro(e);
         this.proximo(motor);
       },

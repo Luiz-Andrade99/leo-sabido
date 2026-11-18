@@ -56,6 +56,16 @@ test.describe('voz Faber', () => {
     await expect.poll(() => page.evaluate(() => window.__leo!.vozCache()), { timeout: 60_000 }).toBeGreaterThan(soPlacas);
   });
 
+  test('um texto com várias frases é falado inteiro, não só a primeira', async ({ page }) => {
+    await abrirComFaber(page);
+    await page.evaluate(() => window.__leo!.faber!.carregar(() => {}));
+    const [uma, duas] = await page.evaluate(async () => {
+      const f = window.__leo!.faber!;
+      return [(await f.gerar('Muito bem!')).length, (await f.gerar('Muito bem! Você dividiu oito em quatro partes iguais.')).length];
+    });
+    expect(duas).toBeGreaterThan(uma * 2);
+  });
+
   test('Faber gera a frase do desafio no navegador e dentro da meta', async ({ page }) => {
     await abrirComFaber(page);
     await page.evaluate(() => window.__leo!.faber!.carregar(() => {}));
