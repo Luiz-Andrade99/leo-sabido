@@ -1,0 +1,229 @@
+[
+  {
+    "id": "5A-DEC-MED-001",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Decimais — décimos",
+    "bncc": [
+      {
+        "codigo": "EF05MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor 2,5 com inteiros e décimos.",
+    "formato": "decimal",
+    "pool": "5ano.decimais",
+    "enunciado": {
+      "texto": "O fio da máquina precisa medir {numero} metros. Monte a medida com as peças."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "centesimos": 250
+    },
+    "explicacao": "{numero} = {u} inteiros + {d} décimos + {c} centésimos.",
+    "dicas": [
+      "O número antes da vírgula diz quantos inteiros.",
+      "Depois da vírgula, o primeiro algarismo são os décimos e o segundo, os centésimos.",
+      "{numero} tem {u} inteiros, {d} décimos e {c} centésimos."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-DEC-MED-002",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Decimais — centésimos",
+    "bncc": [
+      {
+        "codigo": "EF05MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor 1,75 com inteiros, décimos e centésimos.",
+    "formato": "decimal",
+    "pool": "5ano.decimais",
+    "enunciado": {
+      "texto": "O fio da máquina precisa medir {numero} metros. Monte a medida com as peças."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "centesimos": 175
+    },
+    "explicacao": "{numero} = {u} inteiros + {d} décimos + {c} centésimos.",
+    "dicas": [
+      "O número antes da vírgula diz quantos inteiros.",
+      "Depois da vírgula, o primeiro algarismo são os décimos e o segundo, os centésimos.",
+      "{numero} tem {u} inteiros, {d} décimos e {c} centésimos."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-DEC-MED-003",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Decimais — zero nos décimos",
+    "bncc": [
+      {
+        "codigo": "EF05MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor 3,05 reconhecendo o zero nos décimos.",
+    "formato": "decimal",
+    "pool": "5ano.decimais",
+    "enunciado": {
+      "texto": "O fio da máquina precisa medir {numero} metros. Monte a medida com as peças."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "centesimos": 305
+    },
+    "explicacao": "{numero} = {u} inteiros + {d} décimos + {c} centésimos.",
+    "dicas": [
+      "Quantos décimos tem um número com zero logo depois da vírgula?",
+      "O zero quer dizer: nenhum décimo.",
+      "3,05 tem 3 inteiros, 0 décimos e 5 centésimos."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-DEC-MED-004",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Decimais — décimos (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor números de 0,1 a 9,9 com uma casa decimal.",
+    "formato": "decimal",
+    "pool": "5ano.decimais",
+    "enunciado": {
+      "texto": "O fio da máquina precisa medir {numero} metros. Monte a medida com as peças."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "centesimos": [
+        10,
+        990
+      ],
+      "casas": 1
+    },
+    "explicacao": "{numero} = {u} inteiros + {d} décimos + {c} centésimos.",
+    "dicas": [
+      "O número antes da vírgula diz quantos inteiros.",
+      "Depois da vírgula, o primeiro algarismo são os décimos e o segundo, os centésimos.",
+      "{numero} tem {u} inteiros, {d} décimos e {c} centésimos."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-DEC-MED-005",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Decimais — centésimos (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor números de 1,01 a 9,99 com duas casas decimais.",
+    "formato": "decimal",
+    "pool": "5ano.decimais",
+    "enunciado": {
+      "texto": "O fio da máquina precisa medir {numero} metros. Monte a medida com as peças."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "centesimos": [
+        101,
+        999
+      ],
+      "casas": 2
+    },
+    "explicacao": "{numero} = {u} inteiros + {d} décimos + {c} centésimos.",
+    "dicas": [
+      "O número antes da vírgula diz quantos inteiros.",
+      "Depois da vírgula, o primeiro algarismo são os décimos e o segundo, os centésimos.",
+      "{numero} tem {u} inteiros, {d} décimos e {c} centésimos."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-DEC-MED-006",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Decimais menores que 1 (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF05MA05",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor números de 0,01 a 0,99.",
+    "formato": "decimal",
+    "pool": "5ano.decimais",
+    "enunciado": {
+      "texto": "O fio da máquina precisa medir {numero} metros. Monte a medida com as peças."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "centesimos": [
+        1,
+        99
+      ],
+      "casas": 2
+    },
+    "explicacao": "{numero} = {u} inteiros + {d} décimos + {c} centésimos.",
+    "dicas": [
+      "O número antes da vírgula diz quantos inteiros.",
+      "Depois da vírgula, o primeiro algarismo são os décimos e o segundo, os centésimos.",
+      "{numero} tem {u} inteiros, {d} décimos e {c} centésimos."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

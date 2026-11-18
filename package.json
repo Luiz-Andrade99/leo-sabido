@@ -1,0 +1,34 @@
+{
+  "name": "leo-sabido",
+  "version": "0.9.0-alpha.1",
+  "private": true,
+  "description": "Leo Sabido: Aventuras do Conhecimento — jogo educativo de plataforma 2D (1º ao 6º ano).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate:content && tsc --noEmit && vite build --mode homologacao",
+    "build:producao": "npm run validate:content -- --producao && tsc --noEmit && vite build --mode production",
+    "preview": "vite preview --port 4173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "gen:levels": "tsx scripts/gen-levels.ts",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "docs:inventario": "tsx scripts/gen-inventory.ts",
+    "gen:art": "tsx scripts/gen-art.ts"
+  },
+  "dependencies": {
+    "phaser": "4.2.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "1.65.1",
+    "@types/node": "^22.12.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  }
+}

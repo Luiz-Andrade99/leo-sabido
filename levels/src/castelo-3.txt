@@ -1,0 +1,54 @@
+{
+  "nome": "Torre das Frações",
+  "tileset": {
+    "name": "castelo",
+    "image": "../assets/tiles/castelo.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "castelo",
+  "saida": "portal",
+  "paineis": {
+    "1": {
+      "pool": "4ano.fracoes",
+      "mecanismo": "ponte",
+      "titulo": "Ponte das Partes",
+      "dificuldade": 1
+    },
+    "2": {
+      "pool": "4ano.fracoes",
+      "mecanismo": "elevador",
+      "titulo": "Elevador da Torre",
+      "dificuldade": 2,
+      "dy": -192,
+      "periodo": 4200
+    },
+    "3": {
+      "pool": "4ano.igualdades",
+      "mecanismo": "porta",
+      "titulo": "Porta do Tesouro",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "No alto da torre, cada ponte é dividida em partes iguais."
+  ]
+}
+---
+##                                                                  #                                       ##
+##                                                                  #                                       ##
+##                                                                  #                                       ##
+##                                                                  #                                       ##
+##                                                                  #                                       ##
+##                                                                  #                                       ##
+##                                                                  #                                       ##
+##                                           *                      #                                       ##
+##                                    #################             #                                       ##
+##                                    #################             #                                       ##
+##                                    #################             #              *                        ##
+##                                    #################             c             ===                       ##
+##                                    #################             c                                       ##
+##  S  !      1            C    2   bb#################   C  *  3   c       B   +           *       G       ##
+#################aaaaaaa######################################################################################
+#################       ######################################################################################
+#################       ######################################################################################

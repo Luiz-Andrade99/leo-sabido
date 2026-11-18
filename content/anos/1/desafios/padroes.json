@@ -1,0 +1,190 @@
+[
+  {
+    "id": "1A-PAD-REP-001",
+    "ano": 1,
+    "area": "logica",
+    "tema": "Padrão AB",
+    "bncc": [
+      {
+        "codigo": "EF01MA10",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar padrão de duas figuras alternadas.",
+    "formato": "padrao",
+    "pool": "1ano.padroes",
+    "enunciado": {
+      "texto": "O que vem depois?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "regra": "AB",
+      "simbolos": [
+        "circulo",
+        "triangulo"
+      ],
+      "tamanho": 6
+    },
+    "explicacao": "O pedaço que se repete é: {sequencia}. Depois vem: {proximo}.",
+    "dicas": [
+      "Diga em voz alta o nome de cada figura.",
+      "Encontre o pedaço que se repete: {sequencia}.",
+      "Depois do último, o pedaço começa de novo."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-PAD-REP-002",
+    "ano": 1,
+    "area": "logica",
+    "tema": "Padrão ABB",
+    "bncc": [
+      {
+        "codigo": "EF01MA10",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar padrão com uma figura e duas repetidas.",
+    "formato": "padrao",
+    "pool": "1ano.padroes",
+    "enunciado": {
+      "texto": "O que vem depois?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "regra": "ABB",
+      "simbolos": [
+        "quadrado",
+        "estrela"
+      ],
+      "tamanho": 6
+    },
+    "explicacao": "O pedaço que se repete é: {sequencia}. Depois vem: {proximo}.",
+    "dicas": [
+      "Diga em voz alta o nome de cada figura.",
+      "Encontre o pedaço que se repete: {sequencia}.",
+      "Depois do último, o pedaço começa de novo."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-PAD-REP-003",
+    "ano": 1,
+    "area": "logica",
+    "tema": "Padrão AB (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF01MA10",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar padrões de duas figuras alternadas.",
+    "formato": "padrao",
+    "pool": "1ano.padroes",
+    "enunciado": {
+      "texto": "O que vem depois?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "regra": "AB",
+      "tamanho": 6
+    },
+    "explicacao": "O pedaço que se repete é: {sequencia}. Depois vem: {proximo}.",
+    "dicas": [
+      "Diga em voz alta o nome de cada figura.",
+      "Encontre o pedaço que se repete: {sequencia}.",
+      "Depois do último, o pedaço começa de novo."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-PAD-REP-004",
+    "ano": 1,
+    "area": "logica",
+    "tema": "Padrão ABC (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF01MA10",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar padrões de três figuras.",
+    "formato": "padrao",
+    "pool": "1ano.padroes",
+    "enunciado": {
+      "texto": "O que vem depois?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "regra": "ABC",
+      "tamanho": 6
+    },
+    "explicacao": "O pedaço que se repete é: {sequencia}. Depois vem: {proximo}.",
+    "dicas": [
+      "Diga em voz alta o nome de cada figura.",
+      "Encontre o pedaço que se repete: {sequencia}.",
+      "Depois do último, o pedaço começa de novo."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-PAD-REP-005",
+    "ano": 1,
+    "area": "logica",
+    "tema": "Padrão AAB (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF01MA10",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar padrões com repetição dupla.",
+    "formato": "padrao",
+    "pool": "1ano.padroes",
+    "enunciado": {
+      "texto": "O que vem depois?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "regra": "AAB",
+      "tamanho": 6
+    },
+    "explicacao": "O pedaço que se repete é: {sequencia}. Depois vem: {proximo}.",
+    "dicas": [
+      "Diga em voz alta o nome de cada figura.",
+      "Encontre o pedaço que se repete: {sequencia}.",
+      "Depois do último, o pedaço começa de novo."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "nome": "Portal do Saber",
+  "tileset": {
+    "name": "laboratorio",
+    "image": "../assets/tiles/laboratorio.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "laboratorio",
+  "saida": "portal",
+  "paineis": {
+    "1": {
+      "pool": "6ano.expressoes",
+      "mecanismo": "elevador",
+      "titulo": "Elevador do Portal",
+      "dificuldade": 2,
+      "dy": -192,
+      "periodo": 4200
+    },
+    "2": {
+      "pool": "6ano.divisibilidade",
+      "mecanismo": "porta",
+      "titulo": "Porta dos Primos",
+      "dificuldade": 2
+    },
+    "3": {
+      "pool": "6ano.programas",
+      "mecanismo": "ponte",
+      "titulo": "Ponte Programada",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "O portal leva à parte mais funda do laboratório."
+  ]
+}
+---
+##                                                #                                                         ##
+##                                                #                                                         ##
+##                                                #                                                         ##
+##                                                #                                                         ##
+##                                                #                                                         ##
+##                                                #                                                         ##
+##                                                #                                                         ##
+##                         *                      #                                                         ##
+##                  #################             #                                                         ##
+##                  #################             #                                                         ##
+##                  #################             #                                *                        ##
+##                  #################             b                               ===                       ##
+##                  #################             b                                                         ##
+##  S  !      1   aa#################   C     2   b     C   3               B   +           *   *   G       ##
+###############################################################ccccccc########################################
+###############################################################       ########################################
+###############################################################       ########################################

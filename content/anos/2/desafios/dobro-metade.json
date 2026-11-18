@@ -1,0 +1,164 @@
+[
+  {
+    "id": "2A-PRB-DOB-001",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Dobro",
+    "bncc": [
+      {
+        "codigo": "EF02MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular o dobro de uma quantidade.",
+    "formato": "numerico",
+    "pool": "2ano.dobro_metade",
+    "enunciado": {
+      "texto": "Leo tem {a} parafusos. Lia tem o dobro. Quantos parafusos Lia tem?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "dobro",
+      "a": 12,
+      "b": 0
+    },
+    "explicacao": "Dobro é somar duas vezes: {conta}.",
+    "dicas": [
+      "Dobro é a mesma quantidade duas vezes.",
+      "Some {a} com {a}.",
+      "Some primeiro as dezenas e depois as unidades."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-DOB-002",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Dobro (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular o dobro de números até 25.",
+    "formato": "numerico",
+    "pool": "2ano.dobro_metade",
+    "enunciado": {
+      "texto": "A porta tem {a} trancas de cada lado. Quantas trancas são ao todo?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "dobro",
+      "a": [
+        3,
+        25
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "maxResultado": 50
+    },
+    "explicacao": "Dois lados iguais é o dobro: {conta}.",
+    "dicas": [
+      "Dobro é a mesma quantidade duas vezes.",
+      "Some {a} com {a}.",
+      "Some primeiro as dezenas e depois as unidades."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-MET-003",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Metade",
+    "bncc": [
+      {
+        "codigo": "EF02MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular a metade de uma quantidade par.",
+    "formato": "numerico",
+    "pool": "2ano.dobro_metade",
+    "enunciado": {
+      "texto": "Havia {a} engrenagens. Leo usou a metade. Quantas ele usou?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "metade",
+      "a": 18,
+      "b": 0
+    },
+    "explicacao": "Metade de {a} é {resposta}, porque {conta}.",
+    "dicas": [
+      "Metade é dividir em duas partes iguais.",
+      "Que número somado com ele mesmo dá {a}?",
+      "Separe {a} em dois grupos iguais e conte um deles."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-MET-004",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Metade (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular a metade de números pares até 40.",
+    "formato": "numerico",
+    "pool": "2ano.dobro_metade",
+    "enunciado": {
+      "texto": "A porta abre com metade das {a} chaves. Quantas chaves são?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "metade",
+      "a": [
+        4,
+        40
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "maxResultado": 20
+    },
+    "explicacao": "Metade de {a} é {resposta}, porque {conta}.",
+    "dicas": [
+      "Metade é dividir em duas partes iguais.",
+      "Que número somado com ele mesmo dá {a}?",
+      "Separe {a} em dois grupos iguais e conte um deles."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

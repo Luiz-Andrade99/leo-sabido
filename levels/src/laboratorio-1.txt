@@ -1,0 +1,53 @@
+{
+  "nome": "Sala dos Circuitos",
+  "tileset": {
+    "name": "laboratorio",
+    "image": "../assets/tiles/laboratorio.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "laboratorio",
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2400
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "6ano.divisibilidade",
+      "mecanismo": "porta",
+      "titulo": "Circuito da Porta",
+      "dificuldade": 1
+    },
+    "2": {
+      "pool": "6ano.expressoes",
+      "mecanismo": "ponte",
+      "titulo": "Ponte de Energia",
+      "dificuldade": 1
+    }
+  },
+  "placas": [
+    "Boas-vindas ao Laboratório do Saber! Aqui, cada máquina segue uma regra.",
+    "Plataforma veloz: planeje o salto antes de correr."
+  ]
+}
+---
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #           *                                    *                    ##
+##          *               a                                               ===                   ##
+##          ##              a                                                                     ##
+##  S  !    ##       C  1   a   C !            C  *   2               B   +           *       G   ##
+################+++#################M       #############bbbbbb#####################################
+################   #################++++++++#############      #####################################
+################   #################        #############      #####################################

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "3A-PRB-SOM-001",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Adição — juntar e acrescentar",
+    "bncc": [{ "codigo": "EF03MA06", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Resolver problema de adição com o significado de acrescentar, com números até 100.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": { "texto": "A porta já tem {a} engrenagens. Leo encaixou mais {b}. Quantas engrenagens a porta tem agora?" },
+    "parametros": { "tipo": "fixo", "operacao": "soma", "a": 24, "b": 15 },
+    "explicacao": "Quando acrescentamos, somamos: {conta}.",
+    "dicas": [
+      "As engrenagens aumentaram ou diminuíram?",
+      "Junte as {a} que já estavam com as {b} novas.",
+      "Some primeiro as dezenas e depois as unidades: {a} + {b}."
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-PRB-SOM-002",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Adição — juntar e acrescentar (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA06", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Resolver problemas de adição com resultado até 99.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": { "texto": "Para abrir a porta, Leo precisa juntar duas pilhas de pedras: uma com {a} e outra com {b}. Quantas pedras ao todo?" },
+    "parametros": { "tipo": "modelo", "operacao": "soma", "a": [10, 60], "b": [5, 39], "maxResultado": 99 },
+    "explicacao": "Juntar as duas pilhas é somar: {conta}.",
+    "dicas": [
+      "\"Ao todo\" quer dizer juntar tudo.",
+      "Some as duas pilhas: {a} + {b}.",
+      "Some as dezenas, depois as unidades, e junte os dois resultados."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-PRB-SUB-003",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Subtração — retirar",
+    "bncc": [{ "codigo": "EF03MA06", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Resolver problema de subtração com o significado de retirar.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": { "texto": "Havia {a} cristais na parede da caverna. {b} caíram no rio. Quantos cristais ficaram na parede?" },
+    "parametros": { "tipo": "fixo", "operacao": "subtracao", "a": 45, "b": 18 },
+    "explicacao": "Quando alguns vão embora, subtraímos: {conta}.",
+    "dicas": [
+      "Os cristais na parede aumentaram ou diminuíram?",
+      "Tire {b} de {a}.",
+      "Você pode tirar 10 primeiro e depois o resto: {a} − 10, e então tire mais o que falta."
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-PRB-SUB-004",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Subtração — retirar (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA06", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Resolver problemas de subtração com números até 99.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": { "texto": "A lanterna tinha {a} gotas de óleo. Leo usou {b} gotas na caverna. Quantas gotas sobraram?" },
+    "parametros": { "tipo": "modelo", "operacao": "subtracao", "a": [30, 99], "b": [11, 29], "maxResultado": 88 },
+    "explicacao": "Usar é retirar, então subtraímos: {conta}.",
+    "dicas": [
+      "As gotas aumentaram ou diminuíram?",
+      "Tire {b} de {a}.",
+      "Confira: o resultado mais {b} precisa dar {a}."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-PRB-COM-005",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Subtração — completar",
+    "bncc": [{ "codigo": "EF03MA06", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Resolver problema de subtração com o significado de completar quantidades.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": { "texto": "A porta precisa de {b} engrenagens para abrir. Já tem {a}. Quantas engrenagens faltam?" },
+    "parametros": { "tipo": "fixo", "operacao": "completar", "a": 26, "b": 50 },
+    "explicacao": "Para saber quanto falta, tiramos o que já tem do total: {conta}.",
+    "dicas": [
+      "Você quer chegar a {b} começando de {a}.",
+      "Conte de {a} até {b}, ou faça {b} − {a}.",
+      "De {a} até o próximo número terminado em zero, e depois até {b}: junte os dois saltos."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-PRB-COM-006",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Subtração — completar (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA06", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Resolver problemas de completar quantidades com números até 99.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": { "texto": "O mecanismo da porta só gira com {b} pedras de peso. Leo colocou {a}. Quantas pedras faltam?" },
+    "parametros": { "tipo": "modelo", "operacao": "completar", "a": [10, 60], "b": [40, 99], "maxResultado": 50 },
+    "explicacao": "Quanto falta = total − o que já tem: {conta}.",
+    "dicas": [
+      "Você quer chegar a {b} começando de {a}.",
+      "Faça {b} − {a}.",
+      "Confira: {a} mais a sua resposta precisa dar {b}."
+    ],
+    "dificuldade": 3,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-PRB-CMP-007",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Subtração — comparar",
+    "bncc": [{ "codigo": "EF03MA06", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Resolver problema de subtração com o significado de comparar quantidades.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": { "texto": "A torre da esquerda tem {a} pedras. A da direita tem {b}. Quantas pedras a torre da esquerda tem a mais?" },
+    "parametros": { "tipo": "fixo", "operacao": "comparar", "a": 63, "b": 38 },
+    "explicacao": "Para comparar, subtraímos a menor da maior: {conta}.",
+    "dicas": [
+      "Qual torre é a maior?",
+      "A diferença entre as torres é {a} − {b}.",
+      "Confira: {b} mais a sua resposta precisa dar {a}."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-PRB-SOM-008",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Adição com centenas exatas (parametrizado)",
+    "bncc": [
+      { "codigo": "EF03MA06", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" },
+      { "codigo": "EF03MA02", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }
+    ],
+    "objetivo": "Somar centenas exatas usando o valor posicional.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": { "texto": "O portão pesado tem duas chaves de pedra: uma vale {a} e a outra vale {b}. Quanto valem as duas juntas?" },
+    "parametros": { "tipo": "modelo", "operacao": "soma", "a": [100, 500], "b": [100, 400], "multiploDe": 100, "maxResultado": 900 },
+    "explicacao": "Somamos as centenas: {conta}.",
+    "dicas": [
+      "Quantas centenas tem cada chave?",
+      "Some as centenas como se fossem unidades e depois acrescente os dois zeros.",
+      "{a} + {b}: pense em quantas centenas há ao todo."
+    ],
+    "dificuldade": 3,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  }
+]

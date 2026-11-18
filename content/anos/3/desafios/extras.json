@@ -1,0 +1,223 @@
+[
+  {
+    "id": "3A-PRB-MUL-009",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Multiplicação",
+    "bncc": [
+      {
+        "codigo": "EF03MA07",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de multiplicação com a ideia de grupos iguais.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": {
+      "texto": "Cada carrinho da mina leva {a} pedras. Quantas pedras {b} carrinhos levam?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "multiplicacao",
+      "a": [
+        3,
+        9
+      ],
+      "b": [
+        2,
+        5
+      ],
+      "maxResultado": 45
+    },
+    "explicacao": "Grupos iguais: {conta}.",
+    "dicas": [
+      "Cada carrinho leva a mesma quantidade.",
+      "Some {a} várias vezes, uma para cada carrinho.",
+      "Faça {b} × {a}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-PRB-SUB-010",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Subtração",
+    "bncc": [
+      {
+        "codigo": "EF03MA05",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF03MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de subtração com números de três algarismos.",
+    "formato": "numerico",
+    "pool": "3ano.problemas",
+    "enunciado": {
+      "texto": "O lago tinha {a} peixes brilhantes. {b} nadaram para o rio. Quantos peixes ficaram no lago?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "subtracao",
+      "a": [
+        120,
+        400
+      ],
+      "b": [
+        30,
+        99
+      ],
+      "maxResultado": 370
+    },
+    "explicacao": "Quando alguns vão embora, subtraímos: {conta}.",
+    "dicas": [
+      "Ficaram mais ou menos peixes?",
+      "Faça {a} − {b}.",
+      "Se faltar unidade, troque uma dezena por 10 unidades."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-DIV-REP-007",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Divisão em partes iguais",
+    "bncc": [
+      {
+        "codigo": "EF03MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Repartir quantidades igualmente.",
+    "formato": "distribuir",
+    "pool": "3ano.distribuir",
+    "enunciado": {
+      "texto": "Os mineiros vão repartir {total} lanternas igualmente entre {grupos} barcos. Distribua as lanternas."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "total": [
+        10,
+        30
+      ],
+      "grupos": [
+        2,
+        3
+      ],
+      "comResto": false
+    },
+    "explicacao": "{total} ÷ {grupos} = {cada}: cada barco recebe {cada} lanternas, porque {grupos} × {cada} = {total}.",
+    "dicas": [
+      "Dê uma lanterna para cada barco, uma de cada vez.",
+      "Todos os barcos precisam ficar iguais.",
+      "Que número vezes {grupos} dá {total}?"
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-SEQ-DEC-009",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Sequência decrescente",
+    "bncc": [
+      {
+        "codigo": "EF03MA10",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar uma sequência que diminui de 10 em 10.",
+    "formato": "sequencia",
+    "pool": "3ano.sequencias",
+    "enunciado": {
+      "texto": "As pedras da ponte seguem uma regra. Complete os números que faltam."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "valores": [
+        100,
+        90,
+        80,
+        null,
+        60,
+        null
+      ],
+      "passo": -10
+    },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}: cada número é o anterior − {passoAbs}.",
+    "dicas": [
+      "Os números estão ficando maiores ou menores?",
+      "Quanto diminui de uma pedra para a outra?",
+      "Tire 10 de cada número."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-MUL-ARR-008",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Multiplicação em disposição retangular",
+    "bncc": [
+      {
+        "codigo": "EF03MA07",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Montar arranjos com 4 ou 5 linhas iguais.",
+    "formato": "arranjo",
+    "pool": "3ano.arranjos",
+    "enunciado": {
+      "texto": "Monte uma plataforma com {total} blocos em {linhas} linhas iguais. Quantos blocos vão em cada linha?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "linhas": [
+        4,
+        5
+      ],
+      "colunas": [
+        2,
+        6
+      ]
+    },
+    "explicacao": "{linhas} linhas de {colunas} blocos: {linhas} × {colunas} = {total}.",
+    "dicas": [
+      "Todas as linhas têm a mesma quantidade.",
+      "Que número vezes {linhas} dá {total}?",
+      "Vá colocando um bloco em cada linha até acabar."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  }
+]

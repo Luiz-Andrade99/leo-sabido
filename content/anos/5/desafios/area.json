@@ -1,0 +1,230 @@
+[
+  {
+    "id": "5A-ARE-RET-001",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Área e perímetro de retângulos",
+    "bncc": [
+      {
+        "codigo": "EF05MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Construir o retângulo 4 × 3 a partir da área e do perímetro.",
+    "formato": "area",
+    "pool": "5ano.area",
+    "enunciado": {
+      "texto": "A plataforma da fábrica precisa ter área {area} e perímetro {perimetro}. Ajuste o comprimento e a largura."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "largura": 4,
+      "altura": 3
+    },
+    "explicacao": "Um retângulo {largura} × {altura} tem área {largura} × {altura} = {area} e perímetro 2 × ({largura} + {altura}) = {perimetro}.",
+    "dicas": [
+      "Área é quantos quadradinhos cabem dentro; perímetro é a volta toda.",
+      "Procure dois números que, multiplicados, dão {area}.",
+      "Desses pares, escolha o que, somado, dá {semi} (a metade do perímetro)."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-ARE-RET-002",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Área e perímetro de retângulos",
+    "bncc": [
+      {
+        "codigo": "EF05MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Construir o retângulo 6 × 2 a partir da área e do perímetro. A área 12 também cabe em 4 × 3, que tem outro perímetro.",
+    "formato": "area",
+    "pool": "5ano.area",
+    "enunciado": {
+      "texto": "A plataforma da fábrica precisa ter área {area} e perímetro {perimetro}. Ajuste o comprimento e a largura."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "largura": 6,
+      "altura": 2
+    },
+    "explicacao": "Um retângulo {largura} × {altura} tem área {largura} × {altura} = {area} e perímetro 2 × ({largura} + {altura}) = {perimetro}.",
+    "dicas": [
+      "Área é quantos quadradinhos cabem dentro; perímetro é a volta toda.",
+      "Procure dois números que, multiplicados, dão {area}.",
+      "Desses pares, escolha o que, somado, dá {semi} (a metade do perímetro)."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-ARE-RET-003",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Área e perímetro de retângulos",
+    "bncc": [
+      {
+        "codigo": "EF05MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Construir o retângulo 5 × 5 a partir da área e do perímetro.",
+    "formato": "area",
+    "pool": "5ano.area",
+    "enunciado": {
+      "texto": "A plataforma da fábrica precisa ter área {area} e perímetro {perimetro}. Ajuste o comprimento e a largura."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "largura": 5,
+      "altura": 5
+    },
+    "explicacao": "Um retângulo {largura} × {altura} tem área {largura} × {altura} = {area} e perímetro 2 × ({largura} + {altura}) = {perimetro}.",
+    "dicas": [
+      "Área é quantos quadradinhos cabem dentro; perímetro é a volta toda.",
+      "Procure dois números que, multiplicados, dão {area}.",
+      "Desses pares, escolha o que, somado, dá {semi} (a metade do perímetro)."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-ARE-RET-004",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Área e perímetro de retângulos",
+    "bncc": [
+      {
+        "codigo": "EF05MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Construir o retângulo 8 × 1 a partir da área e do perímetro. Mesma área de 4 × 2, perímetro bem maior.",
+    "formato": "area",
+    "pool": "5ano.area",
+    "enunciado": {
+      "texto": "A plataforma da fábrica precisa ter área {area} e perímetro {perimetro}. Ajuste o comprimento e a largura."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "largura": 8,
+      "altura": 1
+    },
+    "explicacao": "Um retângulo {largura} × {altura} tem área {largura} × {altura} = {area} e perímetro 2 × ({largura} + {altura}) = {perimetro}.",
+    "dicas": [
+      "Área é quantos quadradinhos cabem dentro; perímetro é a volta toda.",
+      "Procure dois números que, multiplicados, dão {area}.",
+      "Desses pares, escolha o que, somado, dá {semi} (a metade do perímetro)."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-ARE-RET-005",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Área e perímetro (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Construir retângulos de lados 2 a 6.",
+    "formato": "area",
+    "pool": "5ano.area",
+    "enunciado": {
+      "texto": "A plataforma da fábrica precisa ter área {area} e perímetro {perimetro}. Ajuste o comprimento e a largura."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "largura": [
+        2,
+        6
+      ],
+      "altura": [
+        2,
+        6
+      ]
+    },
+    "explicacao": "Um retângulo {largura} × {altura} tem área {largura} × {altura} = {area} e perímetro 2 × ({largura} + {altura}) = {perimetro}.",
+    "dicas": [
+      "Área é quantos quadradinhos cabem dentro; perímetro é a volta toda.",
+      "Procure dois números que, multiplicados, dão {area}.",
+      "Desses pares, escolha o que, somado, dá {semi} (a metade do perímetro)."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-ARE-RET-006",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Área e perímetro (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Construir retângulos de comprimento 4 a 10 e largura 2 a 5.",
+    "formato": "area",
+    "pool": "5ano.area",
+    "enunciado": {
+      "texto": "A plataforma da fábrica precisa ter área {area} e perímetro {perimetro}. Ajuste o comprimento e a largura."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "largura": [
+        4,
+        10
+      ],
+      "altura": [
+        2,
+        5
+      ]
+    },
+    "explicacao": "Um retângulo {largura} × {altura} tem área {largura} × {altura} = {area} e perímetro 2 × ({largura} + {altura}) = {perimetro}.",
+    "dicas": [
+      "Área é quantos quadradinhos cabem dentro; perímetro é a volta toda.",
+      "Procure dois números que, multiplicados, dão {area}.",
+      "Desses pares, escolha o que, somado, dá {semi} (a metade do perímetro)."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "id": "2A-POS-COM-001",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Composição de números",
+    "bncc": [
+      {
+        "codigo": "EF02MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor 34 com dezenas e unidades.",
+    "formato": "posicional",
+    "pool": "2ano.posicional",
+    "enunciado": {
+      "texto": "Monte o número {numero} com as peças para formar a escada."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "numero": 34
+    },
+    "explicacao": "{numero} = {cValor} + {dValor} + {u}: {c} centenas, {d} dezenas e {u} unidades.",
+    "dicas": [
+      "O algarismo da esquerda diz quantas centenas (ou dezenas) o número tem.",
+      "Cada dezena vale 10 e cada centena vale 100.",
+      "{numero} tem {c} centenas, {d} dezenas e {u} unidades."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-POS-COM-002",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Composição de números",
+    "bncc": [
+      {
+        "codigo": "EF02MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor 125 com centenas, dezenas e unidades.",
+    "formato": "posicional",
+    "pool": "2ano.posicional",
+    "enunciado": {
+      "texto": "Monte o número {numero} com as peças para formar a escada."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "numero": 125
+    },
+    "explicacao": "{numero} = {cValor} + {dValor} + {u}: {c} centenas, {d} dezenas e {u} unidades.",
+    "dicas": [
+      "O algarismo da esquerda diz quantas centenas (ou dezenas) o número tem.",
+      "Cada dezena vale 10 e cada centena vale 100.",
+      "{numero} tem {c} centenas, {d} dezenas e {u} unidades."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-POS-COM-003",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Composição com zero",
+    "bncc": [
+      {
+        "codigo": "EF02MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF02MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor 207 reconhecendo a função do zero.",
+    "formato": "posicional",
+    "pool": "2ano.posicional",
+    "enunciado": {
+      "texto": "Monte o número {numero} com as peças para formar a escada."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "numero": 207
+    },
+    "explicacao": "{numero} = {cValor} + {dValor} + {u}: {c} centenas, {d} dezenas e {u} unidades.",
+    "dicas": [
+      "Quantas dezenas tem um número com zero no meio?",
+      "O zero quer dizer: nenhuma dezena.",
+      "207 tem 2 centenas, 0 dezenas e 7 unidades."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-POS-COM-004",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Composição de números (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor números de 10 a 99.",
+    "formato": "posicional",
+    "pool": "2ano.posicional",
+    "enunciado": {
+      "texto": "Monte o número {numero} com as peças para formar a escada."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "numero": [
+        10,
+        99
+      ]
+    },
+    "explicacao": "{numero} = {cValor} + {dValor} + {u}: {c} centenas, {d} dezenas e {u} unidades.",
+    "dicas": [
+      "O algarismo da esquerda diz quantas centenas (ou dezenas) o número tem.",
+      "Cada dezena vale 10 e cada centena vale 100.",
+      "{numero} tem {c} centenas, {d} dezenas e {u} unidades."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-POS-COM-005",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Composição de números (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor números de 100 a 599.",
+    "formato": "posicional",
+    "pool": "2ano.posicional",
+    "enunciado": {
+      "texto": "Monte o número {numero} com as peças para formar a escada."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "numero": [
+        100,
+        599
+      ]
+    },
+    "explicacao": "{numero} = {cValor} + {dValor} + {u}: {c} centenas, {d} dezenas e {u} unidades.",
+    "dicas": [
+      "O algarismo da esquerda diz quantas centenas (ou dezenas) o número tem.",
+      "Cada dezena vale 10 e cada centena vale 100.",
+      "{numero} tem {c} centenas, {d} dezenas e {u} unidades."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-POS-COM-006",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Composição de números (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF02MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor números de 600 a 999.",
+    "formato": "posicional",
+    "pool": "2ano.posicional",
+    "enunciado": {
+      "texto": "Monte o número {numero} com as peças para formar a escada."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "numero": [
+        600,
+        999
+      ]
+    },
+    "explicacao": "{numero} = {cValor} + {dValor} + {u}: {c} centenas, {d} dezenas e {u} unidades.",
+    "dicas": [
+      "O algarismo da esquerda diz quantas centenas (ou dezenas) o número tem.",
+      "Cada dezena vale 10 e cada centena vale 100.",
+      "{numero} tem {c} centenas, {d} dezenas e {u} unidades."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

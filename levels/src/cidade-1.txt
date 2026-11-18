@@ -1,0 +1,53 @@
+{
+  "nome": "Praça das Invenções",
+  "tileset": {
+    "name": "cidade",
+    "image": "../assets/tiles/cidade.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "cidade",
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2600
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "5ano.decimais",
+      "mecanismo": "porta",
+      "titulo": "Porta da Oficina",
+      "dificuldade": 1
+    },
+    "2": {
+      "pool": "5ano.porcentagens",
+      "mecanismo": "ponte",
+      "titulo": "Ponte Elétrica",
+      "dificuldade": 1
+    }
+  },
+  "placas": [
+    "A Cidade dos Inventores funciona com energia e medidas precisas.",
+    "Esta plataforma é rápida! Observe antes de pular."
+  ]
+}
+---
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #           *                                    *                    ##
+##          *               a                                               ===                   ##
+##          ##              a                                                                     ##
+##  S  !    ##       C  1   a   C !            C  *   2               B   +           *       G   ##
+################+++#################M       #############bbbbbb#####################################
+################   #################++++++++#############      #####################################
+################   #################        #############      #####################################

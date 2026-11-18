@@ -1,0 +1,54 @@
+{
+  "nome": "Árvore Antiga",
+  "tileset": {
+    "name": "floresta",
+    "image": "../assets/tiles/floresta.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "floresta",
+  "saida": "portal",
+  "paineis": {
+    "1": {
+      "pool": "1ano.padroes",
+      "mecanismo": "ponte",
+      "titulo": "Ponte das Figuras",
+      "dificuldade": 1
+    },
+    "2": {
+      "pool": "1ano.contagem",
+      "mecanismo": "elevador",
+      "titulo": "Elevador da Árvore",
+      "dificuldade": 2,
+      "dy": -192,
+      "periodo": 4600
+    },
+    "3": {
+      "pool": "1ano.somas",
+      "mecanismo": "porta",
+      "titulo": "Porta da Árvore",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "Lá no alto da árvore há uma pista da engrenagem!"
+  ]
+}
+---
+##                                                              #                                 ##
+##                                                              #                                 ##
+##                                                              #                                 ##
+##                                                              #                                 ##
+##                                                              #                                 ##
+##                                                              #                                 ##
+##                                                              #                                 ##
+##                                         *                    #                                 ##
+##                                  ###############             #                                 ##
+##                                  ###############             #                                 ##
+##                                  ###############             #                                 ##
+##                                  ###############             c                                 ##
+##                                  ###############             c                                 ##
+##  S !     1           C     2   bb###############   C     3   c     *       *     *     G       ##
+###############aaaaaa###############################################################################
+###############      ###############################################################################
+###############      ###############################################################################

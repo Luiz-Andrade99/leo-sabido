@@ -1,0 +1,320 @@
+[
+  {
+    "id": "4A-GRA-COL-001",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Gráfico de colunas — ler um valor",
+    "bncc": [
+      {
+        "codigo": "EF04MA27",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Ler o valor de uma coluna em gráfico de colunas.",
+    "formato": "grafico",
+    "pool": "4ano.graficos",
+    "enunciado": {
+      "texto": "O guarda anotou as tochas acesas. Quantas tochas há na torre {a}?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "titulo": "Tochas acesas em cada torre",
+      "unidade": "tochas",
+      "dados": [
+        {
+          "rotulo": "Norte",
+          "valor": 8
+        },
+        {
+          "rotulo": "Sul",
+          "valor": 5
+        },
+        {
+          "rotulo": "Leste",
+          "valor": 11
+        },
+        {
+          "rotulo": "Oeste",
+          "valor": 6
+        }
+      ],
+      "pergunta": "valor",
+      "alvo": [
+        2
+      ]
+    },
+    "explicacao": "O topo da coluna {a} chega à linha do {resposta}: são {resposta} tochas.",
+    "dicas": [
+      "Encontre a coluna {a} embaixo do gráfico.",
+      "Siga o topo da coluna, reto, até os números da esquerda.",
+      "Cada linha do gráfico vale {passo} a mais que a de baixo."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-GRA-COL-002",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Gráfico de colunas — comparar",
+    "bncc": [
+      {
+        "codigo": "EF04MA27",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar duas colunas e calcular a diferença.",
+    "formato": "grafico",
+    "pool": "4ano.graficos",
+    "enunciado": {
+      "texto": "Quantas tochas a torre {a} tem a mais que a torre {b}?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "titulo": "Tochas acesas em cada torre",
+      "unidade": "tochas",
+      "dados": [
+        {
+          "rotulo": "Norte",
+          "valor": 8
+        },
+        {
+          "rotulo": "Sul",
+          "valor": 5
+        },
+        {
+          "rotulo": "Leste",
+          "valor": 11
+        },
+        {
+          "rotulo": "Oeste",
+          "valor": 6
+        }
+      ],
+      "pergunta": "diferenca",
+      "alvo": [
+        2,
+        1
+      ]
+    },
+    "explicacao": "{a} tem {va} e {b} tem {vb}: {va} − {vb} = {resposta}.",
+    "dicas": [
+      "Descubra quanto tem cada coluna: {a} e {b}.",
+      "Depois tire o menor do maior.",
+      "Siga o topo de cada coluna até os números da esquerda."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-GRA-COL-003",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Gráfico de colunas — total",
+    "bncc": [
+      {
+        "codigo": "EF04MA27",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Somar os valores de todas as colunas.",
+    "formato": "grafico",
+    "pool": "4ano.graficos",
+    "enunciado": {
+      "texto": "Quantas bandeiras há ao todo no pátio?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "titulo": "Bandeiras no pátio",
+      "unidade": "bandeiras",
+      "dados": [
+        {
+          "rotulo": "Azul",
+          "valor": 14
+        },
+        {
+          "rotulo": "Verde",
+          "valor": 8
+        },
+        {
+          "rotulo": "Amarela",
+          "valor": 10
+        },
+        {
+          "rotulo": "Vermelha",
+          "valor": 4
+        }
+      ],
+      "pergunta": "total",
+      "alvo": []
+    },
+    "explicacao": "Somando as colunas: {soma} = {resposta}.",
+    "dicas": [
+      "Descubra o valor de cada coluna.",
+      "Depois some todos os valores.",
+      "Some de dois em dois para não se perder."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-GRA-COL-004",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Gráfico de colunas — ler um valor (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA27",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Ler valores em gráficos com escala de 2 em 2.",
+    "formato": "grafico",
+    "pool": "4ano.graficos",
+    "enunciado": {
+      "texto": "O guarda anotou as tochas acesas. Quantas tochas há na torre {a}?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "titulo": "Tochas acesas em cada torre",
+      "unidade": "tochas",
+      "rotulos": [
+        "Norte",
+        "Sul",
+        "Leste",
+        "Oeste"
+      ],
+      "valor": [
+        2,
+        20
+      ],
+      "passo": 2,
+      "pergunta": "valor"
+    },
+    "explicacao": "O topo da coluna {a} chega à linha do {resposta}: são {resposta} tochas.",
+    "dicas": [
+      "Encontre a coluna {a} embaixo do gráfico.",
+      "Siga o topo da coluna, reto, até os números da esquerda.",
+      "Cada linha do gráfico vale {passo} a mais que a de baixo."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-GRA-COL-005",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Gráfico de colunas — comparar (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA27",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar colunas em gráficos com escala de 2 em 2.",
+    "formato": "grafico",
+    "pool": "4ano.graficos",
+    "enunciado": {
+      "texto": "Quantas tochas a torre {a} tem a mais que a torre {b}?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "titulo": "Tochas acesas em cada torre",
+      "unidade": "tochas",
+      "rotulos": [
+        "Norte",
+        "Sul",
+        "Leste",
+        "Oeste"
+      ],
+      "valor": [
+        2,
+        20
+      ],
+      "passo": 2,
+      "pergunta": "diferenca"
+    },
+    "explicacao": "{a} tem {va} e {b} tem {vb}: {va} − {vb} = {resposta}.",
+    "dicas": [
+      "Descubra quanto tem cada coluna: {a} e {b}.",
+      "Depois tire o menor do maior.",
+      "Siga o topo de cada coluna até os números da esquerda."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-GRA-COL-006",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Gráfico de colunas — total (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA27",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Somar valores de gráficos com escala de 5 em 5.",
+    "formato": "grafico",
+    "pool": "4ano.graficos",
+    "enunciado": {
+      "texto": "Quantas pessoas visitaram o castelo nos cinco dias, ao todo?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "titulo": "Visitantes por dia",
+      "unidade": "pessoas",
+      "rotulos": [
+        "Seg",
+        "Ter",
+        "Qua",
+        "Qui",
+        "Sex"
+      ],
+      "valor": [
+        5,
+        50
+      ],
+      "passo": 5,
+      "pergunta": "total"
+    },
+    "explicacao": "Somando as colunas: {soma} = {resposta}.",
+    "dicas": [
+      "Descubra o valor de cada coluna.",
+      "Depois some todos os valores.",
+      "Some de dois em dois para não se perder."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

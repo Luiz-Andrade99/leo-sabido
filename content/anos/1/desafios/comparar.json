@@ -1,0 +1,186 @@
+[
+  {
+    "id": "1A-CMP-MAI-001",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Comparar quantidades",
+    "bncc": [
+      {
+        "codigo": "EF01MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA05",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar grupos de 4 e 7.",
+    "formato": "contagem",
+    "pool": "1ano.comparar",
+    "enunciado": {
+      "texto": "Qual grupo tem mais {nome}?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "modo": "compara",
+      "a": 4,
+      "b": 7,
+      "icone": "cogumelo"
+    },
+    "explicacao": "{resposta} é mais que {menor}: tem {diferenca} a mais.",
+    "dicas": [
+      "Conte os dois grupos.",
+      "Ligue um de cada grupo, par a par. Qual grupo sobra?",
+      "O grupo com o número maior tem mais."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CMP-MAI-002",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Comparar quantidades",
+    "bncc": [
+      {
+        "codigo": "EF01MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA05",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar grupos de 9 e 6.",
+    "formato": "contagem",
+    "pool": "1ano.comparar",
+    "enunciado": {
+      "texto": "Qual grupo tem mais {nome}?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "modo": "compara",
+      "a": 9,
+      "b": 6,
+      "icone": "estrela"
+    },
+    "explicacao": "{resposta} é mais que {menor}: tem {diferenca} a mais.",
+    "dicas": [
+      "Conte os dois grupos.",
+      "Ligue um de cada grupo, par a par. Qual grupo sobra?",
+      "O grupo com o número maior tem mais."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CMP-MAI-003",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Comparar quantidades (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF01MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA05",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar grupos de 2 a 10.",
+    "formato": "contagem",
+    "pool": "1ano.comparar",
+    "enunciado": {
+      "texto": "Qual grupo tem mais {nome}?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "modo": "compara",
+      "a": [
+        2,
+        10
+      ],
+      "b": [
+        2,
+        10
+      ],
+      "icone": "maca"
+    },
+    "explicacao": "{resposta} é mais que {menor}: tem {diferenca} a mais.",
+    "dicas": [
+      "Conte os dois grupos.",
+      "Ligue um de cada grupo, par a par. Qual grupo sobra?",
+      "O grupo com o número maior tem mais."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CMP-MAI-004",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Comparar quantidades (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF01MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA05",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar grupos de 8 a 20.",
+    "formato": "contagem",
+    "pool": "1ano.comparar",
+    "enunciado": {
+      "texto": "Qual grupo tem mais {nome}?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "modo": "compara",
+      "a": [
+        8,
+        20
+      ],
+      "b": [
+        8,
+        20
+      ],
+      "icone": "folha"
+    },
+    "explicacao": "{resposta} é mais que {menor}: tem {diferenca} a mais.",
+    "dicas": [
+      "Conte os dois grupos.",
+      "Ligue um de cada grupo, par a par. Qual grupo sobra?",
+      "O grupo com o número maior tem mais."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

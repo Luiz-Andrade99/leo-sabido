@@ -1,0 +1,204 @@
+[
+  {
+    "id": "1A-FIG-PLA-001",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Figuras planas",
+    "bncc": [
+      {
+        "codigo": "EF01MA14",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Identificar o círculo.",
+    "formato": "formas",
+    "pool": "1ano.formas",
+    "enunciado": {
+      "texto": "Toque no {forma}."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "alvo": "circulo",
+      "opcoes": [
+        "quadrado",
+        "circulo",
+        "triangulo"
+      ]
+    },
+    "explicacao": "Esse é o {forma}: ele {descricao}.",
+    "dicas": [
+      "Conte os lados de cada figura.",
+      "O {forma} {descricao}.",
+      "Passe o dedo pela borda de cada figura."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-FIG-PLA-002",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Figuras planas",
+    "bncc": [
+      {
+        "codigo": "EF01MA14",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Identificar o triângulo.",
+    "formato": "formas",
+    "pool": "1ano.formas",
+    "enunciado": {
+      "texto": "Toque no {forma}."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "alvo": "triangulo",
+      "opcoes": [
+        "triangulo",
+        "retangulo",
+        "circulo"
+      ]
+    },
+    "explicacao": "Esse é o {forma}: ele {descricao}.",
+    "dicas": [
+      "Conte os lados de cada figura.",
+      "O {forma} {descricao}.",
+      "Passe o dedo pela borda de cada figura."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-FIG-PLA-003",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Figuras planas",
+    "bncc": [
+      {
+        "codigo": "EF01MA14",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Diferenciar quadrado de retângulo.",
+    "formato": "formas",
+    "pool": "1ano.formas",
+    "enunciado": {
+      "texto": "Toque no {forma}."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "alvo": "quadrado",
+      "opcoes": [
+        "retangulo",
+        "triangulo",
+        "quadrado"
+      ]
+    },
+    "explicacao": "Esse é o {forma}: ele {descricao}.",
+    "dicas": [
+      "Conte os lados de cada figura.",
+      "O {forma} {descricao}.",
+      "Passe o dedo pela borda de cada figura."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-FIG-PLA-004",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Figuras planas",
+    "bncc": [
+      {
+        "codigo": "EF01MA14",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Identificar o retângulo entre quatro figuras.",
+    "formato": "formas",
+    "pool": "1ano.formas",
+    "enunciado": {
+      "texto": "Toque no {forma}."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "alvo": "retangulo",
+      "opcoes": [
+        "quadrado",
+        "retangulo",
+        "circulo",
+        "triangulo"
+      ]
+    },
+    "explicacao": "Esse é o {forma}: ele {descricao}.",
+    "dicas": [
+      "Conte os lados de cada figura.",
+      "O {forma} {descricao}.",
+      "Passe o dedo pela borda de cada figura."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-FIG-PLA-005",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Figuras planas",
+    "bncc": [
+      {
+        "codigo": "EF01MA14",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Identificar as quatro figuras planas em posições variadas.",
+    "formato": "formas",
+    "pool": "1ano.formas",
+    "enunciado": {
+      "texto": "Toque no {forma}."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "alvos": [
+        "circulo",
+        "quadrado",
+        "retangulo",
+        "triangulo"
+      ],
+      "quantidade": 4
+    },
+    "explicacao": "Esse é o {forma}: ele {descricao}.",
+    "dicas": [
+      "Conte os lados de cada figura.",
+      "O {forma} {descricao}.",
+      "Passe o dedo pela borda de cada figura."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

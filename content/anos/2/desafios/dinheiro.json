@@ -1,0 +1,259 @@
+[
+  {
+    "id": "2A-DIN-VAL-001",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Dinheiro — valor exato",
+    "bncc": [
+      {
+        "codigo": "EF02MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Formar R$ 7 com moedas de R$ 1 e cédulas de R$ 2 e R$ 5.",
+    "formato": "dinheiro",
+    "pool": "2ano.dinheiro",
+    "enunciado": {
+      "texto": "O elevador do mercado só liga com R$ {valor}. Junte o valor exato."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "valor": 7,
+      "notas": [
+        1,
+        2,
+        5
+      ]
+    },
+    "explicacao": "Uma forma de pagar: {exemplo}. Outras combinações também dão certo!",
+    "dicas": [
+      "Comece pelas cédulas maiores, sem passar de R$ {valor}.",
+      "Some o que você já colocou. Quanto ainda falta?",
+      "Uma forma possível: {exemplo}."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-DIN-VAL-002",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Dinheiro — valor exato",
+    "bncc": [
+      {
+        "codigo": "EF02MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Formar R$ 12 com moedas e cédulas até R$ 10.",
+    "formato": "dinheiro",
+    "pool": "2ano.dinheiro",
+    "enunciado": {
+      "texto": "O elevador do mercado só liga com R$ {valor}. Junte o valor exato."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "valor": 12,
+      "notas": [
+        1,
+        2,
+        5,
+        10
+      ]
+    },
+    "explicacao": "Uma forma de pagar: {exemplo}. Outras combinações também dão certo!",
+    "dicas": [
+      "Comece pelas cédulas maiores, sem passar de R$ {valor}.",
+      "Some o que você já colocou. Quanto ainda falta?",
+      "Uma forma possível: {exemplo}."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-DIN-VAL-003",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Dinheiro — valor exato",
+    "bncc": [
+      {
+        "codigo": "EF02MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Formar R$ 25 com moedas e cédulas até R$ 20.",
+    "formato": "dinheiro",
+    "pool": "2ano.dinheiro",
+    "enunciado": {
+      "texto": "O elevador do mercado só liga com R$ {valor}. Junte o valor exato."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "valor": 25,
+      "notas": [
+        1,
+        2,
+        5,
+        10,
+        20
+      ]
+    },
+    "explicacao": "Uma forma de pagar: {exemplo}. Outras combinações também dão certo!",
+    "dicas": [
+      "Comece pelas cédulas maiores, sem passar de R$ {valor}.",
+      "Some o que você já colocou. Quanto ainda falta?",
+      "Uma forma possível: {exemplo}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-DIN-VAL-004",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Dinheiro — valor exato (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Formar valores de R$ 3 a R$ 20.",
+    "formato": "dinheiro",
+    "pool": "2ano.dinheiro",
+    "enunciado": {
+      "texto": "O elevador do mercado só liga com R$ {valor}. Junte o valor exato."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "valor": [
+        3,
+        20
+      ],
+      "notas": [
+        1,
+        2,
+        5,
+        10
+      ]
+    },
+    "explicacao": "Uma forma de pagar: {exemplo}. Outras combinações também dão certo!",
+    "dicas": [
+      "Comece pelas cédulas maiores, sem passar de R$ {valor}.",
+      "Some o que você já colocou. Quanto ainda falta?",
+      "Uma forma possível: {exemplo}."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-DIN-VAL-005",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Dinheiro — valor exato (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Formar valores de R$ 15 a R$ 50.",
+    "formato": "dinheiro",
+    "pool": "2ano.dinheiro",
+    "enunciado": {
+      "texto": "O elevador do mercado só liga com R$ {valor}. Junte o valor exato."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "valor": [
+        15,
+        50
+      ],
+      "notas": [
+        1,
+        2,
+        5,
+        10,
+        20
+      ]
+    },
+    "explicacao": "Uma forma de pagar: {exemplo}. Outras combinações também dão certo!",
+    "dicas": [
+      "Comece pelas cédulas maiores, sem passar de R$ {valor}.",
+      "Some o que você já colocou. Quanto ainda falta?",
+      "Uma forma possível: {exemplo}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-DIN-VAL-006",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Dinheiro — só cédulas (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Formar valores de R$ 30 a R$ 100 só com cédulas.",
+    "formato": "dinheiro",
+    "pool": "2ano.dinheiro",
+    "enunciado": {
+      "texto": "O elevador só aceita cédulas. Junte exatamente R$ {valor}."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "valor": [
+        30,
+        100
+      ],
+      "notas": [
+        2,
+        5,
+        10,
+        20,
+        50
+      ]
+    },
+    "explicacao": "Uma forma de pagar: {exemplo}. Outras combinações também dão certo!",
+    "dicas": [
+      "Comece pelas cédulas maiores, sem passar de R$ {valor}.",
+      "Some o que você já colocou. Quanto ainda falta?",
+      "Uma forma possível: {exemplo}."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

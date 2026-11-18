@@ -1,0 +1,50 @@
+{
+  "nome": "Entrada da Caverna",
+  "tileset": {
+    "name": "caverna",
+    "image": "../assets/tiles/caverna.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "saida": "portal",
+  "paineis": {
+    "1": {
+      "pool": "3ano.problemas",
+      "mecanismo": "porta",
+      "titulo": "Porta de Engrenagens",
+      "dificuldade": 1
+    },
+    "2": {
+      "pool": "3ano.sequencias",
+      "mecanismo": "ponte",
+      "titulo": "Ponte de Pedras",
+      "dificuldade": 1
+    }
+  },
+  "placas": [
+    "Use ← e → (ou A e D) para andar.",
+    "Aperte Espaço para pular. Segure para pular mais alto!",
+    "Se cair num buraco, você volta para a última bandeira. Nada se perde.",
+    "Cristais brilhantes podem ser coletados. Tente achar todos!",
+    "Painéis com ? guardam desafios. Chegue perto e aperte E.",
+    "Caixas podem ser empurradas. Suba nelas para alcançar lugares altos."
+  ]
+}
+---
+##                                          #                                                     ##
+##                                          #                                                     ##
+##                                          #                                                     ##
+##                                          #                                                     ##
+##                                          #                                                     ##
+##                                          #                                                     ##
+##                                          #                                                     ##
+##                                          #                                                     ##
+##                                          #                                                     ##
+##                                          #                                                     ##
+##                                          #                                *                    ##
+##            *                *            a                               ===                   ##
+##            ##              ====          a                                                     ##
+##  S !    !  ##        ! C  !       !  1   a   C   *   2           ! B   +             *      G  ##
+####################+++####################################bbbbbb###################################
+####################   ####################################      ###################################
+####################   ####################################      ###################################

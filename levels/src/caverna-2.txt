@@ -1,0 +1,54 @@
+{
+  "nome": "Galeria dos Cristais",
+  "tileset": {
+    "name": "caverna",
+    "image": "../assets/tiles/caverna.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2800
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "3ano.distribuir",
+      "mecanismo": "elevador",
+      "titulo": "Máquinas do Elevador",
+      "dificuldade": 1,
+      "dy": -192,
+      "periodo": 4200
+    },
+    "2": {
+      "pool": "3ano.distribuir_resto",
+      "mecanismo": "ponte",
+      "titulo": "Máquinas da Ponte",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "Nesta galeria, cristais fazem as máquinas funcionarem.",
+    "O elevador está desligado. Resolva o painel para ligá-lo."
+  ]
+}
+---
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                      *                                                                   ##
+##                                  ###############                                                         ##
+##                                  ###############                                            *            ##
+##               *                  ###############              *                            ====          ##
+##                                  ###############             ===                                         ##
+##                                  ###############                                       ==                ##
+##  S  !                C   ! 1   aa###############  C    B   +         2             *                 G   ##
+##############M       #####################################################bbbbbbb############################
+##############++++++++#####################################################       ############################
+##############        #####################################################       ############################

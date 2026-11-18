@@ -1,0 +1,184 @@
+[
+  {
+    "id": "5A-PRB-PCT-007",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Porcentagem e dinheiro",
+    "bncc": [
+      {
+        "codigo": "EF05MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 25% de um preço em situação de compra.",
+    "formato": "numerico",
+    "pool": "5ano.porcentagens",
+    "enunciado": {
+      "texto": "Um brinquedo custa R$ {b}. Na promoção, há {a}% de desconto. De quantos reais é o desconto?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "porcentagem",
+      "a": 25,
+      "b": 80
+    },
+    "explicacao": "25% é a quarta parte: {conta} reais.",
+    "dicas": [
+      "25% é o mesmo que um quarto.",
+      "Divida o preço em 4 partes iguais.",
+      "Calcule {b} ÷ 4."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PRB-PCT-008",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Porcentagem e dinheiro",
+    "bncc": [
+      {
+        "codigo": "EF05MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 10% de um valor em reais.",
+    "formato": "numerico",
+    "pool": "5ano.porcentagens",
+    "enunciado": {
+      "texto": "Uma passagem de trem custa R$ {b}. Quem tem cartão ganha {a}% de desconto. De quantos reais é o desconto?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "porcentagem",
+      "a": 10,
+      "b": 350
+    },
+    "explicacao": "10% é a décima parte: {conta} reais.",
+    "dicas": [
+      "10% é o mesmo que um décimo.",
+      "Divida o preço por 10.",
+      "Tire um zero de {b}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-DEC-MED-007",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Números decimais",
+    "bncc": [
+      {
+        "codigo": "EF05MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Representar decimais com zero na casa dos décimos.",
+    "formato": "decimal",
+    "pool": "5ano.decimais",
+    "enunciado": {
+      "texto": "O trilho do trem precisa medir {numero} metros. Monte a medida com as peças."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "centesimos": 408
+    },
+    "explicacao": "{numero} = {u} inteiros + {d} décimos + {c} centésimos.",
+    "dicas": [
+      "O número antes da vírgula são os inteiros.",
+      "O primeiro número depois da vírgula são os décimos.",
+      "Aqui não há décimos: o zero ocupa o lugar deles."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-ARE-RET-007",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Área e perímetro",
+    "bncc": [
+      {
+        "codigo": "EF05MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar área e perímetro de retângulos compridos.",
+    "formato": "area",
+    "pool": "5ano.area",
+    "enunciado": {
+      "texto": "A plataforma da estação precisa ter área {area} e perímetro {perimetro}. Ajuste o comprimento e a largura."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "largura": 9,
+      "altura": 2
+    },
+    "explicacao": "Um retângulo {largura} × {altura} tem área {largura} × {altura} = {area} e perímetro 2 × ({largura} + {altura}) = {perimetro}.",
+    "dicas": [
+      "Área é quantos quadradinhos cabem dentro.",
+      "Perímetro é a volta toda.",
+      "Teste retângulos compridos e baixos."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PRB-DIV-009",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Divisão",
+    "bncc": [
+      {
+        "codigo": "EF05MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de divisão com dividendo de quatro algarismos.",
+    "formato": "numerico",
+    "pool": "5ano.problemas",
+    "enunciado": {
+      "texto": "A estação vendeu {a} passagens em {b} dias, a mesma quantidade por dia. Quantas passagens foram vendidas por dia?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "divisao",
+      "a": 1260,
+      "b": 6
+    },
+    "explicacao": "{conta}.",
+    "dicas": [
+      "Mesma quantidade por dia: é divisão.",
+      "Divida as centenas, depois as dezenas.",
+      "Confira multiplicando o resultado por {b}."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  }
+]

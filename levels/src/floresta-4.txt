@@ -1,0 +1,52 @@
+{
+  "nome": "Ponte das Folhas",
+  "tileset": {
+    "name": "floresta",
+    "image": "../assets/tiles/floresta.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "floresta",
+  "saida": "portal",
+  "paineis": {
+    "1": {
+      "pool": "1ano.contagem",
+      "mecanismo": "porta",
+      "titulo": "Porta do Tronco",
+      "dificuldade": 2
+    },
+    "2": {
+      "pool": "1ano.ordenar",
+      "mecanismo": "blocos",
+      "titulo": "Escada de Galhos",
+      "dificuldade": 2
+    },
+    "3": {
+      "pool": "1ano.padroes",
+      "mecanismo": "ponte",
+      "titulo": "Ponte de Cipós",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "Pule o buraco ou peça ajuda no modo de apoio. A ponte é de cipós!"
+  ]
+}
+---
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                         *                                                  ##
+##                             #                  ###############                                           ##
+##                             #                 b###############                             *             ##
+##                             a                bb###############                            ====           ##
+##                             a               bbb###############                                           ##
+##  S  !  *             C  1   a   *  C   2   bbbb###############   C   3             *                 G   ##
+################+++########################################################cccccc#############################
+################   ########################################################      #############################
+################   ########################################################      #############################

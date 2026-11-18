@@ -1,0 +1,290 @@
+[
+  {
+    "id": "6A-FRA-QTD-001",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Fração 2/3 de uma quantidade",
+    "bncc": [
+      {
+        "codigo": "EF06MA09",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 2/3 de 12.",
+    "formato": "fracao",
+    "pool": "6ano.fracoes",
+    "enunciado": {
+      "texto": "O reator tem {partes} células iguais. Ative {fracao} delas para ligar o portal."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "partes": 12,
+      "numerador": 2,
+      "denominador": 3
+    },
+    "explicacao": "{partes} ÷ {denominador} = {umaParte}; {fracao} de {partes} = {numerador} × {umaParte} = {resposta} células.",
+    "dicas": [
+      "O número de baixo ({denominador}) diz em quantos grupos iguais dividir as {partes} células.",
+      "Cada grupo tem {partes} ÷ {denominador} = {umaParte} células.",
+      "O número de cima ({numerador}) diz quantos grupos ativar."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-FRA-QTD-002",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Fração 3/5 de uma quantidade",
+    "bncc": [
+      {
+        "codigo": "EF06MA09",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 3/5 de 20.",
+    "formato": "fracao",
+    "pool": "6ano.fracoes",
+    "enunciado": {
+      "texto": "O reator tem {partes} células iguais. Ative {fracao} delas para ligar o portal."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "partes": 20,
+      "numerador": 3,
+      "denominador": 5
+    },
+    "explicacao": "{partes} ÷ {denominador} = {umaParte}; {fracao} de {partes} = {numerador} × {umaParte} = {resposta} células.",
+    "dicas": [
+      "O número de baixo ({denominador}) diz em quantos grupos iguais dividir as {partes} células.",
+      "Cada grupo tem {partes} ÷ {denominador} = {umaParte} células.",
+      "O número de cima ({numerador}) diz quantos grupos ativar."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-FRA-QTD-003",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Fração 2/5 de uma quantidade",
+    "bncc": [
+      {
+        "codigo": "EF06MA09",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 2/5 de 15.",
+    "formato": "fracao",
+    "pool": "6ano.fracoes",
+    "enunciado": {
+      "texto": "O reator tem {partes} células iguais. Ative {fracao} delas para ligar o portal."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "partes": 15,
+      "numerador": 2,
+      "denominador": 5
+    },
+    "explicacao": "{partes} ÷ {denominador} = {umaParte}; {fracao} de {partes} = {numerador} × {umaParte} = {resposta} células.",
+    "dicas": [
+      "O número de baixo ({denominador}) diz em quantos grupos iguais dividir as {partes} células.",
+      "Cada grupo tem {partes} ÷ {denominador} = {umaParte} células.",
+      "O número de cima ({numerador}) diz quantos grupos ativar."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-FRA-QTD-005",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Fração 7/10 de uma quantidade",
+    "bncc": [
+      {
+        "codigo": "EF06MA09",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 7/10 de 10.",
+    "formato": "fracao",
+    "pool": "6ano.fracoes",
+    "enunciado": {
+      "texto": "O reator tem {partes} células iguais. Ative {fracao} delas para ligar o portal."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "partes": 10,
+      "numerador": 7,
+      "denominador": 10
+    },
+    "explicacao": "{partes} ÷ {denominador} = {umaParte}; {fracao} de {partes} = {numerador} × {umaParte} = {resposta} células.",
+    "dicas": [
+      "O número de baixo ({denominador}) diz em quantos grupos iguais dividir as {partes} células.",
+      "Cada grupo tem {partes} ÷ {denominador} = {umaParte} células.",
+      "O número de cima ({numerador}) diz quantos grupos ativar."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-FRA-QTD-004",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Fração de uma quantidade (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF06MA09",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF06MA07",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular frações não unitárias de quantidades até 20.",
+    "formato": "fracao",
+    "pool": "6ano.fracoes",
+    "enunciado": {
+      "texto": "O reator tem {partes} células iguais. Ative {fracao} delas para ligar o portal."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "fracoes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "partes": [
+        6,
+        8,
+        9,
+        10,
+        12,
+        15,
+        20
+      ]
+    },
+    "explicacao": "{partes} ÷ {denominador} = {umaParte}; {fracao} de {partes} = {numerador} × {umaParte} = {resposta} células.",
+    "dicas": [
+      "O número de baixo ({denominador}) diz em quantos grupos iguais dividir as {partes} células.",
+      "Cada grupo tem {partes} ÷ {denominador} = {umaParte} células.",
+      "O número de cima ({numerador}) diz quantos grupos ativar."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-FRA-QTD-006",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Fração de uma quantidade (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF06MA09",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF06MA07",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular frações próximas do inteiro (3/4, 4/5, 9/10).",
+    "formato": "fracao",
+    "pool": "6ano.fracoes",
+    "enunciado": {
+      "texto": "O reator tem {partes} células iguais. Ative {fracao} delas para ligar o portal."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "fracoes": [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "partes": [
+        12,
+        15,
+        20
+      ]
+    },
+    "explicacao": "{partes} ÷ {denominador} = {umaParte}; {fracao} de {partes} = {numerador} × {umaParte} = {resposta} células.",
+    "dicas": [
+      "O número de baixo ({denominador}) diz em quantos grupos iguais dividir as {partes} células.",
+      "Cada grupo tem {partes} ÷ {denominador} = {umaParte} células.",
+      "O número de cima ({numerador}) diz quantos grupos ativar."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

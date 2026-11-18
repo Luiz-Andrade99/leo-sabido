@@ -1,0 +1,264 @@
+[
+  {
+    "id": "5A-GRA-COL-001",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Gráfico — comparar",
+    "bncc": [
+      {
+        "codigo": "EF05MA24",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar dados de um gráfico de colunas.",
+    "formato": "grafico",
+    "pool": "5ano.graficos",
+    "enunciado": {
+      "texto": "Quantas unidades a usina de {a} produziu a mais que a de {b}?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "titulo": "Energia produzida por usina",
+      "unidade": "unidades",
+      "dados": [
+        {
+          "rotulo": "Solar",
+          "valor": 45
+        },
+        {
+          "rotulo": "Vento",
+          "valor": 30
+        },
+        {
+          "rotulo": "Água",
+          "valor": 55
+        },
+        {
+          "rotulo": "Vapor",
+          "valor": 20
+        }
+      ],
+      "passo": 5,
+      "pergunta": "diferenca",
+      "alvo": [
+        2,
+        3
+      ]
+    },
+    "explicacao": "{a} produziu {va} e {b} produziu {vb}: {va} − {vb} = {resposta}.",
+    "dicas": [
+      "Descubra quanto tem cada coluna: {a} e {b}.",
+      "Depois tire o menor do maior.",
+      "Cada linha do gráfico vale {passo}."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-GRA-COL-002",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Gráfico — total",
+    "bncc": [
+      {
+        "codigo": "EF05MA24",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Somar os dados de um gráfico de colunas.",
+    "formato": "grafico",
+    "pool": "5ano.graficos",
+    "enunciado": {
+      "texto": "Quantas unidades de energia as quatro usinas produziram ao todo?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "titulo": "Energia produzida por usina",
+      "unidade": "unidades",
+      "dados": [
+        {
+          "rotulo": "Solar",
+          "valor": 45
+        },
+        {
+          "rotulo": "Vento",
+          "valor": 30
+        },
+        {
+          "rotulo": "Água",
+          "valor": 55
+        },
+        {
+          "rotulo": "Vapor",
+          "valor": 20
+        }
+      ],
+      "passo": 5,
+      "pergunta": "total",
+      "alvo": []
+    },
+    "explicacao": "Somando as colunas: {soma} = {resposta}.",
+    "dicas": [
+      "Descubra o valor de cada coluna.",
+      "Depois some todos os valores.",
+      "Some de dois em dois para não se perder."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-GRA-COL-003",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Gráfico — ler valor (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA24",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Ler valores em gráficos com escala de 5 em 5.",
+    "formato": "grafico",
+    "pool": "5ano.graficos",
+    "enunciado": {
+      "texto": "Quantas unidades de energia a usina de {a} produziu?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "titulo": "Energia produzida por usina",
+      "unidade": "unidades",
+      "rotulos": [
+        "Solar",
+        "Vento",
+        "Água",
+        "Vapor"
+      ],
+      "valor": [
+        5,
+        60
+      ],
+      "passo": 5,
+      "pergunta": "valor"
+    },
+    "explicacao": "O topo da coluna {a} chega à linha do {resposta}.",
+    "dicas": [
+      "Encontre a coluna {a} embaixo do gráfico.",
+      "Siga o topo da coluna, reto, até os números da esquerda.",
+      "Cada linha do gráfico vale {passo} a mais que a de baixo."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-GRA-COL-004",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Gráfico — comparar (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA24",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar dados em gráficos com escala de 5 em 5.",
+    "formato": "grafico",
+    "pool": "5ano.graficos",
+    "enunciado": {
+      "texto": "Quantas unidades a usina de {a} produziu a mais que a de {b}?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "titulo": "Energia produzida por usina",
+      "unidade": "unidades",
+      "rotulos": [
+        "Solar",
+        "Vento",
+        "Água",
+        "Vapor"
+      ],
+      "valor": [
+        5,
+        60
+      ],
+      "passo": 5,
+      "pergunta": "diferenca"
+    },
+    "explicacao": "{a} produziu {va} e {b} produziu {vb}: {va} − {vb} = {resposta}.",
+    "dicas": [
+      "Descubra quanto tem cada coluna: {a} e {b}.",
+      "Depois tire o menor do maior.",
+      "Cada linha do gráfico vale {passo}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-GRA-COL-005",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Gráfico — total (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA24",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Somar dados de gráficos com escala de 10 em 10.",
+    "formato": "grafico",
+    "pool": "5ano.graficos",
+    "enunciado": {
+      "texto": "Quantas peças a fábrica produziu na semana, ao todo?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "titulo": "Peças fabricadas por dia",
+      "unidade": "peças",
+      "rotulos": [
+        "Seg",
+        "Ter",
+        "Qua",
+        "Qui",
+        "Sex"
+      ],
+      "valor": [
+        10,
+        100
+      ],
+      "passo": 10,
+      "pergunta": "total"
+    },
+    "explicacao": "Somando as colunas: {soma} = {resposta}.",
+    "dicas": [
+      "Descubra o valor de cada coluna.",
+      "Depois some todos os valores.",
+      "Some de dois em dois para não se perder."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

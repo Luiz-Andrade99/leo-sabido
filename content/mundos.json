@@ -1,0 +1,232 @@
+{
+  "anos": [
+    {
+      "ano": 1,
+      "mundo": "Floresta dos Números",
+      "peca": "Primeira engrenagem",
+      "disponivel": true,
+      "fases": [
+        {
+          "id": "f1",
+          "nome": "Clareira das Estrelas",
+          "mapa": "floresta-1",
+          "objetivo": "Conte as estrelas para a ponte e encontre a forma certa."
+        },
+        {
+          "id": "f2",
+          "nome": "Rio dos Cogumelos",
+          "mapa": "floresta-2",
+          "objetivo": "Compare os grupos e junte para subir."
+        },
+        {
+          "id": "f3",
+          "nome": "Árvore Antiga",
+          "mapa": "floresta-3",
+          "objetivo": "Descubra o padrão e suba a Árvore Antiga."
+        },
+        {
+          "id": "f4",
+          "nome": "Ponte das Folhas",
+          "mapa": "floresta-4",
+          "objetivo": "Conte, compare e atravesse a ponte de cipós."
+        },
+        {
+          "id": "f5",
+          "nome": "Ninho das Corujas",
+          "mapa": "floresta-5",
+          "objetivo": "Some para subir ao ninho e recupere a Primeira Engrenagem."
+        }
+      ]
+    },
+    {
+      "ano": 2,
+      "mundo": "Vila das Descobertas",
+      "peca": "Segunda engrenagem",
+      "disponivel": true,
+      "fases": [
+        {
+          "id": "f1",
+          "nome": "Praça dos Inventores",
+          "mapa": "vila-1",
+          "objetivo": "Abra a porta da oficina e complete a ponte do riacho."
+        },
+        {
+          "id": "f2",
+          "nome": "Mercado das Engrenagens",
+          "mapa": "vila-2",
+          "objetivo": "Pague o valor certo no elevador e monte a escada de peças."
+        },
+        {
+          "id": "f3",
+          "nome": "Torre do Relógio",
+          "mapa": "vila-3",
+          "objetivo": "Acerte o relógio e abra as trancas da torre."
+        },
+        {
+          "id": "f4",
+          "nome": "Feira da Vila",
+          "mapa": "vila-4",
+          "objetivo": "Pague o valor certo e atravesse a feira."
+        },
+        {
+          "id": "f5",
+          "nome": "Moinho Encantado",
+          "mapa": "vila-5",
+          "objetivo": "Acerte as horas do moinho e recupere a Segunda Engrenagem."
+        }
+      ]
+    },
+    {
+      "ano": 3,
+      "mundo": "Caverna dos Enigmas",
+      "peca": "Terceira engrenagem",
+      "disponivel": true,
+      "fases": [
+        {
+          "id": "f1",
+          "nome": "Entrada da Caverna",
+          "mapa": "caverna-1",
+          "objetivo": "Aprenda a explorar, abra a porta de engrenagens e erga a ponte de pedras."
+        },
+        {
+          "id": "f2",
+          "nome": "Galeria dos Cristais",
+          "mapa": "caverna-2",
+          "objetivo": "Distribua os cristais igualmente para ligar o elevador e a ponte."
+        },
+        {
+          "id": "f3",
+          "nome": "Salão das Engrenagens",
+          "mapa": "caverna-3",
+          "objetivo": "Monte plataformas de blocos e chegue ao portal."
+        },
+        {
+          "id": "f4",
+          "nome": "Lago Subterrâneo",
+          "mapa": "caverna-4",
+          "objetivo": "Distribua as pedras e atravesse o lago subterrâneo."
+        },
+        {
+          "id": "f5",
+          "nome": "Coração da Caverna",
+          "mapa": "caverna-5",
+          "objetivo": "Resolva os enigmas finais e recupere a Terceira Engrenagem."
+        }
+      ]
+    },
+    {
+      "ano": 4,
+      "mundo": "Castelo das Estratégias",
+      "peca": "Quarta engrenagem",
+      "disponivel": true,
+      "fases": [
+        {
+          "id": "f1",
+          "nome": "Portão do Castelo",
+          "mapa": "castelo-1",
+          "objetivo": "Equilibre a balança do portão e complete a ponte dos múltiplos."
+        },
+        {
+          "id": "f2",
+          "nome": "Pátio das Bandeiras",
+          "mapa": "castelo-2",
+          "objetivo": "Leia o gráfico do vigia para ligar o elevador e monte a escada do pátio."
+        },
+        {
+          "id": "f3",
+          "nome": "Torre das Frações",
+          "mapa": "castelo-3",
+          "objetivo": "Marque as frações das pontes e chegue ao portal da torre."
+        },
+        {
+          "id": "f4",
+          "nome": "Biblioteca Secreta",
+          "mapa": "castelo-4",
+          "objetivo": "Leia os livros secretos e atravesse o fosso."
+        },
+        {
+          "id": "f5",
+          "nome": "Sala do Trono",
+          "mapa": "castelo-5",
+          "objetivo": "Equilibre a balança do trono e recupere a Quarta Engrenagem."
+        }
+      ]
+    },
+    {
+      "ano": 5,
+      "mundo": "Cidade dos Inventores",
+      "peca": "Quinta engrenagem",
+      "disponivel": true,
+      "fases": [
+        {
+          "id": "f1",
+          "nome": "Praça das Invenções",
+          "mapa": "cidade-1",
+          "objetivo": "Monte a medida certa na porta e carregue a ponte elétrica."
+        },
+        {
+          "id": "f2",
+          "nome": "Fábrica de Engrenagens",
+          "mapa": "cidade-2",
+          "objetivo": "Leia os dados da fábrica e construa a plataforma sob medida."
+        },
+        {
+          "id": "f3",
+          "nome": "Usina de Energia",
+          "mapa": "cidade-3",
+          "objetivo": "Carregue o elevador e abra o gerador da usina."
+        },
+        {
+          "id": "f4",
+          "nome": "Estação de Trens",
+          "mapa": "cidade-4",
+          "objetivo": "Passe pela catraca e atravesse os trilhos."
+        },
+        {
+          "id": "f5",
+          "nome": "Torre de Controle",
+          "mapa": "cidade-5",
+          "objetivo": "Leia os dados da torre e recupere a Quinta Engrenagem."
+        }
+      ]
+    },
+    {
+      "ano": 6,
+      "mundo": "Laboratório do Saber",
+      "peca": "Sexta engrenagem",
+      "disponivel": true,
+      "fases": [
+        {
+          "id": "f1",
+          "nome": "Sala dos Circuitos",
+          "mapa": "laboratorio-1",
+          "objetivo": "Acenda as lâmpadas certas e resolva a expressão da ponte de energia."
+        },
+        {
+          "id": "f2",
+          "nome": "Oficina dos Robôs",
+          "mapa": "laboratorio-2",
+          "objetivo": "Programe o elevador e ative as células do reator."
+        },
+        {
+          "id": "f3",
+          "nome": "Portal do Saber",
+          "mapa": "laboratorio-3",
+          "objetivo": "Supere os três desafios e entre no portal."
+        },
+        {
+          "id": "f4",
+          "nome": "Observatório",
+          "mapa": "laboratorio-4",
+          "objetivo": "Programe o telescópio e atravesse a ponte de luz."
+        },
+        {
+          "id": "f5",
+          "nome": "Núcleo do Saber",
+          "mapa": "laboratorio-5",
+          "objetivo": "Ative o núcleo e recupere a Sexta Engrenagem."
+        }
+      ]
+    }
+  ]
+}

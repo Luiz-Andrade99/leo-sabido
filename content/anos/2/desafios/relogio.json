@@ -1,0 +1,243 @@
+[
+  {
+    "id": "2A-REL-DUR-001",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Duração em horas inteiras",
+    "bncc": [
+      {
+        "codigo": "EF02MA19",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Determinar o horário de término de um intervalo de 2 horas.",
+    "formato": "relogio",
+    "pool": "2ano.relogio",
+    "enunciado": {
+      "texto": "O forno liga às {inicio} e fica ligado por {duracao}. Marque a hora em que ele desliga."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "inicio": "08:00",
+      "duracaoMin": 120
+    },
+    "explicacao": "Começando às {inicio} e contando {duracao}, chegamos às {fim}.",
+    "dicas": [
+      "Comece no horário {inicio} e vá avançando.",
+      "Avance primeiro as horas inteiras, depois a meia hora.",
+      "Uma hora tem 60 minutos; meia hora tem 30."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-REL-DUR-002",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Duração em horas inteiras",
+    "bncc": [
+      {
+        "codigo": "EF02MA19",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Determinar o horário de término de um intervalo de 1 hora.",
+    "formato": "relogio",
+    "pool": "2ano.relogio",
+    "enunciado": {
+      "texto": "O sino da torre começa a tocar às {inicio} e toca por {duracao}. Marque a hora em que ele para."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "inicio": "14:00",
+      "duracaoMin": 60
+    },
+    "explicacao": "Começando às {inicio} e contando {duracao}, chegamos às {fim}.",
+    "dicas": [
+      "Comece no horário {inicio} e vá avançando.",
+      "Avance primeiro as horas inteiras, depois a meia hora.",
+      "Uma hora tem 60 minutos; meia hora tem 30."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-REL-DUR-003",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Duração com meia hora",
+    "bncc": [
+      {
+        "codigo": "EF02MA19",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Determinar o horário de término de um intervalo de 1 hora e meia.",
+    "formato": "relogio",
+    "pool": "2ano.relogio",
+    "enunciado": {
+      "texto": "O sino da torre começa a tocar às {inicio} e toca por {duracao}. Marque a hora em que ele para."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "inicio": "09:30",
+      "duracaoMin": 90
+    },
+    "explicacao": "Começando às {inicio} e contando {duracao}, chegamos às {fim}.",
+    "dicas": [
+      "Comece no horário {inicio} e vá avançando.",
+      "Avance primeiro as horas inteiras, depois a meia hora.",
+      "Uma hora tem 60 minutos; meia hora tem 30."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-REL-DUR-004",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Duração em horas inteiras (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA19",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Intervalos de 1 a 3 horas começando em hora cheia.",
+    "formato": "relogio",
+    "pool": "2ano.relogio",
+    "enunciado": {
+      "texto": "O sino da torre começa a tocar às {inicio} e toca por {duracao}. Marque a hora em que ele para."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "horaInicio": [
+        7,
+        15
+      ],
+      "meiaHora": false,
+      "duracoesMin": [
+        60,
+        120,
+        180
+      ]
+    },
+    "explicacao": "Começando às {inicio} e contando {duracao}, chegamos às {fim}.",
+    "dicas": [
+      "Comece no horário {inicio} e vá avançando.",
+      "Avance primeiro as horas inteiras, depois a meia hora.",
+      "Uma hora tem 60 minutos; meia hora tem 30."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-REL-DUR-005",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Duração com meia hora (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA19",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Intervalos de 30 minutos a 2 horas, começando em hora cheia ou meia hora.",
+    "formato": "relogio",
+    "pool": "2ano.relogio",
+    "enunciado": {
+      "texto": "O sino da torre começa a tocar às {inicio} e toca por {duracao}. Marque a hora em que ele para."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "horaInicio": [
+        7,
+        16
+      ],
+      "meiaHora": true,
+      "duracoesMin": [
+        30,
+        60,
+        90,
+        120
+      ]
+    },
+    "explicacao": "Começando às {inicio} e contando {duracao}, chegamos às {fim}.",
+    "dicas": [
+      "Comece no horário {inicio} e vá avançando.",
+      "Avance primeiro as horas inteiras, depois a meia hora.",
+      "Uma hora tem 60 minutos; meia hora tem 30."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-REL-DUR-006",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Duração com meia hora (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA19",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Intervalos de 1h30 a 3h30.",
+    "formato": "relogio",
+    "pool": "2ano.relogio",
+    "enunciado": {
+      "texto": "O sino da torre começa a tocar às {inicio} e toca por {duracao}. Marque a hora em que ele para."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "horaInicio": [
+        8,
+        17
+      ],
+      "meiaHora": true,
+      "duracoesMin": [
+        90,
+        150,
+        210
+      ]
+    },
+    "explicacao": "Começando às {inicio} e contando {duracao}, chegamos às {fim}.",
+    "dicas": [
+      "Comece no horário {inicio} e vá avançando.",
+      "Avance primeiro as horas inteiras, depois a meia hora.",
+      "Uma hora tem 60 minutos; meia hora tem 30."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

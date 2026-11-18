@@ -1,0 +1,47 @@
+{
+  "nome": "Clareira das Estrelas",
+  "tileset": {
+    "name": "floresta",
+    "image": "../assets/tiles/floresta.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "floresta",
+  "saida": "portal",
+  "paineis": {
+    "1": {
+      "pool": "1ano.contagem",
+      "mecanismo": "ponte",
+      "titulo": "Ponte das Estrelas",
+      "dificuldade": 1
+    },
+    "2": {
+      "pool": "1ano.formas",
+      "mecanismo": "porta",
+      "titulo": "Porta das Formas",
+      "dificuldade": 1
+    }
+  },
+  "placas": [
+    "Ande com as setas. Pule com o Espaço.",
+    "Perto do painel, aperte E."
+  ]
+}
+---
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          #                                           ##
+##                                          b           *                               ##
+##         *                                b          ===                              ##
+##  S !    ##   C !  1          C  *    2   b     *               *             G       ##
+########################aaaaa#############################################################
+########################     #############################################################
+########################     #############################################################

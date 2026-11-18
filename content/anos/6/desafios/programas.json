@@ -1,0 +1,350 @@
+[
+  {
+    "id": "6A-PRG-MAQ-001",
+    "ano": 6,
+    "area": "logica",
+    "tema": "Algoritmo — somar e dobrar",
+    "bncc": [
+      {
+        "codigo": "EF06MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Planejar uma sequência de comandos com +3 e ×2.",
+    "formato": "programa",
+    "pool": "6ano.programas",
+    "enunciado": {
+      "texto": "Programe a máquina: comece em {inicio} e chegue a {alvo} com no máximo {maxPassos} comandos ({comandos})."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "inicio": 2,
+      "alvo": 14,
+      "comandos": [
+        "+3",
+        "x2"
+      ],
+      "maxPassos": 4
+    },
+    "explicacao": "Um programa que funciona: {exemplo}. Pensar de trás para a frente ajuda a planejar!",
+    "dicas": [
+      "Pense de trás para a frente: que número vem logo antes de {alvo}?",
+      "Desfaça as operações: o contrário de ×2 é ÷2, e o contrário de +3 é −3.",
+      "O programa mais curto tem {passosMin} comandos."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-PRG-MAQ-002",
+    "ano": 6,
+    "area": "logica",
+    "tema": "Algoritmo — somar e dobrar",
+    "bncc": [
+      {
+        "codigo": "EF06MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Planejar uma sequência de comandos com +1 e ×2.",
+    "formato": "programa",
+    "pool": "6ano.programas",
+    "enunciado": {
+      "texto": "Programe a máquina: comece em {inicio} e chegue a {alvo} com no máximo {maxPassos} comandos ({comandos})."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "inicio": 5,
+      "alvo": 22,
+      "comandos": [
+        "+1",
+        "x2"
+      ],
+      "maxPassos": 4
+    },
+    "explicacao": "Um programa que funciona: {exemplo}. Pensar de trás para a frente ajuda a planejar!",
+    "dicas": [
+      "Pense de trás para a frente: que número vem logo antes de {alvo}?",
+      "Desfaça as operações: o contrário de ×2 é ÷2, e o contrário de +3 é −3.",
+      "O programa mais curto tem {passosMin} comandos."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-PRG-MAQ-003",
+    "ano": 6,
+    "area": "logica",
+    "tema": "Algoritmo — dividir e subtrair",
+    "bncc": [
+      {
+        "codigo": "EF06MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Planejar uma sequência de comandos com ÷2 e −1.",
+    "formato": "programa",
+    "pool": "6ano.programas",
+    "enunciado": {
+      "texto": "Programe a máquina: comece em {inicio} e chegue a {alvo} com no máximo {maxPassos} comandos ({comandos})."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "inicio": 40,
+      "alvo": 9,
+      "comandos": [
+        "/2",
+        "-1"
+      ],
+      "maxPassos": 4
+    },
+    "explicacao": "Um programa que funciona: {exemplo}. Pensar de trás para a frente ajuda a planejar!",
+    "dicas": [
+      "Pense de trás para a frente: que número vem logo antes de {alvo}?",
+      "Desfaça as operações: o contrário de ×2 é ÷2, e o contrário de +3 é −3.",
+      "O programa mais curto tem {passosMin} comandos."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-PRG-MAQ-004",
+    "ano": 6,
+    "area": "logica",
+    "tema": "Algoritmo — três comandos",
+    "bncc": [
+      {
+        "codigo": "EF06MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Planejar uma sequência com ×2, +5 e −1.",
+    "formato": "programa",
+    "pool": "6ano.programas",
+    "enunciado": {
+      "texto": "Programe a máquina: comece em {inicio} e chegue a {alvo} com no máximo {maxPassos} comandos ({comandos})."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "inicio": 3,
+      "alvo": 25,
+      "comandos": [
+        "x2",
+        "+5",
+        "-1"
+      ],
+      "maxPassos": 4
+    },
+    "explicacao": "Um programa que funciona: {exemplo}. Pensar de trás para a frente ajuda a planejar!",
+    "dicas": [
+      "Pense de trás para a frente: que número vem logo antes de {alvo}?",
+      "Desfaça as operações: o contrário de ×2 é ÷2, e o contrário de +3 é −3.",
+      "O programa mais curto tem {passosMin} comandos."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-PRG-MAQ-005",
+    "ano": 6,
+    "area": "logica",
+    "tema": "Algoritmo — somar e dobrar (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF06MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Planejar sequências com +3 e ×2.",
+    "formato": "programa",
+    "pool": "6ano.programas",
+    "enunciado": {
+      "texto": "Programe a máquina: comece em {inicio} e chegue a {alvo} com no máximo {maxPassos} comandos ({comandos})."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "inicio": [
+        1,
+        10
+      ],
+      "alvo": [
+        20,
+        40
+      ],
+      "comandos": [
+        "+3",
+        "x2"
+      ],
+      "maxPassos": 4
+    },
+    "explicacao": "Um programa que funciona: {exemplo}. Pensar de trás para a frente ajuda a planejar!",
+    "dicas": [
+      "Pense de trás para a frente: que número vem logo antes de {alvo}?",
+      "Desfaça as operações: o contrário de ×2 é ÷2, e o contrário de +3 é −3.",
+      "O programa mais curto tem {passosMin} comandos."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-PRG-MAQ-006",
+    "ano": 6,
+    "area": "logica",
+    "tema": "Algoritmo — dividir e subtrair (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF06MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Planejar sequências com ÷2 e −1.",
+    "formato": "programa",
+    "pool": "6ano.programas",
+    "enunciado": {
+      "texto": "Programe a máquina: comece em {inicio} e chegue a {alvo} com no máximo {maxPassos} comandos ({comandos})."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "inicio": [
+        30,
+        60
+      ],
+      "alvo": [
+        2,
+        12
+      ],
+      "comandos": [
+        "/2",
+        "-1"
+      ],
+      "maxPassos": 4
+    },
+    "explicacao": "Um programa que funciona: {exemplo}. Pensar de trás para a frente ajuda a planejar!",
+    "dicas": [
+      "Pense de trás para a frente: que número vem logo antes de {alvo}?",
+      "Desfaça as operações: o contrário de ×2 é ÷2, e o contrário de +3 é −3.",
+      "O programa mais curto tem {passosMin} comandos."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-PRG-MAQ-007",
+    "ano": 6,
+    "area": "logica",
+    "tema": "Algoritmo — três comandos (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF06MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Planejar sequências com ×3, +2 e −1.",
+    "formato": "programa",
+    "pool": "6ano.programas",
+    "enunciado": {
+      "texto": "Programe a máquina: comece em {inicio} e chegue a {alvo} com no máximo {maxPassos} comandos ({comandos})."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "inicio": [
+        2,
+        9
+      ],
+      "alvo": [
+        30,
+        60
+      ],
+      "comandos": [
+        "x3",
+        "+2",
+        "-1"
+      ],
+      "maxPassos": 4
+    },
+    "explicacao": "Um programa que funciona: {exemplo}. Pensar de trás para a frente ajuda a planejar!",
+    "dicas": [
+      "Pense de trás para a frente: que número vem logo antes de {alvo}?",
+      "Desfaça as operações: o contrário de ×2 é ÷2, e o contrário de +3 é −3.",
+      "O programa mais curto tem {passosMin} comandos."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-PRG-MAQ-008",
+    "ano": 6,
+    "area": "logica",
+    "tema": "Algoritmo — somar e dobrar",
+    "bncc": [
+      {
+        "codigo": "EF06MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Planejar uma sequência de comandos com ×2 e +1.",
+    "formato": "programa",
+    "pool": "6ano.programas",
+    "enunciado": {
+      "texto": "Programe a máquina: comece em {inicio} e chegue a {alvo} com no máximo {maxPassos} comandos ({comandos})."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "inicio": 1,
+      "alvo": 10,
+      "comandos": [
+        "x2",
+        "+1"
+      ],
+      "maxPassos": 4
+    },
+    "explicacao": "Um programa que funciona: {exemplo}. Pensar de trás para a frente ajuda a planejar!",
+    "dicas": [
+      "Pense de trás para a frente: que número vem logo antes de {alvo}?",
+      "Desfaça as operações: o contrário de ×2 é ÷2, e o contrário de +3 é −3.",
+      "O programa mais curto tem {passosMin} comandos."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  }
+]

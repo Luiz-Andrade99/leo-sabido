@@ -1,0 +1,58 @@
+{
+  "nome": "Lago Subterrâneo",
+  "tileset": {
+    "name": "caverna",
+    "image": "../assets/tiles/caverna.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "caverna",
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2800
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "3ano.distribuir",
+      "mecanismo": "porta",
+      "titulo": "Porta das Estalactites",
+      "dificuldade": 2
+    },
+    "2": {
+      "pool": "3ano.arranjos",
+      "mecanismo": "blocos",
+      "titulo": "Escada de Pedras",
+      "dificuldade": 2
+    },
+    "3": {
+      "pool": "3ano.sequencias",
+      "mecanismo": "ponte",
+      "titulo": "Ponte do Lago",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "O lago subterrâneo é fundo. Cuidado com a plataforma que anda!"
+  ]
+}
+---
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                         *                                                  ##
+##                             #                  ###############                                           ##
+##                             #                 b###############                             *             ##
+##                             a                bb###############                            ====           ##
+##                             a               bbb###############                                           ##
+##  S  !  *             C  1   a   *  C   2   bbbb###############   C   3             *                 G   ##
+##############M       #####################################################cccccc#############################
+##############++++++++#####################################################      #############################
+##############        #####################################################      #############################

@@ -1,0 +1,46 @@
+{
+  "nome": "Cena de teste",
+  "tileset": {
+    "name": "caverna",
+    "image": "../assets/tiles/caverna.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "saida": "engrenagem",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2600
+    },
+    "V": {
+      "dy": -192,
+      "periodo": 3200
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "3ano.sequencias",
+      "mecanismo": "ponte",
+      "titulo": "Painel da Ponte",
+      "dificuldade": 1
+    }
+  }
+}
+---
+##
+##
+##
+##
+##
+##
+##
+##                                                                  G
+##                                                               #######
+##                      *                                        #######
+##                     ====                                      #######
+##                                                               #######
+##        ##                                                     #######
+##  S     ##    C   B                     C   1         *        #######
+################################M       #########aaaaaa########V #######
+################################        #########      ########  #######
+################################        #########      ########  #######

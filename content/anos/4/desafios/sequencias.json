@@ -1,0 +1,224 @@
+[
+  {
+    "id": "4A-SEQ-MUL-001",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Múltiplos de 6",
+    "bncc": [
+      {
+        "codigo": "EF04MA11",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar a sequência dos múltiplos de 6.",
+    "formato": "sequencia",
+    "pool": "4ano.sequencias",
+    "enunciado": {
+      "texto": "As pedras da ponte mostram os múltiplos de um número. Complete os que faltam."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "valores": [
+        0,
+        6,
+        12,
+        null,
+        24,
+        null
+      ],
+      "passo": 6
+    },
+    "explicacao": "São múltiplos de {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Quanto aumenta de uma pedra para a outra?",
+      "São os múltiplos de {passoAbs}: a tabuada do {passoAbs}.",
+      "Pegue o número antes do espaço e some {passoAbs}."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-SEQ-MUL-002",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Múltiplos de 7",
+    "bncc": [
+      {
+        "codigo": "EF04MA11",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar a sequência dos múltiplos de 7.",
+    "formato": "sequencia",
+    "pool": "4ano.sequencias",
+    "enunciado": {
+      "texto": "As pedras da ponte mostram os múltiplos de um número. Complete os que faltam."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "valores": [
+        7,
+        14,
+        21,
+        null,
+        null,
+        42
+      ],
+      "passo": 7
+    },
+    "explicacao": "São múltiplos de {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Quanto aumenta de uma pedra para a outra?",
+      "São os múltiplos de {passoAbs}: a tabuada do {passoAbs}.",
+      "Pegue o número antes do espaço e some {passoAbs}."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-SEQ-MUL-003",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Múltiplos de 9",
+    "bncc": [
+      {
+        "codigo": "EF04MA11",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar a sequência dos múltiplos de 9.",
+    "formato": "sequencia",
+    "pool": "4ano.sequencias",
+    "enunciado": {
+      "texto": "As pedras da ponte mostram os múltiplos de um número. Complete os que faltam."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "valores": [
+        9,
+        18,
+        27,
+        null,
+        45,
+        null
+      ],
+      "passo": 9
+    },
+    "explicacao": "São múltiplos de {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Quanto aumenta de uma pedra para a outra?",
+      "São os múltiplos de {passoAbs}: a tabuada do {passoAbs}.",
+      "Pegue o número antes do espaço e some {passoAbs}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-SEQ-MUL-004",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Múltiplos de 3 a 12 (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA11",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar sequências de múltiplos de 3 a 12.",
+    "formato": "sequencia",
+    "pool": "4ano.sequencias",
+    "enunciado": {
+      "texto": "As pedras da ponte mostram os múltiplos de um número. Complete os que faltam."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "modelo": "progressao_aritmetica",
+      "inicio": [
+        0,
+        0
+      ],
+      "passo": [
+        3,
+        12
+      ],
+      "tamanho": [
+        6,
+        7
+      ],
+      "lacunas": 2,
+      "minValor": 0,
+      "maxValor": 100
+    },
+    "explicacao": "São múltiplos de {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Quanto aumenta de uma pedra para a outra?",
+      "São os múltiplos de {passoAbs}: a tabuada do {passoAbs}.",
+      "Pegue o número antes do espaço e some {passoAbs}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-SEQ-MUL-005",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Múltiplos de 12",
+    "bncc": [
+      {
+        "codigo": "EF04MA11",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar a sequência dos múltiplos de 12.",
+    "formato": "sequencia",
+    "pool": "4ano.sequencias",
+    "enunciado": {
+      "texto": "As pedras da ponte mostram os múltiplos de um número. Complete os que faltam."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "valores": [
+        12,
+        24,
+        36,
+        null,
+        60,
+        null
+      ],
+      "passo": 12
+    },
+    "explicacao": "São múltiplos de {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Quanto aumenta de uma pedra para a outra?",
+      "São os múltiplos de {passoAbs}: a tabuada do {passoAbs}.",
+      "Pegue o número antes do espaço e some {passoAbs}."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  }
+]

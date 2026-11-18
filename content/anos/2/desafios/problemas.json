@@ -1,0 +1,256 @@
+[
+  {
+    "id": "2A-PRB-SOM-001",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Adição — acrescentar",
+    "bncc": [
+      {
+        "codigo": "EF02MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problema de adição com o significado de acrescentar.",
+    "formato": "numerico",
+    "pool": "2ano.problemas",
+    "enunciado": {
+      "texto": "A padaria tem {a} pães. O padeiro fez mais {b}. Quantos pães há agora?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "soma",
+      "a": 35,
+      "b": 24
+    },
+    "explicacao": "Acrescentar é somar: {conta}.",
+    "dicas": [
+      "Os números aumentaram ou diminuíram?",
+      "Junte {a} com {b}.",
+      "Some as dezenas, depois as unidades: {a} + {b}."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-SOM-002",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Adição — juntar (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de juntar com resultado até 99.",
+    "formato": "numerico",
+    "pool": "2ano.problemas",
+    "enunciado": {
+      "texto": "Uma cesta tem {a} maçãs e outra tem {b}. Quantas maçãs ao todo?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "soma",
+      "a": [
+        10,
+        60
+      ],
+      "b": [
+        10,
+        39
+      ],
+      "maxResultado": 99
+    },
+    "explicacao": "Juntar é somar: {conta}.",
+    "dicas": [
+      "Os números aumentaram ou diminuíram?",
+      "Junte {a} com {b}.",
+      "Some as dezenas, depois as unidades: {a} + {b}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-SUB-003",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Subtração — retirar",
+    "bncc": [
+      {
+        "codigo": "EF02MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problema de subtração com o significado de retirar.",
+    "formato": "numerico",
+    "pool": "2ano.problemas",
+    "enunciado": {
+      "texto": "O moinho tinha {a} sacos de farinha. Saíram {b}. Quantos sacos ficaram?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "subtracao",
+      "a": 48,
+      "b": 15
+    },
+    "explicacao": "Quando alguns saem, subtraímos: {conta}.",
+    "dicas": [
+      "Os números aumentaram ou diminuíram?",
+      "Tire {b} de {a}.",
+      "Confira: a sua resposta mais {b} precisa dar {a}."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-SUB-004",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Subtração — retirar (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de retirar com números até 99.",
+    "formato": "numerico",
+    "pool": "2ano.problemas",
+    "enunciado": {
+      "texto": "A vila tinha {a} lâmpadas acesas. {b} apagaram. Quantas continuam acesas?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "subtracao",
+      "a": [
+        40,
+        99
+      ],
+      "b": [
+        10,
+        30
+      ],
+      "maxResultado": 89
+    },
+    "explicacao": "Quando algumas apagam, subtraímos: {conta}.",
+    "dicas": [
+      "Os números aumentaram ou diminuíram?",
+      "Tire {b} de {a}.",
+      "Confira: a sua resposta mais {b} precisa dar {a}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-SOM-005",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Adição com três ordens (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF02MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF02MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Somar centenas e dezenas exatas usando o valor posicional.",
+    "formato": "numerico",
+    "pool": "2ano.problemas",
+    "enunciado": {
+      "texto": "O relógio da torre tem {a} peças. Chegaram mais {b}. Quantas peças ao todo?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "soma",
+      "a": [
+        100,
+        500
+      ],
+      "b": [
+        10,
+        90
+      ],
+      "multiploDe": 10,
+      "maxResultado": 590
+    },
+    "explicacao": "Somamos as centenas com as dezenas: {conta}.",
+    "dicas": [
+      "Quantas centenas e quantas dezenas há em cada número?",
+      "Junte as dezenas às centenas.",
+      "{a} + {b}: as centenas não mudam, só as dezenas."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-CMP-006",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Subtração — comparar",
+    "bncc": [
+      {
+        "codigo": "EF02MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF02MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Comparar duas quantidades e dizer quantos a mais.",
+    "formato": "numerico",
+    "pool": "2ano.problemas",
+    "enunciado": {
+      "texto": "Leo tem {a} parafusos e Lia tem {b}. Quantos parafusos Leo tem a mais?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "comparar",
+      "a": 42,
+      "b": 27
+    },
+    "explicacao": "Para comparar, tiramos o menor do maior: {conta}.",
+    "dicas": [
+      "Quem tem mais parafusos?",
+      "A diferença é {a} − {b}.",
+      "Confira: {b} mais a sua resposta dá {a}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  }
+]

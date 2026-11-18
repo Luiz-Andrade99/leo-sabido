@@ -1,0 +1,58 @@
+{
+  "nome": "Estação de Trens",
+  "tileset": {
+    "name": "cidade",
+    "image": "../assets/tiles/cidade.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "cidade",
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2800
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "5ano.porcentagens",
+      "mecanismo": "porta",
+      "titulo": "Catraca da Estação",
+      "dificuldade": 2
+    },
+    "2": {
+      "pool": "5ano.area",
+      "mecanismo": "blocos",
+      "titulo": "Plataforma de Embarque",
+      "dificuldade": 2
+    },
+    "3": {
+      "pool": "5ano.decimais",
+      "mecanismo": "ponte",
+      "titulo": "Ponte dos Trilhos",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "Os trens saem no horário. Pule na plataforma que anda!"
+  ]
+}
+---
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                         *                                                  ##
+##                             #                  ###############                                           ##
+##                             #                 b###############                             *             ##
+##                             a                bb###############                            ====           ##
+##                             a               bbb###############                                           ##
+##  S  !  *             C  1   a   *  C   2   bbbb###############   C   3             *                 G   ##
+##############M       #####################################################cccccc#############################
+##############++++++++#####################################################      #############################
+##############        #####################################################      #############################

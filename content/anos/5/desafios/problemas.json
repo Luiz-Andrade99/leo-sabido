@@ -1,0 +1,263 @@
+[
+  {
+    "id": "5A-PRB-MUL-001",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Multiplicação (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Multiplicar números de três algarismos por um algarismo.",
+    "formato": "numerico",
+    "pool": "5ano.problemas",
+    "enunciado": {
+      "texto": "Cada máquina fabrica {a} engrenagens por dia. Quantas engrenagens {b} máquinas fabricam?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "multiplicacao",
+      "a": [
+        120,
+        450
+      ],
+      "b": [
+        3,
+        8
+      ],
+      "maxResultado": 3600
+    },
+    "explicacao": "{conta}.",
+    "dicas": [
+      "São grupos iguais?",
+      "Multiplique: {a} × {b}.",
+      "Decomponha o número maior em centenas, dezenas e unidades e multiplique cada parte."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PRB-DIV-002",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Divisão (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Dividir números de três algarismos por um algarismo (divisão exata).",
+    "formato": "numerico",
+    "pool": "5ano.problemas",
+    "enunciado": {
+      "texto": "A fábrica embalou {a} parafusos em {b} caixas iguais. Quantos parafusos há em cada caixa?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "divisao",
+      "a": [
+        100,
+        999
+      ],
+      "b": [
+        4,
+        9
+      ],
+      "maxResultado": 250
+    },
+    "explicacao": "{conta}.",
+    "dicas": [
+      "Estamos repartindo em partes iguais?",
+      "Divida: {a} ÷ {b}.",
+      "Pense: que número vezes {b} dá {a}?"
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PRB-SOM-003",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Adição — centenas de milhar",
+    "bncc": [
+      {
+        "codigo": "EF05MA07",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF05MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Somar números da ordem das centenas de milhar.",
+    "formato": "numerico",
+    "pool": "5ano.problemas",
+    "enunciado": {
+      "texto": "A usina gerou {a} unidades de energia em janeiro e {b} em fevereiro. Quantas no total?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "soma",
+      "a": 125400,
+      "b": 38750
+    },
+    "explicacao": "Juntando os dois meses: {conta}.",
+    "dicas": [
+      "Vamos juntar os dois meses.",
+      "Alinhe unidades com unidades, dezenas com dezenas, e assim por diante.",
+      "Some primeiro os milhares e depois o resto."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PRB-SUB-004",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Subtração — dezenas de milhar (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA07",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF05MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Subtrair números da ordem das dezenas de milhar.",
+    "formato": "numerico",
+    "pool": "5ano.problemas",
+    "enunciado": {
+      "texto": "A cidade tinha {a} lâmpadas antigas e já trocou {b}. Quantas ainda faltam trocar?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "subtracao",
+      "a": [
+        50000,
+        99000
+      ],
+      "b": [
+        10000,
+        40000
+      ],
+      "multiploDe": 1000,
+      "maxResultado": 89000
+    },
+    "explicacao": "Tiramos as que já foram trocadas: {conta}.",
+    "dicas": [
+      "As lâmpadas antigas aumentaram ou diminuíram?",
+      "Tire {b} de {a}.",
+      "Confira: a resposta mais {b} precisa dar {a}."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PRB-MUL-005",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Multiplicação com dois algarismos (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Multiplicar dois números de dois algarismos.",
+    "formato": "numerico",
+    "pool": "5ano.problemas",
+    "enunciado": {
+      "texto": "Um prédio da cidade tem {b} andares com {a} janelas em cada um. Quantas janelas ao todo?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "multiplicacao",
+      "a": [
+        12,
+        35
+      ],
+      "b": [
+        11,
+        25
+      ],
+      "maxResultado": 875
+    },
+    "explicacao": "{conta}.",
+    "dicas": [
+      "São grupos iguais?",
+      "Multiplique: {a} × {b}.",
+      "Decomponha o número maior em centenas, dezenas e unidades e multiplique cada parte."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PRB-DIV-006",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Divisão com divisor de dois algarismos",
+    "bncc": [
+      {
+        "codigo": "EF05MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Dividir 144 por 12 em situação de repartição.",
+    "formato": "numerico",
+    "pool": "5ano.problemas",
+    "enunciado": {
+      "texto": "Há {a} lâmpadas para {b} postes, o mesmo número em cada poste. Quantas lâmpadas em cada um?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "divisao",
+      "a": 144,
+      "b": 12
+    },
+    "explicacao": "{conta}.",
+    "dicas": [
+      "Estamos repartindo em partes iguais?",
+      "Divida: {a} ÷ {b}.",
+      "Pense: que número vezes {b} dá {a}?"
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  }
+]

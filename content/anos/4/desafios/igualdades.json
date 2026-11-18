@@ -1,0 +1,288 @@
+[
+  {
+    "id": "4A-IGU-MUL-001",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Igualdade — multiplicação",
+    "bncc": [
+      {
+        "codigo": "EF04MA15",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF04MA13",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar o fator desconhecido de uma multiplicação.",
+    "formato": "igualdade",
+    "pool": "4ano.igualdades",
+    "enunciado": {
+      "texto": "A porta só abre quando a igualdade fica verdadeira. Que número completa {expressao}?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "op": "x",
+      "a": 7,
+      "b": 6,
+      "lacuna": "a"
+    },
+    "explicacao": "Pela operação inversa, {inversa}. Por isso, {conta}.",
+    "dicas": [
+      "Leia a igualdade trocando o □ por \"que número\".",
+      "Use a operação inversa: a subtração desfaz a adição e a divisão desfaz a multiplicação.",
+      "Faça a conta inversa com os dois números que você já conhece."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-IGU-MUL-002",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Igualdade — multiplicação (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA15",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF04MA13",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar o fator desconhecido em multiplicações da tabuada.",
+    "formato": "igualdade",
+    "pool": "4ano.igualdades",
+    "enunciado": {
+      "texto": "A porta só abre quando a igualdade fica verdadeira. Que número completa {expressao}?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "op": "x",
+      "a": [
+        2,
+        10
+      ],
+      "b": [
+        2,
+        10
+      ],
+      "lacuna": "b",
+      "maxResultado": 100
+    },
+    "explicacao": "Pela operação inversa, {inversa}. Por isso, {conta}.",
+    "dicas": [
+      "Leia a igualdade trocando o □ por \"que número\".",
+      "Use a operação inversa: a subtração desfaz a adição e a divisão desfaz a multiplicação.",
+      "Faça a conta inversa com os dois números que você já conhece."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-IGU-ADI-003",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Igualdade — adição",
+    "bncc": [
+      {
+        "codigo": "EF04MA15",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF04MA13",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar a parcela desconhecida de uma adição.",
+    "formato": "igualdade",
+    "pool": "4ano.igualdades",
+    "enunciado": {
+      "texto": "A porta só abre quando a igualdade fica verdadeira. Que número completa {expressao}?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "op": "+",
+      "a": 35,
+      "b": 45,
+      "lacuna": "b"
+    },
+    "explicacao": "Pela operação inversa, {inversa}. Por isso, {conta}.",
+    "dicas": [
+      "Leia a igualdade trocando o □ por \"que número\".",
+      "Use a operação inversa: a subtração desfaz a adição e a divisão desfaz a multiplicação.",
+      "Faça a conta inversa com os dois números que você já conhece."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-IGU-SUB-004",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Igualdade — subtração (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA15",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF04MA13",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar o minuendo desconhecido de uma subtração.",
+    "formato": "igualdade",
+    "pool": "4ano.igualdades",
+    "enunciado": {
+      "texto": "A porta só abre quando a igualdade fica verdadeira. Que número completa {expressao}?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "op": "-",
+      "a": [
+        50,
+        200
+      ],
+      "b": [
+        10,
+        90
+      ],
+      "lacuna": "a",
+      "maxResultado": 150
+    },
+    "explicacao": "Pela operação inversa, {inversa}. Por isso, {conta}.",
+    "dicas": [
+      "Leia a igualdade trocando o □ por \"que número\".",
+      "Use a operação inversa: a subtração desfaz a adição e a divisão desfaz a multiplicação.",
+      "Faça a conta inversa com os dois números que você já conhece."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-IGU-DIV-005",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Igualdade — divisão (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA15",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF04MA13",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar o dividendo desconhecido de uma divisão exata.",
+    "formato": "igualdade",
+    "pool": "4ano.igualdades",
+    "enunciado": {
+      "texto": "A porta só abre quando a igualdade fica verdadeira. Que número completa {expressao}?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "op": "/",
+      "a": [
+        12,
+        120
+      ],
+      "b": [
+        2,
+        10
+      ],
+      "lacuna": "a",
+      "maxResultado": 12
+    },
+    "explicacao": "Pela operação inversa, {inversa}. Por isso, {conta}.",
+    "dicas": [
+      "Leia a igualdade trocando o □ por \"que número\".",
+      "Use a operação inversa: a subtração desfaz a adição e a divisão desfaz a multiplicação.",
+      "Faça a conta inversa com os dois números que você já conhece."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-IGU-DIV-006",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Igualdade — divisão (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA15",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF04MA13",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar o divisor desconhecido de uma divisão exata.",
+    "formato": "igualdade",
+    "pool": "4ano.igualdades",
+    "enunciado": {
+      "texto": "A porta só abre quando a igualdade fica verdadeira. Que número completa {expressao}?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "op": "/",
+      "a": [
+        20,
+        200
+      ],
+      "b": [
+        2,
+        10
+      ],
+      "lacuna": "b",
+      "maxResultado": 20
+    },
+    "explicacao": "Pela operação inversa, {inversa}. Por isso, {conta}.",
+    "dicas": [
+      "Leia a igualdade trocando o □ por \"que número\".",
+      "Use a operação inversa: a subtração desfaz a adição e a divisão desfaz a multiplicação.",
+      "Faça a conta inversa com os dois números que você já conhece."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

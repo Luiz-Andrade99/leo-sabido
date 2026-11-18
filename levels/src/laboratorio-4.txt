@@ -1,0 +1,58 @@
+{
+  "nome": "Observatório",
+  "tileset": {
+    "name": "laboratorio",
+    "image": "../assets/tiles/laboratorio.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "laboratorio",
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2800
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "6ano.programas",
+      "mecanismo": "porta",
+      "titulo": "Porta do Telescópio",
+      "dificuldade": 2
+    },
+    "2": {
+      "pool": "6ano.fracoes",
+      "mecanismo": "blocos",
+      "titulo": "Escada das Estrelas",
+      "dificuldade": 2
+    },
+    "3": {
+      "pool": "6ano.expressoes",
+      "mecanismo": "ponte",
+      "titulo": "Ponte de Luz",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "Do observatório se veem todas as engrenagens do mundo."
+  ]
+}
+---
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                         *                                                  ##
+##                             #                  ###############                                           ##
+##                             #                 b###############                             *             ##
+##                             a                bb###############                            ====           ##
+##                             a               bbb###############                                           ##
+##  S  !  *             C  1   a   *  C   2   bbbb###############   C   3             *                 G   ##
+##############M       #####################################################cccccc#############################
+##############++++++++#####################################################      #############################
+##############        #####################################################      #############################

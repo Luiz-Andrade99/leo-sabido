@@ -1,0 +1,58 @@
+{
+  "nome": "Feira da Vila",
+  "tileset": {
+    "name": "vila",
+    "image": "../assets/tiles/vila.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "vila",
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2800
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "2ano.dinheiro",
+      "mecanismo": "porta",
+      "titulo": "Porta da Barraca",
+      "dificuldade": 2
+    },
+    "2": {
+      "pool": "2ano.posicional",
+      "mecanismo": "blocos",
+      "titulo": "Escada de Caixotes",
+      "dificuldade": 2
+    },
+    "3": {
+      "pool": "2ano.sequencias",
+      "mecanismo": "ponte",
+      "titulo": "Ponte da Feira",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "A feira está cheia! Use a plataforma que anda para atravessar."
+  ]
+}
+---
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                         *                                                  ##
+##                             #                  ###############                                           ##
+##                             #                 b###############                             *             ##
+##                             a                bb###############                            ====           ##
+##                             a               bbb###############                                           ##
+##  S  !  *             C  1   a   *  C   2   bbbb###############   C   3             *                 G   ##
+##############M       #####################################################cccccc#############################
+##############++++++++#####################################################      #############################
+##############        #####################################################      #############################

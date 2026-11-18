@@ -1,0 +1,194 @@
+[
+  {
+    "id": "3A-SEQ-ARI-001",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Sequências numéricas — adições sucessivas",
+    "bncc": [{ "codigo": "EF03MA10", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Identificar a regularidade de uma sequência que cresce de 2 em 2 e completar os termos que faltam.",
+    "formato": "sequencia",
+    "pool": "3ano.sequencias",
+    "enunciado": { "texto": "As pedras da ponte seguem uma regra. Complete os números que faltam." },
+    "parametros": { "tipo": "fixo", "valores": [2, 4, 6, null, 10, null], "passo": 2 },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Olhe os dois primeiros números. Quanto mudou de um para o outro?",
+      "De um número para o seguinte, a sequência {direcao} {passoAbs}.",
+      "Pegue o número antes do espaço vazio e {acao} {passoAbs}."
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-SEQ-ARI-002",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Sequências numéricas — adições sucessivas",
+    "bncc": [{ "codigo": "EF03MA10", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Identificar a regularidade de uma sequência que cresce de 5 em 5 e completar os termos que faltam.",
+    "formato": "sequencia",
+    "pool": "3ano.sequencias",
+    "enunciado": { "texto": "As pedras da ponte seguem uma regra. Complete os números que faltam." },
+    "parametros": { "tipo": "fixo", "valores": [5, 10, 15, null, 25, null], "passo": 5 },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Olhe os dois primeiros números. Quanto mudou de um para o outro?",
+      "De um número para o seguinte, a sequência {direcao} {passoAbs}.",
+      "Pegue o número antes do espaço vazio e {acao} {passoAbs}."
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-SEQ-ARI-003",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Sequências numéricas — adições sucessivas",
+    "bncc": [{ "codigo": "EF03MA10", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Completar uma sequência que cresce de 10 em 10, incluindo os últimos termos.",
+    "formato": "sequencia",
+    "pool": "3ano.sequencias",
+    "enunciado": { "texto": "As pedras da ponte seguem uma regra. Complete os números que faltam." },
+    "parametros": { "tipo": "fixo", "valores": [10, 20, 30, 40, null, null], "passo": 10 },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Olhe os dois primeiros números. Quanto mudou de um para o outro?",
+      "De um número para o seguinte, a sequência {direcao} {passoAbs}.",
+      "Pegue o número antes do espaço vazio e {acao} {passoAbs}."
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-SEQ-ARI-004",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Sequências numéricas — subtrações sucessivas",
+    "bncc": [{ "codigo": "EF03MA10", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Identificar a regularidade de uma sequência que diminui de 3 em 3 e completar os termos que faltam.",
+    "formato": "sequencia",
+    "pool": "3ano.sequencias",
+    "enunciado": { "texto": "Agora os números diminuem. Descubra a regra e complete." },
+    "parametros": { "tipo": "fixo", "valores": [30, 27, 24, null, 18, null], "passo": -3 },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}: cada número é o anterior − {passoAbs}.",
+    "dicas": [
+      "Os números estão ficando maiores ou menores?",
+      "De um número para o seguinte, a sequência {direcao} {passoAbs}.",
+      "Pegue o número antes do espaço vazio e {acao} {passoAbs}."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-SEQ-ARI-005",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Sequências numéricas — adições sucessivas (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA10", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Identificar regularidades em sequências crescentes com passo de 3 a 9 e números até 100.",
+    "formato": "sequencia",
+    "pool": "3ano.sequencias",
+    "enunciado": { "texto": "As pedras da ponte seguem uma regra. Complete os números que faltam." },
+    "parametros": {
+      "tipo": "modelo",
+      "modelo": "progressao_aritmetica",
+      "inicio": [1, 50],
+      "passo": [3, 9],
+      "tamanho": [5, 6],
+      "lacunas": 2,
+      "minValor": 0,
+      "maxValor": 100
+    },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Olhe os dois primeiros números. Quanto mudou de um para o outro?",
+      "De um número para o seguinte, a sequência {direcao} {passoAbs}.",
+      "Pegue o número antes do espaço vazio e {acao} {passoAbs}."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; todas as variações são verificadas automaticamente, mas a faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-SEQ-ARI-006",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Sequências numéricas — subtrações sucessivas (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA10", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Identificar regularidades em sequências decrescentes com passo de 3 a 9 e números até 100.",
+    "formato": "sequencia",
+    "pool": "3ano.sequencias",
+    "enunciado": { "texto": "Agora os números diminuem. Descubra a regra e complete." },
+    "parametros": {
+      "tipo": "modelo",
+      "modelo": "progressao_aritmetica",
+      "inicio": [40, 100],
+      "passo": [-9, -3],
+      "tamanho": [5, 6],
+      "lacunas": 2,
+      "minValor": 0,
+      "maxValor": 100
+    },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}: cada número é o anterior − {passoAbs}.",
+    "dicas": [
+      "Os números estão ficando maiores ou menores?",
+      "De um número para o seguinte, a sequência {direcao} {passoAbs}.",
+      "Pegue o número antes do espaço vazio e {acao} {passoAbs}."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; todas as variações são verificadas automaticamente, mas a faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-SEQ-ARI-007",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Sequências numéricas — centenas",
+    "bncc": [
+      { "codigo": "EF03MA10", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" },
+      { "codigo": "EF03MA01", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }
+    ],
+    "objetivo": "Completar sequência crescente de 50 em 50 com números da ordem das centenas.",
+    "formato": "sequencia",
+    "pool": "3ano.sequencias",
+    "enunciado": { "texto": "Estas pedras são mais pesadas! Descubra a regra e complete." },
+    "parametros": { "tipo": "fixo", "valores": [100, 150, 200, null, 300, null], "passo": 50 },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}: cada número é o anterior + {passoAbs}.",
+    "dicas": [
+      "Olhe os dois primeiros números. Quanto mudou de um para o outro?",
+      "De um número para o seguinte, a sequência {direcao} {passoAbs}.",
+      "Pegue o número antes do espaço vazio e {acao} {passoAbs}."
+    ],
+    "dificuldade": 3,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-SEQ-ARI-008",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Sequências numéricas — centenas",
+    "bncc": [
+      { "codigo": "EF03MA10", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" },
+      { "codigo": "EF03MA01", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }
+    ],
+    "objetivo": "Completar sequência decrescente de 25 em 25 com números da ordem das centenas.",
+    "formato": "sequencia",
+    "pool": "3ano.sequencias",
+    "enunciado": { "texto": "Estas pedras são mais pesadas! Descubra a regra e complete." },
+    "parametros": { "tipo": "fixo", "valores": [500, 475, 450, null, null, 375], "passo": -25 },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}: cada número é o anterior − {passoAbs}.",
+    "dicas": [
+      "Os números estão ficando maiores ou menores?",
+      "De um número para o seguinte, a sequência {direcao} {passoAbs}.",
+      "Pegue o número antes do espaço vazio e {acao} {passoAbs}."
+    ],
+    "dificuldade": 3,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  }
+]

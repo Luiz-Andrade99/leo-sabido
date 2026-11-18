@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  qualidade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Fases geradas estão em dia com levels/src
+        run: npm run gen:levels && git diff --exit-code public/levels
+      - run: npm run validate:content
+      - run: npm run typecheck
+      - run: npm test
+      - name: Navegadores do Playwright
+        run: npx playwright install --with-deps chromium firefox webkit
+      - name: Testes E2E (Chromium, Firefox e WebKit)
+        run: npm run test:e2e
+        env:
+          PW_CHANNEL: chromium
+          PW_ALL_ENGINES: '1'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidencias-e2e
+          path: |
+            docs/relatorios/evidencias
+            test-results

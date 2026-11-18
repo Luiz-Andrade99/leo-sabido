@@ -1,0 +1,53 @@
+{
+  "nome": "Portão do Castelo",
+  "tileset": {
+    "name": "castelo",
+    "image": "../assets/tiles/castelo.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "castelo",
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2800
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "4ano.igualdades",
+      "mecanismo": "porta",
+      "titulo": "Portão da Balança",
+      "dificuldade": 1
+    },
+    "2": {
+      "pool": "4ano.sequencias",
+      "mecanismo": "ponte",
+      "titulo": "Ponte dos Múltiplos",
+      "dificuldade": 1
+    }
+  },
+  "placas": [
+    "O Castelo das Estratégias guarda a Quarta Engrenagem. Pense antes de agir!",
+    "A plataforma vai e volta. Espere o momento certo para pular."
+  ]
+}
+---
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #                                                                     ##
+##                          #           *                                    *                    ##
+##          *               a                                               ===                   ##
+##          ##              a                                                                     ##
+##  S  !    ##       C  1   a   C !            C  *   2               B   +           *       G   ##
+################+++#################M       #############bbbbbb#####################################
+################   #################++++++++#############      #####################################
+################   #################        #############      #####################################

@@ -1,0 +1,230 @@
+[
+  {
+    "id": "2A-DIN-TRO-007",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Troco",
+    "bncc": [
+      {
+        "codigo": "EF02MA20",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF02MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular o troco em compras com cédulas e moedas.",
+    "formato": "numerico",
+    "pool": "2ano.dinheiro",
+    "enunciado": {
+      "texto": "Lia pagou uma pipa de R$ {b} com uma nota de R$ {a}. Quantos reais ela recebe de troco?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "subtracao",
+      "a": [
+        10,
+        20
+      ],
+      "b": [
+        2,
+        9
+      ],
+      "maxResultado": 18
+    },
+    "explicacao": "O troco é o que sobra: {conta}.",
+    "dicas": [
+      "Troco é o que sobra do dinheiro.",
+      "Faça {a} − {b}.",
+      "Conte de {b} até {a}."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-SEQ-DEC-007",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Sequência decrescente",
+    "bncc": [
+      {
+        "codigo": "EF02MA09",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF02MA11",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Completar uma sequência que diminui de 5 em 5.",
+    "formato": "sequencia",
+    "pool": "2ano.sequencias",
+    "enunciado": {
+      "texto": "Os números da ponte diminuem sempre igual. Complete os que faltam."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "valores": [
+        50,
+        45,
+        40,
+        null,
+        30,
+        null
+      ],
+      "passo": -5
+    },
+    "explicacao": "A sequência {direcao} de {passoAbs} em {passoAbs}.",
+    "dicas": [
+      "Os números estão ficando maiores ou menores?",
+      "Quanto diminui de um número para o outro?",
+      "Tire 5 de cada número."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-POS-CEN-007",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Centenas, dezenas e unidades",
+    "bncc": [
+      {
+        "codigo": "EF02MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF02MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Compor números de três algarismos com centenas, dezenas e unidades.",
+    "formato": "posicional",
+    "pool": "2ano.posicional",
+    "enunciado": {
+      "texto": "Monte o número {numero} com as peças para formar a escada."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "numero": [
+        100,
+        199
+      ]
+    },
+    "explicacao": "{numero} = {cValor} + {dValor} + {u}: {c} centenas, {d} dezenas e {u} unidades.",
+    "dicas": [
+      "Comece pelas centenas.",
+      "Uma centena vale 10 dezenas.",
+      "Depois coloque as dezenas e as unidades."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-SUB-007",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Problemas de subtração",
+    "bncc": [
+      {
+        "codigo": "EF02MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de retirar com números até 99.",
+    "formato": "numerico",
+    "pool": "2ano.problemas",
+    "enunciado": {
+      "texto": "A vila tinha {a} lanternas acesas. O vento apagou {b}. Quantas lanternas continuam acesas?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "subtracao",
+      "a": [
+        20,
+        60
+      ],
+      "b": [
+        5,
+        19
+      ],
+      "maxResultado": 55
+    },
+    "explicacao": "Quando tiramos, subtraímos: {conta}.",
+    "dicas": [
+      "Algumas lanternas apagaram: sobraram mais ou menos?",
+      "Faça {a} − {b}.",
+      "Tire primeiro as dezenas e depois as unidades."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "2A-PRB-DOB-008",
+    "ano": 2,
+    "area": "matematica",
+    "tema": "Metade",
+    "bncc": [
+      {
+        "codigo": "EF02MA08",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar a metade de quantidades pares.",
+    "formato": "numerico",
+    "pool": "2ano.dobro_metade",
+    "enunciado": {
+      "texto": "O moinho moeu {a} sacos de trigo. Metade vai para a padaria. Quantos sacos vão para a padaria?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "metade",
+      "a": [
+        10,
+        40
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "maxResultado": 20
+    },
+    "explicacao": "Metade é dividir em 2 partes iguais: {conta}.",
+    "dicas": [
+      "Metade é repartir em 2 partes iguais.",
+      "Que número somado com ele mesmo dá {a}?",
+      "Separe as dezenas e as unidades e divida cada uma por 2."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Item novo da ampliação para a versão 1.0 (nov/2026); aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  }
+]

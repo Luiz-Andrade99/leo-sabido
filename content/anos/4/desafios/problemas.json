@@ -1,0 +1,290 @@
+[
+  {
+    "id": "4A-PRB-MUL-001",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Multiplicação — parcelas iguais",
+    "bncc": [
+      {
+        "codigo": "EF04MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problema de multiplicação com a ideia de parcelas iguais.",
+    "formato": "numerico",
+    "pool": "4ano.problemas",
+    "enunciado": {
+      "texto": "Cada torre do castelo tem {a} janelas. São {b} torres. Quantas janelas ao todo?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "multiplicacao",
+      "a": 12,
+      "b": 8
+    },
+    "explicacao": "Grupos iguais: {conta}.",
+    "dicas": [
+      "Os grupos são todos do mesmo tamanho?",
+      "Quando há grupos iguais, multiplicamos: {a} × {b}.",
+      "Decomponha: multiplique as dezenas e depois as unidades, e some."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-PRB-MUL-002",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Multiplicação — organização retangular (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de multiplicação com organização retangular.",
+    "formato": "numerico",
+    "pool": "4ano.problemas",
+    "enunciado": {
+      "texto": "Cada fileira do pátio tem {a} bandeiras. São {b} fileiras. Quantas bandeiras ao todo?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "multiplicacao",
+      "a": [
+        11,
+        25
+      ],
+      "b": [
+        3,
+        9
+      ],
+      "maxResultado": 225
+    },
+    "explicacao": "Fileiras iguais: {conta}.",
+    "dicas": [
+      "Os grupos são todos do mesmo tamanho?",
+      "Quando há grupos iguais, multiplicamos: {a} × {b}.",
+      "Decomponha: multiplique as dezenas e depois as unidades, e some."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-PRB-DIV-003",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Divisão — repartição equitativa",
+    "bncc": [
+      {
+        "codigo": "EF04MA07",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problema de divisão com divisor de dois algarismos.",
+    "formato": "numerico",
+    "pool": "4ano.problemas",
+    "enunciado": {
+      "texto": "A biblioteca do castelo tem {a} livros para guardar em {b} prateleiras iguais. Quantos livros em cada prateleira?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "divisao",
+      "a": 96,
+      "b": 12
+    },
+    "explicacao": "{conta}.",
+    "dicas": [
+      "Estamos repartindo em partes iguais?",
+      "Repartir igualmente é dividir: {a} ÷ {b}.",
+      "Pense: que número vezes {b} dá {a}?"
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-PRB-DIV-004",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Divisão — repartição (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA07",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de divisão exata por números de um algarismo.",
+    "formato": "numerico",
+    "pool": "4ano.problemas",
+    "enunciado": {
+      "texto": "São {a} maçãs para dividir igualmente em {b} cestas. Quantas maçãs em cada cesta?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "divisao",
+      "a": [
+        20,
+        90
+      ],
+      "b": [
+        2,
+        9
+      ],
+      "maxResultado": 10
+    },
+    "explicacao": "{conta}.",
+    "dicas": [
+      "Estamos repartindo em partes iguais?",
+      "Repartir igualmente é dividir: {a} ÷ {b}.",
+      "Pense: que número vezes {b} dá {a}?"
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-PRB-DIV-005",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Divisão com divisor de dois algarismos (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA07",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de divisão exata com divisor de 11 a 15.",
+    "formato": "numerico",
+    "pool": "4ano.problemas",
+    "enunciado": {
+      "texto": "O castelo tem {a} velas para dividir igualmente entre {b} salões. Quantas velas em cada salão?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "divisao",
+      "a": [
+        30,
+        300
+      ],
+      "b": [
+        11,
+        15
+      ],
+      "maxResultado": 25
+    },
+    "explicacao": "{conta}.",
+    "dicas": [
+      "Estamos repartindo em partes iguais?",
+      "Repartir igualmente é dividir: {a} ÷ {b}.",
+      "Pense: que número vezes {b} dá {a}?"
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-PRB-SOM-006",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Adição com milhares",
+    "bncc": [
+      {
+        "codigo": "EF04MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problema de adição com números da ordem dos milhares.",
+    "formato": "numerico",
+    "pool": "4ano.problemas",
+    "enunciado": {
+      "texto": "Na primeira semana, {a} pessoas visitaram o castelo. Na segunda, {b}. Quantas ao todo?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "operacao": "soma",
+      "a": 1250,
+      "b": 3480
+    },
+    "explicacao": "Juntamos as duas semanas: {conta}.",
+    "dicas": [
+      "Vamos juntar as duas semanas.",
+      "Some unidades com unidades, dezenas com dezenas, e assim por diante.",
+      "Comece pelos milhares: 1000 + 3000, depois as centenas."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "4A-PRB-SUB-007",
+    "ano": 4,
+    "area": "matematica",
+    "tema": "Subtração com milhares (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF04MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Resolver problemas de subtração com números até 9000.",
+    "formato": "numerico",
+    "pool": "4ano.problemas",
+    "enunciado": {
+      "texto": "O castelo tinha {a} tijolos guardados. Usaram {b} na torre nova. Quantos sobraram?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "operacao": "subtracao",
+      "a": [
+        2000,
+        9000
+      ],
+      "b": [
+        500,
+        1900
+      ],
+      "multiploDe": 100,
+      "maxResultado": 8500
+    },
+    "explicacao": "Tiramos o que foi usado: {conta}.",
+    "dicas": [
+      "Os tijolos aumentaram ou diminuíram?",
+      "Tire {b} de {a}.",
+      "Confira: a sua resposta mais {b} precisa dar {a}."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

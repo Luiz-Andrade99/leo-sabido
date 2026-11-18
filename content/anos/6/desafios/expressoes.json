@@ -1,0 +1,323 @@
+[
+  {
+    "id": "6A-EXP-ORD-001",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Expressões — multiplicação antes da adição",
+    "bncc": [
+      {
+        "codigo": "EF06MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular a + b × c respeitando a ordem das operações.",
+    "formato": "expressao",
+    "pool": "6ano.expressoes",
+    "enunciado": {
+      "texto": "O circuito só liga com o resultado certo de {expressao}. Quanto dá?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "forma": "a+bxc",
+      "termos": [
+        3,
+        4,
+        5
+      ]
+    },
+    "explicacao": "{expressao}: {passos}.",
+    "dicas": [
+      "O que vem primeiro: parênteses, multiplicação e divisão, ou adição e subtração?",
+      "Resolva primeiro o que está entre parênteses; depois, multiplicações e divisões.",
+      "Por último, faça as adições e subtrações."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-EXP-ORD-002",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Expressões — parênteses",
+    "bncc": [
+      {
+        "codigo": "EF06MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular (a + b) × c resolvendo primeiro os parênteses.",
+    "formato": "expressao",
+    "pool": "6ano.expressoes",
+    "enunciado": {
+      "texto": "O circuito só liga com o resultado certo de {expressao}. Quanto dá?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "forma": "(a+b)xc",
+      "termos": [
+        3,
+        4,
+        5
+      ]
+    },
+    "explicacao": "{expressao}: {passos}.",
+    "dicas": [
+      "O que vem primeiro: parênteses, multiplicação e divisão, ou adição e subtração?",
+      "Resolva primeiro o que está entre parênteses; depois, multiplicações e divisões.",
+      "Por último, faça as adições e subtrações."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-EXP-ORD-003",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Expressões — multiplicação antes da subtração",
+    "bncc": [
+      {
+        "codigo": "EF06MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular a − b × c.",
+    "formato": "expressao",
+    "pool": "6ano.expressoes",
+    "enunciado": {
+      "texto": "O circuito só liga com o resultado certo de {expressao}. Quanto dá?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "forma": "a-bxc",
+      "termos": [
+        50,
+        6,
+        7
+      ]
+    },
+    "explicacao": "{expressao}: {passos}.",
+    "dicas": [
+      "O que vem primeiro: parênteses, multiplicação e divisão, ou adição e subtração?",
+      "Resolva primeiro o que está entre parênteses; depois, multiplicações e divisões.",
+      "Por último, faça as adições e subtrações."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-EXP-ORD-004",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Expressões — duas multiplicações",
+    "bncc": [
+      {
+        "codigo": "EF06MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular a × b + c × d.",
+    "formato": "expressao",
+    "pool": "6ano.expressoes",
+    "enunciado": {
+      "texto": "O circuito só liga com o resultado certo de {expressao}. Quanto dá?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "forma": "axb+cxd",
+      "termos": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "explicacao": "{expressao}: {passos}.",
+    "dicas": [
+      "O que vem primeiro: parênteses, multiplicação e divisão, ou adição e subtração?",
+      "Resolva primeiro o que está entre parênteses; depois, multiplicações e divisões.",
+      "Por último, faça as adições e subtrações."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-EXP-ORD-005",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Expressões — multiplicação e adição (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF06MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular a + b × c com termos de 2 a 12.",
+    "formato": "expressao",
+    "pool": "6ano.expressoes",
+    "enunciado": {
+      "texto": "O circuito só liga com o resultado certo de {expressao}. Quanto dá?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "forma": "a+bxc",
+      "termo": [
+        2,
+        12
+      ],
+      "maxResultado": 160
+    },
+    "explicacao": "{expressao}: {passos}.",
+    "dicas": [
+      "O que vem primeiro: parênteses, multiplicação e divisão, ou adição e subtração?",
+      "Resolva primeiro o que está entre parênteses; depois, multiplicações e divisões.",
+      "Por último, faça as adições e subtrações."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-EXP-ORD-006",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Expressões — parênteses (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF06MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular (a + b) × c com termos de 2 a 12.",
+    "formato": "expressao",
+    "pool": "6ano.expressoes",
+    "enunciado": {
+      "texto": "O circuito só liga com o resultado certo de {expressao}. Quanto dá?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "forma": "(a+b)xc",
+      "termo": [
+        2,
+        12
+      ],
+      "maxResultado": 200
+    },
+    "explicacao": "{expressao}: {passos}.",
+    "dicas": [
+      "O que vem primeiro: parênteses, multiplicação e divisão, ou adição e subtração?",
+      "Resolva primeiro o que está entre parênteses; depois, multiplicações e divisões.",
+      "Por último, faça as adições e subtrações."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-EXP-ORD-007",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Expressões — divisão antes da adição (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF06MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular a + b ÷ c com divisão exata.",
+    "formato": "expressao",
+    "pool": "6ano.expressoes",
+    "enunciado": {
+      "texto": "O circuito só liga com o resultado certo de {expressao}. Quanto dá?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "forma": "a+b/c",
+      "termo": [
+        2,
+        30
+      ],
+      "maxResultado": 60
+    },
+    "explicacao": "{expressao}: {passos}.",
+    "dicas": [
+      "O que vem primeiro: parênteses, multiplicação e divisão, ou adição e subtração?",
+      "Resolva primeiro o que está entre parênteses; depois, multiplicações e divisões.",
+      "Por último, faça as adições e subtrações."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "6A-EXP-ORD-008",
+    "ano": 6,
+    "area": "matematica",
+    "tema": "Expressões — parênteses e divisão (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF06MA03",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular (a − b) ÷ c com divisão exata.",
+    "formato": "expressao",
+    "pool": "6ano.expressoes",
+    "enunciado": {
+      "texto": "O circuito só liga com o resultado certo de {expressao}. Quanto dá?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "forma": "(a-b)/c",
+      "termo": [
+        2,
+        40
+      ],
+      "maxResultado": 20
+    },
+    "explicacao": "{expressao}: {passos}.",
+    "dicas": [
+      "O que vem primeiro: parênteses, multiplicação e divisão, ou adição e subtração?",
+      "Resolva primeiro o que está entre parênteses; depois, multiplicações e divisões.",
+      "Por último, faça as adições e subtrações."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

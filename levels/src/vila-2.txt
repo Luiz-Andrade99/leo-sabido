@@ -1,0 +1,49 @@
+{
+  "nome": "Mercado das Engrenagens",
+  "tileset": {
+    "name": "vila",
+    "image": "../assets/tiles/vila.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "vila",
+  "saida": "portal",
+  "paineis": {
+    "1": {
+      "pool": "2ano.dinheiro",
+      "mecanismo": "elevador",
+      "titulo": "Elevador do Mercado",
+      "dificuldade": 1,
+      "dy": -192,
+      "periodo": 4200
+    },
+    "2": {
+      "pool": "2ano.posicional",
+      "mecanismo": "blocos",
+      "titulo": "Escada de Peças",
+      "dificuldade": 1
+    }
+  },
+  "placas": [
+    "As máquinas do mercado só funcionam com o valor certo.",
+    "Monte números com centenas, dezenas e unidades para formar a escada."
+  ]
+}
+---
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                                                                                          ##
+##                                *                                                                         ##
+##                        ###################                           *                                   ##
+##                        ###################                   #################                           ##
+##                        ###################                  b#################              *            ##
+##                        ###################                 bb#################             ===           ##
+##                        ###################                bbb#################                           ##
+##  S  !    *       1   aa###################   C   !   2   bbbb#################   C   B   +           G   ##
+##############################################################################################################
+##############################################################################################################
+##############################################################################################################

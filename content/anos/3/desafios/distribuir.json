@@ -1,0 +1,170 @@
+[
+  {
+    "id": "3A-DIV-REP-001",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Divisão — repartição equitativa",
+    "bncc": [{ "codigo": "EF03MA08", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Repartir igualmente 15 objetos em 3 grupos (divisão exata).",
+    "formato": "distribuir",
+    "pool": "3ano.distribuir",
+    "enunciado": { "texto": "O elevador só sobe se as {grupos} máquinas tiverem a mesma quantidade. Distribua os {total} cristais igualmente." },
+    "parametros": { "tipo": "fixo", "total": 15, "grupos": 3 },
+    "explicacao": "{total} ÷ {grupos} = {cada}: cada máquina recebe {cada} cristais, porque {grupos} × {cada} = {total}.",
+    "dicas": [
+      "Dê um cristal para cada máquina, uma de cada vez, e repita.",
+      "Continue dando um para cada até os cristais acabarem.",
+      "Que número, vezes {grupos}, dá {total}?"
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-DIV-REP-002",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Divisão — repartição equitativa",
+    "bncc": [{ "codigo": "EF03MA08", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Repartir igualmente 12 objetos em 4 grupos (divisão exata).",
+    "formato": "distribuir",
+    "pool": "3ano.distribuir",
+    "enunciado": { "texto": "O elevador só sobe se as {grupos} máquinas tiverem a mesma quantidade. Distribua os {total} cristais igualmente." },
+    "parametros": { "tipo": "fixo", "total": 12, "grupos": 4 },
+    "explicacao": "{total} ÷ {grupos} = {cada}: cada máquina recebe {cada} cristais, porque {grupos} × {cada} = {total}.",
+    "dicas": [
+      "Dê um cristal para cada máquina, uma de cada vez, e repita.",
+      "Continue dando um para cada até os cristais acabarem.",
+      "Que número, vezes {grupos}, dá {total}?"
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-DIV-REP-003",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Divisão — repartição equitativa",
+    "bncc": [{ "codigo": "EF03MA08", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Repartir igualmente 20 objetos em 5 grupos (divisão exata).",
+    "formato": "distribuir",
+    "pool": "3ano.distribuir",
+    "enunciado": { "texto": "O elevador só sobe se as {grupos} máquinas tiverem a mesma quantidade. Distribua os {total} cristais igualmente." },
+    "parametros": { "tipo": "fixo", "total": 20, "grupos": 5 },
+    "explicacao": "{total} ÷ {grupos} = {cada}: cada máquina recebe {cada} cristais, porque {grupos} × {cada} = {total}.",
+    "dicas": [
+      "Dê um cristal para cada máquina, uma de cada vez, e repita.",
+      "Continue dando um para cada até os cristais acabarem.",
+      "Que número, vezes {grupos}, dá {total}?"
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-DIV-REP-004",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Divisão — repartição equitativa (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA08", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Repartir igualmente até 40 objetos em 2 a 5 grupos (divisões exatas por até 10).",
+    "formato": "distribuir",
+    "pool": "3ano.distribuir",
+    "enunciado": { "texto": "O elevador só sobe se as {grupos} máquinas tiverem a mesma quantidade. Distribua os {total} cristais igualmente." },
+    "parametros": { "tipo": "modelo", "total": [6, 40], "grupos": [2, 5], "comResto": false },
+    "explicacao": "{total} ÷ {grupos} = {cada}: cada máquina recebe {cada} cristais, porque {grupos} × {cada} = {total}.",
+    "dicas": [
+      "Dê um cristal para cada máquina, uma de cada vez, e repita.",
+      "Continue dando um para cada até os cristais acabarem.",
+      "Que número, vezes {grupos}, dá {total}?"
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-DIV-REP-005",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Divisão — repartição equitativa (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA08", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Repartir igualmente de 20 a 50 objetos em 3 a 5 grupos (divisões exatas por até 10).",
+    "formato": "distribuir",
+    "pool": "3ano.distribuir",
+    "enunciado": { "texto": "O elevador só sobe se as {grupos} máquinas tiverem a mesma quantidade. Distribua os {total} cristais igualmente." },
+    "parametros": { "tipo": "modelo", "total": [20, 50], "grupos": [3, 5], "comResto": false },
+    "explicacao": "{total} ÷ {grupos} = {cada}: cada máquina recebe {cada} cristais, porque {grupos} × {cada} = {total}.",
+    "dicas": [
+      "Tente colocar 5 em cada máquina e veja se sobra ou falta.",
+      "Ajuste: se sobrar, coloque mais um em cada; se faltar, tire um de cada.",
+      "Que número, vezes {grupos}, dá {total}?"
+    ],
+    "dificuldade": 3,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-DIV-RES-006",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Divisão com resto — repartição equitativa",
+    "bncc": [{ "codigo": "EF03MA08", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Repartir igualmente 17 objetos em 3 grupos e identificar o resto.",
+    "formato": "distribuir",
+    "pool": "3ano.distribuir_resto",
+    "enunciado": { "texto": "Distribua os {total} cristais igualmente entre as {grupos} máquinas da ponte. O que não der para dividir fica no cesto de sobras." },
+    "parametros": { "tipo": "fixo", "total": 17, "grupos": 3 },
+    "explicacao": "{grupos} máquinas × {cada} cristais = {produto}. Dos {total} cristais, sobram {sobra}, que não dá para dividir igualmente.",
+    "dicas": [
+      "Dê um cristal para cada máquina, uma de cada vez.",
+      "Pare quando não houver cristais suficientes para dar mais um a TODAS as máquinas.",
+      "O que sobrar, menos que {grupos}, fica no cesto."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-DIV-RES-007",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Divisão com resto — repartição equitativa",
+    "bncc": [{ "codigo": "EF03MA08", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Repartir igualmente 14 objetos em 4 grupos e identificar o resto.",
+    "formato": "distribuir",
+    "pool": "3ano.distribuir_resto",
+    "enunciado": { "texto": "Distribua os {total} cristais igualmente entre as {grupos} máquinas da ponte. O que não der para dividir fica no cesto de sobras." },
+    "parametros": { "tipo": "fixo", "total": 14, "grupos": 4 },
+    "explicacao": "{grupos} máquinas × {cada} cristais = {produto}. Dos {total} cristais, sobram {sobra}, que não dá para dividir igualmente.",
+    "dicas": [
+      "Dê um cristal para cada máquina, uma de cada vez.",
+      "Pare quando não houver cristais suficientes para dar mais um a TODAS as máquinas.",
+      "O que sobrar, menos que {grupos}, fica no cesto."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-DIV-RES-008",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Divisão com resto (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA08", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Repartir igualmente até 40 objetos em 2 a 5 grupos, com resto diferente de zero.",
+    "formato": "distribuir",
+    "pool": "3ano.distribuir_resto",
+    "enunciado": { "texto": "Distribua os {total} cristais igualmente entre as {grupos} máquinas da ponte. O que não der para dividir fica no cesto de sobras." },
+    "parametros": { "tipo": "modelo", "total": [7, 40], "grupos": [2, 5], "comResto": true },
+    "explicacao": "{grupos} máquinas × {cada} cristais = {produto}. Dos {total} cristais, sobram {sobra}, que não dá para dividir igualmente.",
+    "dicas": [
+      "Dê um cristal para cada máquina, uma de cada vez.",
+      "Pare quando não houver cristais suficientes para dar mais um a TODAS as máquinas.",
+      "O que sobrar, menos que {grupos}, fica no cesto."
+    ],
+    "dificuldade": 3,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  }
+]

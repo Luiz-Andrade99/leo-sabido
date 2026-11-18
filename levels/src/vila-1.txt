@@ -1,0 +1,53 @@
+{
+  "nome": "Praça dos Inventores",
+  "tileset": {
+    "name": "vila",
+    "image": "../assets/tiles/vila.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "vila",
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2800
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "2ano.problemas",
+      "mecanismo": "porta",
+      "titulo": "Porta da Oficina",
+      "dificuldade": 1
+    },
+    "2": {
+      "pool": "2ano.sequencias",
+      "mecanismo": "ponte",
+      "titulo": "Ponte do Riacho",
+      "dificuldade": 1
+    }
+  },
+  "placas": [
+    "Boas-vindas à Vila das Descobertas! Os inventores precisam de ajuda.",
+    "Pule na plataforma que anda. Ela leva você para o outro lado."
+  ]
+}
+---
+##                                #                                                               ##
+##                                #                                                               ##
+##                                #                                                               ##
+##                                #                                                               ##
+##                                #                                                               ##
+##                                #                                                               ##
+##                                #                                                               ##
+##                                #                                                               ##
+##                                #                                                               ##
+##                                #                                                               ##
+##                        *       #             *                              *                  ##
+##          *            ====     a                                           ===                 ##
+##          ##                    a                                                               ##
+##  S  !    ##        C       1   a   C  !            C   2             B   +           *     G   ##
+#################+++########################M       #########bbbbbb#################################
+#################   ########################++++++++#########      #################################
+#################   ########################        #########      #################################

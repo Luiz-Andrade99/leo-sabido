@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="32" viewBox="0 0 96 32">
+  <defs><linearGradient id="rock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A5996"/><stop offset="1" stop-color="#43427A"/></linearGradient></defs>
+  <rect x="0" y="0" width="32" height="32" fill="url(#rock)"/>
+  <path d="M0 0 h32 v7 q-4 3 -8 1 q-4 -2 -8 1 q-4 3 -8 0 q-4 -2 -8 0z" fill="#5ED3E0"/>
+  <path d="M0 7 q4 -2 8 0 q4 3 8 0 q4 -3 8 -1 q4 2 8 -1" fill="none" stroke="#2C9FB0" stroke-width="1.5"/>
+  <circle cx="9" cy="20" r="2" fill="#3B3A6E"/><circle cx="23" cy="25" r="1.5" fill="#3B3A6E"/>
+  <rect x="32" y="0" width="32" height="32" fill="#43427A"/>
+  <circle cx="40" cy="9" r="2" fill="#3B3A6E"/><circle cx="55" cy="18" r="2.5" fill="#3B3A6E"/><circle cx="44" cy="26" r="1.5" fill="#3B3A6E"/>
+  <rect x="64" y="0" width="32" height="14" rx="3" fill="#8A7AB8" stroke="#3B2F2A" stroke-width="1.5"/>
+  <path d="M66 4 h28" stroke="#B3A6DA" stroke-width="2" stroke-linecap="round"/>
+  <path d="M74 1 v12 M86 1 v12" stroke="#5E5090" stroke-width="1.2"/>
+</svg>

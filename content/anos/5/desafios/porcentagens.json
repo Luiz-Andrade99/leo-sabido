@@ -1,0 +1,278 @@
+[
+  {
+    "id": "5A-PCT-ENE-001",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Porcentagem — 50%",
+    "bncc": [
+      {
+        "codigo": "EF05MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 50% de 40, associando à fração correspondente.",
+    "formato": "porcentagem",
+    "pool": "5ano.porcentagens",
+    "enunciado": {
+      "texto": "A invenção precisa de {porcentagem}% da bateria, que guarda {total} unidades de energia. Carregue o medidor."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "total": 40,
+      "porcentagem": 50
+    },
+    "explicacao": "{porcentagem}% é {parte}: {porcentagem}% de {total} = {resposta}.",
+    "dicas": [
+      "Lembre: 50% é a metade, 25% é a quarta parte e 10% é a décima parte.",
+      "{porcentagem}% é {parte}.",
+      "Faça a conta com {total} e depois carregue o medidor até esse número."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PCT-ENE-002",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Porcentagem — 25%",
+    "bncc": [
+      {
+        "codigo": "EF05MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 25% de 80, associando à fração correspondente.",
+    "formato": "porcentagem",
+    "pool": "5ano.porcentagens",
+    "enunciado": {
+      "texto": "A invenção precisa de {porcentagem}% da bateria, que guarda {total} unidades de energia. Carregue o medidor."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "total": 80,
+      "porcentagem": 25
+    },
+    "explicacao": "{porcentagem}% é {parte}: {porcentagem}% de {total} = {resposta}.",
+    "dicas": [
+      "Lembre: 50% é a metade, 25% é a quarta parte e 10% é a décima parte.",
+      "{porcentagem}% é {parte}.",
+      "Faça a conta com {total} e depois carregue o medidor até esse número."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PCT-ENE-003",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Porcentagem — 10%",
+    "bncc": [
+      {
+        "codigo": "EF05MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 10% de 60, associando à fração correspondente.",
+    "formato": "porcentagem",
+    "pool": "5ano.porcentagens",
+    "enunciado": {
+      "texto": "A invenção precisa de {porcentagem}% da bateria, que guarda {total} unidades de energia. Carregue o medidor."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "total": 60,
+      "porcentagem": 10
+    },
+    "explicacao": "{porcentagem}% é {parte}: {porcentagem}% de {total} = {resposta}.",
+    "dicas": [
+      "Lembre: 50% é a metade, 25% é a quarta parte e 10% é a décima parte.",
+      "{porcentagem}% é {parte}.",
+      "Faça a conta com {total} e depois carregue o medidor até esse número."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PCT-ENE-004",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Porcentagem — 75%",
+    "bncc": [
+      {
+        "codigo": "EF05MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 75% de 120, associando à fração correspondente.",
+    "formato": "porcentagem",
+    "pool": "5ano.porcentagens",
+    "enunciado": {
+      "texto": "A invenção precisa de {porcentagem}% da bateria, que guarda {total} unidades de energia. Carregue o medidor."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "total": 120,
+      "porcentagem": 75
+    },
+    "explicacao": "{porcentagem}% é {parte}: {porcentagem}% de {total} = {resposta}.",
+    "dicas": [
+      "Lembre: 50% é a metade, 25% é a quarta parte e 10% é a décima parte.",
+      "{porcentagem}% é {parte}.",
+      "Faça a conta com {total} e depois carregue o medidor até esse número."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PCT-ENE-005",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Porcentagem — 10% e 50% (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 10% e 50% de totais múltiplos de 10.",
+    "formato": "porcentagem",
+    "pool": "5ano.porcentagens",
+    "enunciado": {
+      "texto": "A invenção precisa de {porcentagem}% da bateria, que guarda {total} unidades de energia. Carregue o medidor."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "total": [
+        20,
+        200
+      ],
+      "porcentagens": [
+        10,
+        50
+      ],
+      "multiploDe": 10
+    },
+    "explicacao": "{porcentagem}% é {parte}: {porcentagem}% de {total} = {resposta}.",
+    "dicas": [
+      "Lembre: 50% é a metade, 25% é a quarta parte e 10% é a décima parte.",
+      "{porcentagem}% é {parte}.",
+      "Faça a conta com {total} e depois carregue o medidor até esse número."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PCT-ENE-006",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Porcentagem — 25% e 75% (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 25% e 75% de totais múltiplos de 4.",
+    "formato": "porcentagem",
+    "pool": "5ano.porcentagens",
+    "enunciado": {
+      "texto": "A invenção precisa de {porcentagem}% da bateria, que guarda {total} unidades de energia. Carregue o medidor."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "total": [
+        8,
+        200
+      ],
+      "porcentagens": [
+        25,
+        75
+      ],
+      "multiploDe": 4
+    },
+    "explicacao": "{porcentagem}% é {parte}: {porcentagem}% de {total} = {resposta}.",
+    "dicas": [
+      "Lembre: 50% é a metade, 25% é a quarta parte e 10% é a décima parte.",
+      "{porcentagem}% é {parte}.",
+      "Faça a conta com {total} e depois carregue o medidor até esse número."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "5A-PCT-ENE-007",
+    "ano": 5,
+    "area": "matematica",
+    "tema": "Porcentagens usuais (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF05MA06",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Calcular 10%, 25%, 50%, 75% e 100% de totais múltiplos de 20.",
+    "formato": "porcentagem",
+    "pool": "5ano.porcentagens",
+    "enunciado": {
+      "texto": "A invenção precisa de {porcentagem}% da bateria, que guarda {total} unidades de energia. Carregue o medidor."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "total": [
+        20,
+        200
+      ],
+      "porcentagens": [
+        10,
+        25,
+        50,
+        75,
+        100
+      ],
+      "multiploDe": 20
+    },
+    "explicacao": "{porcentagem}% é {parte}: {porcentagem}% de {total} = {resposta}.",
+    "dicas": [
+      "Lembre: 50% é a metade, 25% é a quarta parte e 10% é a décima parte.",
+      "{porcentagem}% é {parte}.",
+      "Faça a conta com {total} e depois carregue o medidor até esse número."
+    ],
+    "dificuldade": 3,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  }
+]

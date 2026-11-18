@@ -1,0 +1,390 @@
+[
+  {
+    "id": "1A-CON-QTD-001",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Contar até 10",
+    "bncc": [
+      {
+        "codigo": "EF01MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Contar 5 objetos.",
+    "formato": "contagem",
+    "pool": "1ano.contagem",
+    "enunciado": {
+      "texto": "Quantas {nome} você vê?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "modo": "quantos",
+      "a": 5,
+      "icone": "estrela"
+    },
+    "explicacao": "Contando um por um, são {resposta} {nome}.",
+    "dicas": [
+      "Conte apontando cada um com o dedo.",
+      "Conte devagar: 1, 2, 3...",
+      "Conte de 5 em 5: cada fileira tem 5."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CON-QTD-002",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Contar até 10",
+    "bncc": [
+      {
+        "codigo": "EF01MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Contar 8 objetos.",
+    "formato": "contagem",
+    "pool": "1ano.contagem",
+    "enunciado": {
+      "texto": "Quantas {nome} você vê?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "modo": "quantos",
+      "a": 8,
+      "icone": "maca"
+    },
+    "explicacao": "Contando um por um, são {resposta} {nome}.",
+    "dicas": [
+      "Conte apontando cada um com o dedo.",
+      "Conte devagar: 1, 2, 3...",
+      "Conte de 5 em 5: cada fileira tem 5."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CON-QTD-003",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Contar até 10 (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF01MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Contar de 3 a 10 objetos.",
+    "formato": "contagem",
+    "pool": "1ano.contagem",
+    "enunciado": {
+      "texto": "Quantas {nome} você vê?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "modo": "quantos",
+      "a": [
+        3,
+        10
+      ],
+      "icone": "maca"
+    },
+    "explicacao": "Contando um por um, são {resposta} {nome}.",
+    "dicas": [
+      "Conte apontando cada um com o dedo.",
+      "Conte devagar: 1, 2, 3...",
+      "Conte de 5 em 5: cada fileira tem 5."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CON-QTD-004",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Contar até 20 (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF01MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Contar de 11 a 20 objetos.",
+    "formato": "contagem",
+    "pool": "1ano.contagem",
+    "enunciado": {
+      "texto": "Quantas {nome} você vê?"
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "modo": "quantos",
+      "a": [
+        11,
+        20
+      ],
+      "icone": "folha"
+    },
+    "explicacao": "Contando um por um, são {resposta} {nome}.",
+    "dicas": [
+      "Conte apontando cada um com o dedo.",
+      "Conte devagar: 1, 2, 3...",
+      "Conte de 5 em 5: cada fileira tem 5."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CON-QUA-005",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Associar número e quantidade",
+    "bncc": [
+      {
+        "codigo": "EF01MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar o grupo com 6 objetos.",
+    "formato": "contagem",
+    "pool": "1ano.contagem",
+    "enunciado": {
+      "texto": "Toque no grupo com {a} {nome}."
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "modo": "qual",
+      "a": 6,
+      "icone": "estrela"
+    },
+    "explicacao": "O grupo certo tem {a} {nome}.",
+    "dicas": [
+      "Conte apontando cada um com o dedo.",
+      "Conte devagar: 1, 2, 3...",
+      "Conte de 5 em 5: cada fileira tem 5."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CON-QUA-006",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Associar número e quantidade (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF01MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar o grupo com 3 a 10 objetos.",
+    "formato": "contagem",
+    "pool": "1ano.contagem",
+    "enunciado": {
+      "texto": "Toque no grupo com {a} {nome}."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "modo": "qual",
+      "a": [
+        3,
+        10
+      ],
+      "icone": "maca"
+    },
+    "explicacao": "O grupo certo tem {a} {nome}.",
+    "dicas": [
+      "Conte apontando cada um com o dedo.",
+      "Conte devagar: 1, 2, 3...",
+      "Conte de 5 em 5: cada fileira tem 5."
+    ],
+    "dificuldade": 1,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CON-QUA-007",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Associar número e quantidade (parametrizado)",
+    "bncc": [
+      {
+        "codigo": "EF01MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Encontrar o grupo com 10 a 20 objetos.",
+    "formato": "contagem",
+    "pool": "1ano.contagem",
+    "enunciado": {
+      "texto": "Toque no grupo com {a} {nome}."
+    },
+    "parametros": {
+      "tipo": "modelo",
+      "modo": "qual",
+      "a": [
+        10,
+        20
+      ],
+      "icone": "cogumelo"
+    },
+    "explicacao": "O grupo certo tem {a} {nome}.",
+    "dicas": [
+      "Conte apontando cada um com o dedo.",
+      "Conte devagar: 1, 2, 3...",
+      "Conte de 5 em 5: cada fileira tem 5."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico."
+    },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "1A-CON-QTD-008",
+    "ano": 1,
+    "area": "matematica",
+    "tema": "Contar até 20",
+    "bncc": [
+      {
+        "codigo": "EF01MA01",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA02",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      },
+      {
+        "codigo": "EF01MA04",
+        "status": "a_validar",
+        "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br"
+      }
+    ],
+    "objetivo": "Contar 15 objetos.",
+    "formato": "contagem",
+    "pool": "1ano.contagem",
+    "enunciado": {
+      "texto": "Quantas {nome} você vê?"
+    },
+    "parametros": {
+      "tipo": "fixo",
+      "modo": "quantos",
+      "a": 15,
+      "icone": "estrela"
+    },
+    "explicacao": "Contando um por um, são {resposta} {nome}.",
+    "dicas": [
+      "Conte apontando cada um com o dedo.",
+      "Conte devagar: 1, 2, 3...",
+      "Conte de 5 em 5: cada fileira tem 5."
+    ],
+    "dificuldade": 2,
+    "revisao": {
+      "status": "em_revisao",
+      "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)."
+    },
+    "publicacao": "homologacao"
+  }
+]

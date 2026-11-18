@@ -1,0 +1,58 @@
+{
+  "nome": "Biblioteca Secreta",
+  "tileset": {
+    "name": "castelo",
+    "image": "../assets/tiles/castelo.svg",
+    "columns": 3,
+    "tilecount": 3
+  },
+  "tema": "castelo",
+  "saida": "portal",
+  "objetos": {
+    "M": {
+      "dx": 128,
+      "periodo": 2800
+    }
+  },
+  "paineis": {
+    "1": {
+      "pool": "4ano.fracoes",
+      "mecanismo": "porta",
+      "titulo": "Porta da Biblioteca",
+      "dificuldade": 2
+    },
+    "2": {
+      "pool": "4ano.graficos",
+      "mecanismo": "blocos",
+      "titulo": "Escada de Livros",
+      "dificuldade": 2
+    },
+    "3": {
+      "pool": "4ano.problemas",
+      "mecanismo": "ponte",
+      "titulo": "Ponte do Fosso",
+      "dificuldade": 2
+    }
+  },
+  "placas": [
+    "Os livros secretos ensinam estratégias. Leia com atenção!"
+  ]
+}
+---
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                                                                            ##
+##                             #                         *                                                  ##
+##                             #                  ###############                                           ##
+##                             #                 b###############                             *             ##
+##                             a                bb###############                            ====           ##
+##                             a               bbb###############                                           ##
+##  S  !  *             C  1   a   *  C   2   bbbb###############   C   3             *                 G   ##
+##############M       #####################################################cccccc#############################
+##############++++++++#####################################################      #############################
+##############        #####################################################      #############################

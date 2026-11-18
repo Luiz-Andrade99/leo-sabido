@@ -1,0 +1,149 @@
+[
+  {
+    "id": "3A-MUL-ARR-001",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Multiplicação — disposição retangular",
+    "bncc": [{ "codigo": "EF03MA07", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Compor uma disposição retangular de 10 elementos em 2 linhas iguais.",
+    "formato": "arranjo",
+    "pool": "3ano.arranjos",
+    "enunciado": { "texto": "Monte uma plataforma com {total} blocos em {linhas} linhas iguais. Quantos blocos vão em cada linha?" },
+    "parametros": { "tipo": "fixo", "linhas": 2, "colunas": 5 },
+    "explicacao": "{linhas} linhas de {colunas} blocos: {linhas} × {colunas} = {total}.",
+    "dicas": [
+      "Todas as linhas precisam ter o mesmo número de blocos.",
+      "Aumente os blocos por linha e veja o total mudar até chegar a {total}.",
+      "Que número, vezes {linhas}, dá {total}? Pense na tabuada do {linhas}."
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-MUL-ARR-002",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Multiplicação — disposição retangular",
+    "bncc": [{ "codigo": "EF03MA07", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Compor uma disposição retangular de 12 elementos em 3 linhas iguais.",
+    "formato": "arranjo",
+    "pool": "3ano.arranjos",
+    "enunciado": { "texto": "Monte uma plataforma com {total} blocos em {linhas} linhas iguais. Quantos blocos vão em cada linha?" },
+    "parametros": { "tipo": "fixo", "linhas": 3, "colunas": 4 },
+    "explicacao": "{linhas} linhas de {colunas} blocos: {linhas} × {colunas} = {total}.",
+    "dicas": [
+      "Todas as linhas precisam ter o mesmo número de blocos.",
+      "Aumente os blocos por linha e veja o total mudar até chegar a {total}.",
+      "Que número, vezes {linhas}, dá {total}? Pense na tabuada do {linhas}."
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-MUL-ARR-003",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Multiplicação — disposição retangular",
+    "bncc": [{ "codigo": "EF03MA07", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Compor uma disposição retangular de 20 elementos em 4 linhas iguais.",
+    "formato": "arranjo",
+    "pool": "3ano.arranjos",
+    "enunciado": { "texto": "Monte uma plataforma com {total} blocos em {linhas} linhas iguais. Quantos blocos vão em cada linha?" },
+    "parametros": { "tipo": "fixo", "linhas": 4, "colunas": 5 },
+    "explicacao": "{linhas} linhas de {colunas} blocos: {linhas} × {colunas} = {total}.",
+    "dicas": [
+      "Todas as linhas precisam ter o mesmo número de blocos.",
+      "Aumente os blocos por linha e veja o total mudar até chegar a {total}.",
+      "Que número, vezes {linhas}, dá {total}? Pense na tabuada do {linhas}."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-MUL-ARR-004",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Multiplicação — disposição retangular",
+    "bncc": [{ "codigo": "EF03MA07", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Compor uma disposição retangular de 30 elementos em 5 linhas iguais.",
+    "formato": "arranjo",
+    "pool": "3ano.arranjos",
+    "enunciado": { "texto": "Monte uma plataforma com {total} blocos em {linhas} linhas iguais. Quantos blocos vão em cada linha?" },
+    "parametros": { "tipo": "fixo", "linhas": 5, "colunas": 6 },
+    "explicacao": "{linhas} linhas de {colunas} blocos: {linhas} × {colunas} = {total}.",
+    "dicas": [
+      "Todas as linhas precisam ter o mesmo número de blocos.",
+      "Aumente os blocos por linha e veja o total mudar até chegar a {total}.",
+      "Que número, vezes {linhas}, dá {total}? Pense na tabuada do {linhas}."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Redigido pela equipe de desenvolvimento; aguarda revisão de educador(a)." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-MUL-ARR-005",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Multiplicação — disposição retangular por 2 e 3 (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA07", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Compor disposições retangulares com 2 ou 3 linhas.",
+    "formato": "arranjo",
+    "pool": "3ano.arranjos",
+    "enunciado": { "texto": "Monte uma plataforma com {total} blocos em {linhas} linhas iguais. Quantos blocos vão em cada linha?" },
+    "parametros": { "tipo": "modelo", "linhas": [2, 3], "colunas": [3, 10] },
+    "explicacao": "{linhas} linhas de {colunas} blocos: {linhas} × {colunas} = {total}.",
+    "dicas": [
+      "Todas as linhas precisam ter o mesmo número de blocos.",
+      "Aumente os blocos por linha e veja o total mudar até chegar a {total}.",
+      "Que número, vezes {linhas}, dá {total}? Pense na tabuada do {linhas}."
+    ],
+    "dificuldade": 1,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-MUL-ARR-006",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Multiplicação — disposição retangular por 2 a 5 (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA07", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Compor disposições retangulares com 2 a 5 linhas e 3 a 10 blocos por linha.",
+    "formato": "arranjo",
+    "pool": "3ano.arranjos",
+    "enunciado": { "texto": "Monte uma plataforma com {total} blocos em {linhas} linhas iguais. Quantos blocos vão em cada linha?" },
+    "parametros": { "tipo": "modelo", "linhas": [2, 5], "colunas": [3, 10] },
+    "explicacao": "{linhas} linhas de {colunas} blocos: {linhas} × {colunas} = {total}.",
+    "dicas": [
+      "Todas as linhas precisam ter o mesmo número de blocos.",
+      "Aumente os blocos por linha e veja o total mudar até chegar a {total}.",
+      "Que número, vezes {linhas}, dá {total}? Pense na tabuada do {linhas}."
+    ],
+    "dificuldade": 2,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  },
+  {
+    "id": "3A-MUL-ARR-007",
+    "ano": 3,
+    "area": "matematica",
+    "tema": "Multiplicação — disposição retangular por 4 e 5 (parametrizado)",
+    "bncc": [{ "codigo": "EF03MA07", "status": "a_validar", "fonte": "BNCC (MEC, 2018) — conferir em basenacionalcomum.mec.gov.br" }],
+    "objetivo": "Compor disposições retangulares com 4 ou 5 linhas e 6 a 10 blocos por linha.",
+    "formato": "arranjo",
+    "pool": "3ano.arranjos",
+    "enunciado": { "texto": "Monte uma plataforma com {total} blocos em {linhas} linhas iguais. Quantos blocos vão em cada linha?" },
+    "parametros": { "tipo": "modelo", "linhas": [4, 5], "colunas": [6, 10] },
+    "explicacao": "{linhas} linhas de {colunas} blocos: {linhas} × {colunas} = {total}.",
+    "dicas": [
+      "Todas as linhas precisam ter o mesmo número de blocos.",
+      "Comece com 5 blocos por linha: {linhas} × 5. Falta ou passa?",
+      "Que número, vezes {linhas}, dá {total}? Pense na tabuada do {linhas}."
+    ],
+    "dificuldade": 3,
+    "revisao": { "status": "em_revisao", "notas": "Modelo parametrizado; variações verificadas automaticamente. Faixa precisa de aval pedagógico." },
+    "publicacao": "homologacao"
+  }
+]
