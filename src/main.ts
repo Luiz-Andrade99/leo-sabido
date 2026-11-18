@@ -11,8 +11,7 @@ import type { LeoTestHooks } from './scenes/testHooks';
 import { mountHud } from './ui/hud';
 import { mountScreens } from './ui/screens';
 import './ui/styles.css';
-import { FaberCliente } from './voz/faber';
-import './voz/narrador'; // liga o narrador (Faber com plano B) ao speak()
+import { faberCliente, iniciarFaber, montarAvisosVoz } from './voz/narrador';
 
 const options = readLaunchOptions(window.location.search);
 const state = initState();
@@ -40,8 +39,12 @@ const game = new Phaser.Game({
 game.registry.set('options', options);
 
 const flow = new Flow(game);
+montarAvisosVoz(document.getElementById('app')!);
+
 game.events.once(EV.bootDone, () => {
   flow.start();
+  // Voz Faber: começa a baixar sozinha depois que o jogo carregou (uma vez; depois fica no aparelho).
+  iniciarFaber({ teste: options.testHooks, vozFaber: options.vozFaber });
   if (options.testHooks) installTestHooks();
 });
 
@@ -62,7 +65,7 @@ function installTestHooks(): void {
     apexReset: () => lvl().testApexReset(),
     solution: (painel) => lvl().testSolution(painel),
     save: () => structuredClone(getState().save),
-    faber: options.vozFaber ? new FaberCliente() : undefined,
+    faber: options.vozFaber ? (faberCliente() ?? undefined) : undefined,
   };
   window.__leo = hooks;
 }

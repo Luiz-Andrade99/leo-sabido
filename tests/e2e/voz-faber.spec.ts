@@ -18,6 +18,29 @@ test.describe('voz Faber', () => {
     expect(await page.evaluate(() => window.__leo!.faber === undefined)).toBe(true);
   });
 
+  test('o download começa sozinho e avisa; Configurações mostram a voz Leo', async ({ page }) => {
+    await abrirComFaber(page);
+    await expect(page.locator('#aviso-voz')).toContainText(/Baixando a voz do narrador|Voz do narrador pronta/);
+    await page.getByRole('button', { name: /Configurações/ }).click();
+    const opcao = page.locator('#voz option[value="faber"]');
+    await expect(opcao).toHaveText(/Leo \(natural\) — (baixando \d+%|recomendado)/);
+    await expect(opcao).toHaveText('Leo (natural) — recomendado', { timeout: 60_000 });
+    await expect(page.locator('#voz')).toHaveValue('faber');
+  });
+
+  test('escolher a voz do navegador fica salvo e desliga a Faber', async ({ page }) => {
+    await abrirComFaber(page);
+    await page.getByRole('button', { name: /Configurações/ }).click();
+    const outra = await page.locator('#voz option:not([value="faber"])').first().getAttribute('value');
+    await page.locator('#voz').selectOption(outra!);
+    expect(await page.evaluate(() => window.__leo!.save())).toBeTruthy();
+    await page.reload();
+    await expect.poll(() => page.evaluate(() => window.__leo?.ready === true).catch(() => false)).toBe(true);
+    await page.getByRole('button', { name: /Configurações/ }).click();
+    await expect(page.locator('#voz')).toHaveValue(outra!);
+    await expect(page.locator('#voz option[value="faber"]')).toHaveText('Leo (natural) — desligada');
+  });
+
   test('Faber gera a frase do desafio no navegador e dentro da meta', async ({ page }) => {
     await abrirComFaber(page);
     await page.evaluate(() => window.__leo!.faber!.carregar(() => {}));

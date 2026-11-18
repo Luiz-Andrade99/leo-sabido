@@ -4,7 +4,8 @@
  */
 import { audio } from '../audio/audio';
 import { definirNarrador, falarNavegador, pararNavegador, textoParaFala } from '../ui/speech';
-import { FaberCliente, type FaberProgresso } from './faber';
+import { getState } from '../core/state';
+import { FaberCliente, faberSuportada, type FaberProgresso } from './faber';
 
 export interface Motor {
   gerar(frase: string): Promise<Float32Array>;
@@ -160,14 +161,121 @@ export class Narrador {
 // ---- Estado da voz Faber no jogo ----
 let cliente: FaberCliente | null = null;
 let estado: FaberProgresso = { estado: 'desligada', fracao: 0 };
+const ouvintes = new Set<(p: FaberProgresso) => void>();
 
 export function faberEstado(): FaberProgresso {
   return estado;
 }
-/** Usado pela inicialização da Faber (Tarefa 3) para registrar o cliente e o estado. */
-export function definirFaber(c: FaberCliente | null, p: FaberProgresso): void {
-  cliente = c;
+
+/** O cliente da Faber em uso (testes). */
+export function faberCliente(): FaberCliente | null {
+  return cliente;
+}
+
+/**
+ * Aviso discreto do download e indicador "🔊…" enquanto a fala está sendo gerada.
+ * O aviso aparece uma vez por download e some 6 s depois de começar (ou ao ficar pronta, se depois disso).
+ */
+export function montarAvisosVoz(pai: HTMLElement): void {
+  const aviso = document.createElement('p');
+  aviso.id = 'aviso-voz';
+  aviso.className = 'aviso-voz';
+  aviso.setAttribute('role', 'status');
+  aviso.hidden = true;
+  const indicador = document.createElement('div');
+  indicador.id = 'voz-gerando';
+  indicador.className = 'voz-gerando';
+  indicador.setAttribute('aria-hidden', 'true');
+  indicador.textContent = '🔊…';
+  indicador.hidden = true;
+  pai.append(aviso, indicador);
+
+  let inicio = 0;
+  let timer: number | undefined;
+  const esconderDepois = (ms: number): void => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => (aviso.hidden = true), ms);
+  };
+  onFaberEstado((p) => {
+    if (p.estado === 'baixando' && !inicio) {
+      inicio = performance.now();
+      aviso.textContent = 'Baixando a voz do narrador (92 MB, só uma vez)…';
+      aviso.hidden = false;
+      esconderDepois(6000);
+    } else if (p.estado === 'pronta' && inicio && !aviso.hidden) {
+      aviso.textContent = 'Voz do narrador pronta!';
+      esconderDepois(Math.max(2000, 6000 - (performance.now() - inicio)));
+    }
+  });
+  let desde = 0;
+  window.setInterval(() => {
+    if (narrador.ocupado) {
+      desde ||= performance.now();
+      indicador.hidden = performance.now() - desde < 300;
+    } else {
+      desde = 0;
+      indicador.hidden = true;
+    }
+  }, 100);
+}
+
+function mudar(p: FaberProgresso): void {
   estado = p;
+  for (const f of ouvintes) f(p);
+}
+
+/** Avisa a cada mudança de estado da Faber; devolve a função para cancelar. */
+export function onFaberEstado(fn: (p: FaberProgresso) => void): () => void {
+  ouvintes.add(fn);
+  return () => ouvintes.delete(fn);
+}
+
+export function rotuloFaber(p: FaberProgresso): string {
+  const fim =
+    p.estado === 'baixando'
+      ? `baixando ${Math.round(p.fracao * 100)}%`
+      : p.estado === 'pronta'
+        ? 'recomendado'
+        : p.estado === 'indisponivel'
+          ? 'não disponível neste aparelho'
+          : 'desligada';
+  return `Leo (natural) — ${fim}`;
+}
+
+function vozNeuralLigada(): boolean {
+  try {
+    return getState().settings.vozNeural;
+  } catch {
+    return true;
+  }
+}
+
+/**
+ * Liga ou desliga a Faber conforme as configurações. Começa o download sozinho (uma vez; depois fica no aparelho).
+ * Nos testes automáticos (?teste=1) só liga com &voz=faber.
+ */
+export function iniciarFaber(opcoes: { teste: boolean; vozFaber: boolean }, g: typeof globalThis = globalThis): void {
+  const querer = vozNeuralLigada() && (!opcoes.teste || opcoes.vozFaber);
+  if (!querer) {
+    cliente?.encerrar();
+    cliente = null;
+    mudar({ estado: 'desligada', fracao: 0 });
+    return;
+  }
+  if (cliente) return;
+  if (!faberSuportada(g)) {
+    mudar({ estado: 'indisponivel', fracao: 0 });
+    return;
+  }
+  const c = new FaberCliente();
+  cliente = c;
+  c.carregar(mudar).catch(() => {
+    if (cliente === c) {
+      c.encerrar();
+      cliente = null;
+      mudar({ estado: 'indisponivel', fracao: 0 });
+    }
+  });
 }
 
 export const narrador = new Narrador({

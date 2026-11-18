@@ -3,7 +3,9 @@ import type { AnoInfo, FaseInfo } from '../content/schema';
 import { CONQUISTAS, isFaseConcluida, isFaseUnlocked, type Conquista } from '../core/progress';
 import { defaultSave, exportSave, importSave } from '../core/save';
 import { ACTIONS, ACTION_LABELS, DEFAULT_BINDINGS, keyFromCode, keyLabel, remapKey, type Action } from '../core/settings';
+import { readLaunchOptions } from '../core/launch';
 import { getState } from '../core/state';
+import { faberEstado, iniciarFaber, onFaberEstado, rotuloFaber } from '../voz/narrador';
 import { button, el } from './dom';
 import { canSpeak, onVoicesChanged, rankedVoices, speak, stopSpeaking, voiceScore } from './speech';
 
@@ -347,32 +349,43 @@ export function settingsScreen(onBack: () => void): HTMLElement {
   touch.addEventListener('change', () => st.updateSettings({ controlesToque: touch.value as 'auto' | 'sempre' | 'nunca' }));
 
   // Voz do narrador
+  // Voz do narrador: "Leo (natural)" = Faber, gerada no aparelho; depois as vozes do navegador.
   const voz = el('select', { id: 'voz' });
+  const opFaber = el('option', { value: 'faber', textContent: rotuloFaber(faberEstado()) });
   const fillVoices = (): void => {
-    const atual = getState().settings.voz;
+    const cfg = getState().settings;
     const vs = rankedVoices();
     voz.replaceChildren(
-      el('option', { value: '', textContent: vs[0] ? `Automática (${vs[0].name})` : 'Automática' }),
+      opFaber,
+      el('option', { value: '', textContent: vs[0] ? `Voz do navegador: automática (${vs[0].name})` : 'Voz do navegador: automática' }),
       ...vs.map((v) => el('option', { value: v.name, textContent: `${v.name}${voiceScore(v) >= 80 ? ' — mais natural' : ''}${v.localService ? '' : ' (online)'}` })),
     );
-    voz.value = vs.some((v) => v.name === atual) ? atual : '';
+    voz.value = cfg.vozNeural ? 'faber' : vs.some((v) => v.name === cfg.voz) ? cfg.voz : '';
   };
   fillVoices();
   onVoicesChanged(fillVoices);
+  const pararEstado = onFaberEstado((p) => {
+    opFaber.textContent = rotuloFaber(p);
+    if (!root.isConnected) pararEstado();
+  });
   voz.addEventListener('change', () => {
-    st.updateSettings({ voz: voz.value });
+    if (voz.value === 'faber') st.updateSettings({ vozNeural: true });
+    else st.updateSettings({ vozNeural: false, voz: voz.value });
+    const o = readLaunchOptions(window.location.search);
+    iniciarFaber({ teste: o.testHooks, vozFaber: o.vozFaber });
     speak('Olá! Eu sou a voz do Leo Sabido. Vamos aprender brincando?');
   });
-  const vozField = canSpeak()
-    ? el(
-        'div',
-        { className: 'field' },
-        el('label', { htmlFor: 'voz', textContent: 'Voz do narrador' }),
-        voz,
-        button('🔊 Testar voz', () => speak('Olá! Eu sou a voz do Leo Sabido. Três quartos de 8 são 6. Vamos aprender brincando?'), 'btn small'),
-        el('p', { className: 'hint-text', textContent: 'Vozes "online" são geradas pelo serviço de voz do navegador, que recebe só o texto do jogo.' }),
-      )
-    : null;
+  const vozField = el(
+    'div',
+    { className: 'field' },
+    el('label', { htmlFor: 'voz', textContent: 'Voz do narrador' }),
+    voz,
+    button('🔊 Testar voz', () => speak('Olá! Eu sou a voz do Leo Sabido. Três quartos de 8 são 6. Vamos aprender brincando?'), 'btn small'),
+    el('p', {
+      className: 'hint-text',
+      textContent: 'A voz Leo é gerada no próprio aparelho; nada é enviado para fora. Vozes "online" do navegador recebem só o texto do jogo.',
+    }),
+  );
 
   // Teclas
   const keysBody = el('tbody');

@@ -35,6 +35,8 @@ export const SettingsSchema = z.object({
   narracaoAuto: z.boolean().default(false),
   /** Nome da voz escolhida para a narração ('' = a mais natural disponível no aparelho). */
   voz: z.string().max(200).default(''),
+  /** Voz Faber (neural, gerada no aparelho). Ligada por padrão: baixa sozinha uma vez. */
+  vozNeural: z.boolean().default(true),
   textoGrande: z.boolean().default(false),
   controlesToque: z.enum(['auto', 'sempre', 'nunca']).default('auto'),
   teclas: BindingsSchema.default(DEFAULT_BINDINGS),
