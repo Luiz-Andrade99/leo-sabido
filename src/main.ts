@@ -26,7 +26,8 @@ const game = new Phaser.Game({
   width: GAME_WIDTH,
   height: GAME_HEIGHT,
   backgroundColor: '#1E1D3A',
-  scale: { mode: Phaser.Scale.FIT, autoCenter: Phaser.Scale.CENTER_BOTH },
+  // EXPAND: o jogo preenche a tela inteira (sem faixas pretas); a câmera das fases ajusta o zoom (scenes/camera.ts).
+  scale: { mode: Phaser.Scale.EXPAND, autoCenter: Phaser.Scale.CENTER_BOTH },
   physics: {
     default: 'arcade',
     arcade: { gravity: { x: 0, y: GRAVITY_Y }, fps: PHYSICS_FPS, fixedStep: true, debug: options.debugPhysics },
@@ -64,6 +65,11 @@ function installTestHooks(): void {
     teleport: (x, y) => lvl().testTeleport(x, y),
     apexReset: () => lvl().testApexReset(),
     cair: () => lvl().testCair(),
+    leoNaTela: () => lvl().testLeoNaTela(),
+    canvasRect: () => {
+      const r = game.canvas.getBoundingClientRect();
+      return { x: r.x, y: r.y, w: r.width, h: r.height };
+    },
     solution: (painel) => lvl().testSolution(painel),
     save: () => structuredClone(getState().save),
     faber: options.vozFaber ? (faberCliente() ?? undefined) : undefined,

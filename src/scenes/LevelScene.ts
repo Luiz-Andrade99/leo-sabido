@@ -21,6 +21,7 @@ import { speak } from '../ui/speech';
 import { narrador } from '../voz/narrador';
 import { mountTouch, textoParaToque, touchWanted } from '../ui/touch';
 import { themeFor, type WorldTheme } from './themes';
+import { zoomCamera } from './camera';
 import { EV, type LevelResultEvent, type LevelStartData } from './events';
 import type { LeoTestState, LevelPoints, TestSolution } from './testHooks';
 
@@ -93,6 +94,8 @@ export class LevelScene extends Phaser.Scene {
   private minY = Number.POSITIVE_INFINITY;
   private destroyTouch: (() => void) | null = null;
   private ready = false;
+  private mapaW = 0;
+  private mapaH = 0;
   private vidas = new ControleVidas(false);
   private recomeco: { fechar(): void } | null = null;
 
@@ -142,7 +145,11 @@ export class LevelScene extends Phaser.Scene {
     ground.setCollisionByExclusion([-1, 0]);
     this.worldBottom = map.heightInPixels;
     this.physics.world.setBounds(0, 0, map.widthInPixels, map.heightInPixels + 400, true, true, true, false);
+    this.mapaW = map.widthInPixels;
+    this.mapaH = map.heightInPixels;
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
+    // Fora do mapa (faixa dos botões de toque, tablet em pé): a mesma cor escura das barras do jogo.
+    this.cameras.main.setBackgroundColor('#1E1D3A');
     this.cameras.main.setBackgroundColor(this.theme.bg);
 
     const objects = map.getObjectLayer('objetos')?.objects ?? [];
@@ -319,7 +326,9 @@ export class LevelScene extends Phaser.Scene {
     if (this.narra()) for (const s of this.signs) narrador.preparar(s.texto);
 
     this.ready = true;
+    this.scale.on(Phaser.Scale.Events.RESIZE, this.ajustarCamera);
     this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => {
+      this.scale.off(Phaser.Scale.Events.RESIZE, this.ajustarCamera);
       this.ready = false;
       this.input_.destroy();
       this.dialog?.close();
@@ -372,7 +381,30 @@ export class LevelScene extends Phaser.Scene {
   private mountTouchIfWanted(): void {
     const touchEl = document.getElementById('touch');
     if (touchEl && touchWanted(getState().settings.controlesToque)) this.destroyTouch = mountTouch(touchEl, this.input_);
+    this.ajustarCamera();
   }
+
+  /**
+   * Enquadramento para qualquer tela: ~540 px de altura do mundo, deixando embaixo a faixa dos botões de toque
+   * (assim eles nunca cobrem o Leo). Recalculado quando a tela muda de tamanho ou gira.
+   */
+  private ajustarCamera = (): void => {
+    if (!this.cameras?.main) return;
+    const { width, height } = this.scale.gameSize;
+    const canvas = this.game.canvas.getBoundingClientRect();
+    const jogoPorCss = canvas.height > 0 ? height / canvas.height : 1;
+    const touch = document.getElementById('touch');
+    const reservaCss = touch && !touch.hidden && this.destroyTouch ? touch.getBoundingClientRect().height : 0;
+    const reserva = reservaCss * jogoPorCss;
+    const z = zoomCamera(width, height, reserva);
+    const cam = this.cameras.main;
+    cam.setZoom(z);
+    // Em telas altas (tablet em pé), a fase fica logo acima dos botões e o espaço livre sobra em cima, como céu.
+    const vistaH = height / z;
+    const reservaMundo = reserva / z;
+    const fundo = this.mapaH + reservaMundo;
+    cam.setBounds(0, Math.min(0, fundo - vistaH), this.mapaW, Math.max(fundo, vistaH));
+  };
 
   /** Reaplica teclas, controles de toque e HUD depois de mudar configurações na pausa. */
   applySettings(): void {
@@ -590,6 +622,17 @@ export class LevelScene extends Phaser.Scene {
   /** Leva o Leo para baixo do mundo (queda). */
   testCair(): void {
     this.leo.respawn(this.leo.x, this.worldBottom + 200);
+  }
+
+  /** Retângulo do Leo na página (pixels CSS), para conferir que nada o cobre. */
+  testLeoNaTela(): { x: number; y: number; w: number; h: number } {
+    const cam = this.cameras.main;
+    const c = this.game.canvas.getBoundingClientRect();
+    const escala = c.width / this.scale.gameSize.width;
+    const b = this.leo.getBounds();
+    const x = c.x + (cam.x + (b.x - cam.worldView.x) * cam.zoom) * escala;
+    const y = c.y + (cam.y + (b.y - cam.worldView.y) * cam.zoom) * escala;
+    return { x, y, w: b.width * cam.zoom * escala, h: b.height * cam.zoom * escala };
   }
 
   testApexReset(): void {

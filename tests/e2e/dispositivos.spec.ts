@@ -25,6 +25,44 @@ async function semRolagemLateral(page: Page): Promise<void> {
   expect(sw, 'a página não deve rolar para o lado').toBeLessThanOrEqual(iw + 1);
 }
 
+const celularEmPe = (projeto: string): boolean => /(iphone|pixel).*retrato/.test(projeto);
+
+/** Simula girar o aparelho (troca largura e altura da tela). */
+async function girar(page: Page): Promise<void> {
+  const vp = page.viewportSize()!;
+  await page.setViewportSize({ width: vp.height, height: vp.width });
+  await page.waitForTimeout(300);
+}
+
+/** Celular em pé: a fase pede para girar e fica parada; depois de girar, o jogo continua. Tablet e celular deitado: nada aparece. */
+async function pedeParaGirarSeCelularEmPe(page: Page, projeto: string): Promise<void> {
+  const camada = page.locator('#girar');
+  if (!celularEmPe(projeto)) {
+    await expect(camada).toBeHidden();
+    return;
+  }
+  await expect(camada).toBeVisible();
+  await expect(camada).toContainText('Vire o celular para jogar');
+  await page.screenshot({ path: `${EVID}/disp-${projeto}-girar.png` });
+  const x0 = (await state(page)).x;
+  await page.keyboard.down('ArrowRight');
+  await page.waitForTimeout(500);
+  await page.keyboard.up('ArrowRight');
+  expect((await state(page)).x, 'o jogo fica parado enquanto pede para girar').toBeCloseTo(x0, 0);
+  await girar(page);
+  await expect(camada).toBeHidden();
+}
+
+/** Nenhum botão de toque se sobrepõe ao Leo na tela. */
+async function naoCobreOLeo(page: Page): Promise<void> {
+  const leo = await page.evaluate(() => window.__leo!.leoNaTela());
+  for (const b of await page.locator('.touch-btn').all()) {
+    const r = (await b.boundingBox())!;
+    const cruza = leo.x < r.x + r.width && leo.x + leo.w > r.x && leo.y < r.y + r.height && leo.y + leo.h > r.y;
+    expect(cruza, `o botão ${await b.getAttribute('aria-label')} cobre o Leo`).toBe(false);
+  }
+}
+
 test('jogo em celular/tablet: menus cabem na tela, botões de toque andam, pulam e abrem o desafio', async ({ page }, info) => {
   test.skip(!info.project.use.hasTouch, 'só em dispositivos de toque');
   test.setTimeout(120_000);
@@ -42,6 +80,7 @@ test('jogo em celular/tablet: menus cabem na tela, botões de toque andam, pulam
   await page.getByRole('button', { name: /fase 1,/ }).tap();
   await page.waitForFunction(() => window.__leo!.levelActive());
   await page.waitForFunction(() => window.__leo!.state().onGround);
+  await pedeParaGirarSeCelularEmPe(page, nome);
 
   // Botões de toque visíveis, grandes e dentro da tela
   const vp = page.viewportSize()!;
@@ -54,6 +93,13 @@ test('jogo em celular/tablet: menus cabem na tela, botões de toque andam, pulam
     expect(box.x + box.width, nomeBtn).toBeLessThanOrEqual(vp.width + 1);
     expect(box.y + box.height, nomeBtn).toBeLessThanOrEqual(vp.height + 1);
   }
+  // Enquadramento: deitado, a fase ocupa a tela inteira; os botões de toque nunca cobrem o Leo.
+  if (vp.width > vp.height) {
+    const c = await page.evaluate(() => window.__leo!.canvasRect());
+    expect(c.w, 'o jogo ocupa a largura toda').toBeGreaterThanOrEqual(vp.width - 2);
+    expect(c.h, 'o jogo ocupa a altura toda').toBeGreaterThanOrEqual(vp.height - 2);
+  }
+  await naoCobreOLeo(page);
   await page.screenshot({ path: `${EVID}/disp-${nome}-fase.png` });
 
   // Andar e pular só com os botões
@@ -89,6 +135,8 @@ test('1º ano em celular/tablet: desafio de ordenar só com toques', async ({ pa
   await page.evaluate(() => window.__leo!.startLevel('f4', 1));
   await page.waitForFunction(() => window.__leo!.levelActive());
   await page.waitForFunction(() => window.__leo!.state().onGround);
+  const emPe = celularEmPe(info.project.name);
+  if (emPe) await girar(page); // examina deitado...
   const sol = (await page.evaluate(() => window.__leo!.solution('2')))!;
   if (sol.formato !== 'ordenar') throw new Error('esperado ordenar');
   const p = (await page.evaluate(() => window.__leo!.points())).panels.find((x) => x.painel === '2')!;
@@ -97,6 +145,8 @@ test('1º ano em celular/tablet: desafio de ordenar só com toques', async ({ pa
   await page.getByRole('button', { name: 'Examinar', exact: true }).tap();
   const dialog = page.getByRole('dialog');
   await expect(dialog.locator('.ord-card').first()).toBeFocused();
+  if (emPe) await girar(page); // ...e responde em pé: desafios funcionam com o celular em pé
+  await expect(dialog).toBeVisible();
   for (const i of sol.ordem) await dialog.locator('.ord-card').nth(i).tap();
   await expect(dialog.locator('.feedback')).toContainText('Muito bem');
   await semRolagemLateral(page);

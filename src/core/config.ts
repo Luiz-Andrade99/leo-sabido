@@ -11,3 +11,8 @@ export type BuildMode = 'producao' | 'homologacao';
 
 /** Em produção só entra conteúdo aprovado por revisão pedagógica. */
 export const BUILD_MODE: BuildMode = import.meta.env.MODE === 'production' ? 'producao' : 'homologacao';
+
+/** Altura do mundo mostrada pela câmera das fases (px). */
+export const ALTURA_VISIVEL = 540;
+/** Largura mínima do mundo que a câmera mostra (tablet em pé). */
+export const LARGURA_MINIMA_VISIVEL = 720;

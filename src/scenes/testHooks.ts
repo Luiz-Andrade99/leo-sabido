@@ -85,6 +85,10 @@ export interface LeoTestHooks {
   save(): Save;
   /** Faz o Leo cair (vai para baixo do mundo). */
   cair(): void;
+  /** Retângulo do Leo na página, em pixels CSS. */
+  leoNaTela(): { x: number; y: number; w: number; h: number };
+  /** Retângulo do canvas do jogo na página, em pixels CSS. */
+  canvasRect(): { x: number; y: number; w: number; h: number };
   /** Voz Faber, só com ?teste=1&voz=faber. */
   faber?: import('../voz/faber').FaberCliente;
   /** Quantas frases o narrador já tem geradas e guardadas. */
