@@ -20,6 +20,19 @@ Use em cada navegador/dispositivo. Marque ✅ (ok), ❌ (falhou — registre em 
 | O som da voz respeita o volume "Voz (narração)" e some com o volume em zero | Sim | |
 | Sem internet (modo avião), depois de baixada: a voz continua funcionando | Sim | |
 
+## A3. Vidas e enquadramento em aparelho real
+
+| Verificação | Esperado | Resultado por aparelho |
+|---|---|---|
+| Celular **em pé** ao entrar numa fase | "Vire o celular para jogar"; o Leo não se move | |
+| Girar para **deitado** | A fase continua sozinha e ocupa a tela toda, sem faixas pretas | |
+| Botões ◀ ▶ E ⤒ | Ficam abaixo do chão, sem cobrir o Leo; respeitam a borda arredondada e o entalhe | |
+| Pegar um cristal, cair num buraco | Perde 1 vida (❤️ 2); o cristal volta para o lugar | |
+| Pegar um cristal, tocar na bandeira, cair | O cristal continua contado | |
+| Cair 3 vezes | Janela "As vidas acabaram!"; "Recomeçar a fase" volta ao início com pontes e portas já abertas | |
+| Desafio de escolha (1º ano) com o celular em pé | Todas as figuras dentro dos cartões | |
+| Seletor "Apoio" | Texto legível | |
+
 ## B. Fluxo
 1. [ ] Abertura mostra título, Leo e 4 botões.
 2. [ ] "Jogar" na primeira vez mostra a história; "Pular história" funciona; "Ouvir" lê em voz alta.

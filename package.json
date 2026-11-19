@@ -1,6 +1,6 @@
 {
   "name": "leo-sabido",
-  "version": "0.10.0-alpha.1",
+  "version": "0.11.0-alpha.1",
   "private": true,
   "description": "Leo Sabido: Aventuras do Conhecimento — jogo educativo de plataforma 2D (1º ao 6º ano).",
   "type": "module",

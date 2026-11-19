@@ -315,12 +315,10 @@ export class LevelScene extends Phaser.Scene {
     this.cameras.main.startFollow(this.leo, true, 0.12, 0.12, 0, 40);
     this.cameras.main.setDeadzone(120, 80);
 
-    const onEsc = (): void => {
-      if (!this.dialog && !this.completed) this.game.events.emit(EV.pauseRequest);
-    };
+    const onEsc = (): void => this.pedirPausa();
     this.input.keyboard?.on('keydown-ESC', onEsc);
 
-    showHud(this.data_.titulo, () => this.game.events.emit(EV.pauseRequest));
+    showHud(this.data_.titulo, () => this.pedirPausa());
     this.updateCollectHud();
     setVidas(this.vidas.vidas);
     this.mountTouchIfWanted();
@@ -433,8 +431,15 @@ export class LevelScene extends Phaser.Scene {
     this.destroyTouch?.();
     this.destroyTouch = null;
     this.mountTouchIfWanted();
-    showHud(this.data_.titulo, () => this.game.events.emit(EV.pauseRequest));
+    showHud(this.data_.titulo, () => this.pedirPausa());
     this.updateCollectHud();
+    // A entrada nova nasce ligada: desliga de novo se há desafio, recomeço ou pedido para girar na tela.
+    this.input_.setEnabled(!this.dialog && !this.recomeco && !this.girando);
+  }
+
+  /** Pausa (Esc ou botão), menos por cima de um desafio, da janela de vidas zeradas ou com a fase concluída. */
+  private pedirPausa(): void {
+    if (!this.dialog && !this.recomeco && !this.completed) this.game.events.emit(EV.pauseRequest);
   }
 
   private updateCollectHud(): void {

@@ -77,6 +77,17 @@ test.describe('vidas por fase', () => {
     expect(pontos.checkpoints.every((c) => !c.ativa)).toBe(true);
   });
 
+  test('com a janela de vidas zeradas aberta, Esc não abre a pausa por cima', async ({ page }) => {
+    await open(page);
+    await startLevel(page, 'f1');
+    for (let i = 0; i < 3; i++) await cair(page);
+    await expect(page.getByRole('dialog')).toContainText('As vidas acabaram!');
+    await page.keyboard.press('Escape');
+    await page.waitForTimeout(300);
+    expect(await page.evaluate(() => window.__leo!.screen())).toBeNull();
+    await expect(page.getByRole('dialog')).toContainText('As vidas acabaram!');
+  });
+
   test('concluir depois de recomeçar conta só os coletáveis da nova tentativa', async ({ page }) => {
     await open(page);
     await startLevel(page, 'f1');

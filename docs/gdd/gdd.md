@@ -5,7 +5,7 @@ Versão 0.2 · 17/11/2026
 ## 1. Visão
 Platformer 2D educativo. Leo, um jovem inventor, recupera as seis peças da Grande Engrenagem do Saber, uma em cada mundo (1º ao 6º ano). Os desafios de matemática **são** os mecanismos do cenário: resolver ergue pontes, abre portas, liga elevadores e monta escadas.
 
-**Pilares:** diversão de plataforma · aprendizagem com consequência visível · zero punição por errar.
+**Pilares:** diversão de plataforma · aprendizagem com consequência visível · zero punição por errar **na matemática** (errar um desafio nunca custa vida; as vidas valem só para quedas — ver §6).
 
 ## 2. Fluxo do jogador
 Abertura → História (3 quadros, pode pular, narração opcional) → Escolha do ano (os seis anos ativos) → Mapa do mundo (fases bloqueiam/desbloqueiam em ordem) → Fase → Tela de conclusão ("O que você descobriu", cristais, dicas, conquistas) → Próxima fase → Conclusão do mundo (engrenagem recuperada).
@@ -26,7 +26,7 @@ Física: passo fixo de 60 Hz; *coyote time* 100 ms; *buffer* de pulo 120 ms; sal
 | Elemento | Comportamento |
 |---|---|
 | Ponto de controle (bandeira) | Ao tocar, vira o lugar de reaparecimento |
-| Buraco | Cair devolve ao último ponto de controle (sem perder nada) |
+| Buraco | Cair gasta 1 vida e devolve à última bandeira; os coletáveis pegos depois dela voltam para o lugar |
 | Caixa | Empurrável; serve de degrau; volta ao lugar se cair |
 | Plataforma móvel | Vai e volta; carrega o Leo |
 | Cristal | Coletável opcional; contado no HUD e na conclusão |
@@ -112,7 +112,13 @@ O 1º ano continua sem plataformas móveis nem caixas. Novo formato do 1º ano n
 - Acerto: som curto ascendente, ✓ por espaço, explicação, mecanismo se move.
 - Erro: som suave, ✗ por espaço/máquina, mensagem específica (ex.: "3 linhas de 3 = 9 blocos — faltam 3"), dica conforme o apoio; explicação após 3 erros.
 - Conquistas valorizam esforço: primeira descoberta, pediu ajuda, persistência, explorador (todos os cristais), engrenagem.
-- **Não há:** pontuação, ranking, tempo-limite, vidas, compras ou anúncios.
+- **Vidas (desde a v0.11, decisão do responsável pelo projeto):**
+  - 3 por fase; cair num buraco gasta 1.
+  - A bandeira guarda os coletáveis pegos até ali; ao cair, voltam para o lugar só os pegos depois da última bandeira.
+  - Quando as vidas acabam, aparece uma janela gentil (sem "perdeu" ou "game over") e a fase recomeça do início. Os desafios resolvidos e os mecanismos continuam abertos.
+  - No **modo assistido** não há limite de vidas.
+  - Errar um desafio nunca custa vida.
+- **Não há:** pontuação, ranking, tempo-limite, compras ou anúncios.
 
 ## 7. Acessibilidade
 Desafios e menus em HTML acessível; foco visível; Esc/Enter/Tab; ✓/✗ além de cor; narração pt-BR; volumes separados; reduzir animações; texto maior; modo assistido; controles de toque; remapeamento de teclas. Ver relatório de testes para os limites conhecidos (o canvas não é lido por leitores de tela).

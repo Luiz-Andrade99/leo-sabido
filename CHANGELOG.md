@@ -2,6 +2,26 @@
 
 Formato: [versionamento semântico](https://semver.org/lang/pt-BR/). Versões `alpha` são protótipos de homologação, com conteúdo em revisão pedagógica.
 
+## 0.11.0-alpha.1 — 19/11/2026 · Vidas e enquadramento em celular/tablet
+- **3 vidas por fase.**
+  - O topo da tela mostra "❤️ 3" ("❤️ ∞" no modo assistido, que não tem limite).
+  - Cair num buraco gasta 1 vida e volta à última bandeira.
+  - Os coletáveis pegos depois da última bandeira voltam para o lugar. A bandeira os guarda: "Seus cristais estão guardados".
+- **Vidas zeradas:** uma janela gentil, "As vidas acabaram! Vamos tentar de novo do começo da fase", e a fase recomeça. Os desafios resolvidos e os mecanismos continuam abertos.
+- Errar um desafio continua sem custo.
+- **A fase ocupa a tela inteira** em celular e tablet (escala `EXPAND` do Phaser, com zoom de câmera):
+  - os botões de toque ficam numa faixa abaixo do chão e nunca cobrem o Leo;
+  - no tablet em pé, a fase fica logo acima dos botões.
+- **Celular em pé durante a fase:** "Vire o celular para jogar", com a fase pausada até girar. Menus e janelas de desafio continuam funcionando em pé.
+- **Desafios de escolha por imagem:** as figuras não vazam mais dos cartões em telas estreitas. Os grupos mantêm 5 por linha, com figuras que encolhem.
+- **Barra do topo:**
+  - o seletor "Apoio" ficou legível no Safari/iPhone;
+  - no celular deitado, a pausa vira só o ícone.
+- **Testes:**
+  - 220 unitários;
+  - vidas (`tests/e2e/vidas.spec.ts`);
+  - dispositivos: tela cheia, botões fora do Leo, pedido para girar e figuras dentro dos cartões, em 7 aparelhos emulados.
+
 ## 0.10.0-alpha.1 — 18/11/2026 · Voz humana do narrador (Faber)
 - **Narrador com voz neural Faber** (Piper, pt-BR), gerada no próprio aparelho: mesma voz humana em computador, tablet e celular, inclusive nos desafios sorteados. É grátis, sem conta, e nada é enviado para fora.
 - **Download automático** na primeira visita (cerca de 92 MB, só uma vez, com aviso discreto). Depois fica guardada no aparelho e funciona sem internet. Enquanto carrega, ou se o aparelho não aguentar, o narrador usa a voz do navegador.
