@@ -152,8 +152,12 @@ body {
   font: inherit;
   min-height: 40px;
   border-radius: 8px;
-  padding: 2px 8px;
-  background: var(--paper);
+  padding: 2px 32px 2px 8px;
+  /* Sem a aparência nativa: no Safari/iPhone o seletor ficava escuro com texto escuro (ilegível). */
+  -webkit-appearance: none;
+  appearance: none;
+  color-scheme: light;
+  background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%233b2f2a' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 10px center;
   color: var(--ink);
   border: 2px solid var(--brass);
 }
@@ -1352,6 +1356,10 @@ body {
   .hud-pause {
     min-height: 36px;
   }
+  /* Tela baixa (celular deitado): a pausa vira só o ícone. */
+  .hud-pause-texto {
+    display: none;
+  }
   .hud-status {
     margin-top: 4px;
     padding: 4px 12px;
@@ -1455,4 +1463,46 @@ body {
 }
 .recomeco .dlg-actions {
   justify-content: center;
+}
+
+/* Celular em pé durante a fase: pede para girar (fica por baixo das janelas de desafio) */
+.girar {
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: max(24px, env(safe-area-inset-top, 0px)) max(24px, env(safe-area-inset-right, 0px)) max(24px, env(safe-area-inset-bottom, 0px)) max(24px, env(safe-area-inset-left, 0px));
+  background: var(--cave);
+  color: var(--paper);
+  text-align: center;
+}
+.girar[hidden] {
+  display: none;
+}
+.girar h2 {
+  margin: 0;
+  font-size: calc(26px * var(--ui));
+}
+.girar p {
+  margin: 0;
+  max-width: 28ch;
+  font-size: calc(18px * var(--ui));
+  opacity: 0.9;
+}
+.girar-icone {
+  font-size: 56px;
+  line-height: 1;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .girar-icone {
+    animation: girar-gira 2.4s ease-in-out infinite;
+  }
+}
+@keyframes girar-gira {
+  0%, 30% { transform: rotate(0deg); }
+  60%, 100% { transform: rotate(-90deg); }
 }

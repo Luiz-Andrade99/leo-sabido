@@ -79,8 +79,8 @@ test('jogo em celular/tablet: menus cabem na tela, botões de toque andam, pulam
   await semRolagemLateral(page);
   await page.getByRole('button', { name: /fase 1,/ }).tap();
   await page.waitForFunction(() => window.__leo!.levelActive());
+  await pedeParaGirarSeCelularEmPe(page, nome); // em pé a fase começa parada: confere antes de esperar o Leo pousar
   await page.waitForFunction(() => window.__leo!.state().onGround);
-  await pedeParaGirarSeCelularEmPe(page, nome);
 
   // Botões de toque visíveis, grandes e dentro da tela
   const vp = page.viewportSize()!;
@@ -134,9 +134,9 @@ test('1º ano em celular/tablet: desafio de ordenar só com toques', async ({ pa
   await open(page);
   await page.evaluate(() => window.__leo!.startLevel('f4', 1));
   await page.waitForFunction(() => window.__leo!.levelActive());
-  await page.waitForFunction(() => window.__leo!.state().onGround);
   const emPe = celularEmPe(info.project.name);
   if (emPe) await girar(page); // examina deitado...
+  await page.waitForFunction(() => window.__leo!.state().onGround);
   const sol = (await page.evaluate(() => window.__leo!.solution('2')))!;
   if (sol.formato !== 'ordenar') throw new Error('esperado ordenar');
   const p = (await page.evaluate(() => window.__leo!.points())).panels.find((x) => x.painel === '2')!;

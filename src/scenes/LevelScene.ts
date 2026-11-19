@@ -16,6 +16,7 @@ import { getProp } from '../levels/tiled';
 import { Leo } from '../player/Leo';
 import { announce, setCrystals, setVidas, showHud } from '../ui/hud';
 import { abrirRecomeco } from '../ui/recomeco';
+import { montarGirar } from '../ui/girar';
 import { ControleVidas, textoQueda } from '../core/vidas';
 import { speak } from '../ui/speech';
 import { narrador } from '../voz/narrador';
@@ -98,6 +99,8 @@ export class LevelScene extends Phaser.Scene {
   private mapaH = 0;
   private vidas = new ControleVidas(false);
   private recomeco: { fechar(): void } | null = null;
+  private girando = false;
+  private desmontarGirar: (() => void) | null = null;
 
   constructor() {
     super('level');
@@ -327,8 +330,13 @@ export class LevelScene extends Phaser.Scene {
 
     this.ready = true;
     this.scale.on(Phaser.Scale.Events.RESIZE, this.ajustarCamera);
+    // Celular em pé: pede para girar e deixa a fase parada até lá.
+    this.desmontarGirar = montarGirar(this.aoGirar);
     this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => {
       this.scale.off(Phaser.Scale.Events.RESIZE, this.ajustarCamera);
+      this.desmontarGirar?.();
+      this.desmontarGirar = null;
+      this.girando = false;
       this.ready = false;
       this.input_.destroy();
       this.dialog?.close();
@@ -383,6 +391,18 @@ export class LevelScene extends Phaser.Scene {
     if (touchEl && touchWanted(getState().settings.controlesToque)) this.destroyTouch = mountTouch(touchEl, this.input_);
     this.ajustarCamera();
   }
+
+  /** A camada "Vire o celular" apareceu ou sumiu: pausa ou retoma a fase (sem atropelar desafio aberto ou recomeço). */
+  private aoGirar = (precisa: boolean): void => {
+    this.girando = precisa;
+    if (precisa) {
+      this.physics.pause();
+      this.input_.setEnabled(false);
+    } else {
+      this.physics.resume();
+      if (!this.dialog && !this.recomeco && !this.completed) this.input_.setEnabled(true);
+    }
+  };
 
   /**
    * Enquadramento para qualquer tela: ~540 px de altura do mundo, deixando embaixo a faixa dos botões de toque
@@ -469,7 +489,7 @@ export class LevelScene extends Phaser.Scene {
     this.dialog = null;
     this.leo.setThinking(false);
     // Espera um instante para a tecla que fechou a janela não acionar o painel de novo.
-    this.time.delayedCall(80, () => this.input_.setEnabled(true));
+    this.time.delayedCall(80, () => this.input_.setEnabled(!this.girando));
     then?.();
   }
 
@@ -528,7 +548,7 @@ export class LevelScene extends Phaser.Scene {
     this.leo.respawn(this.spawnPoint.x, this.spawnPoint.y);
     this.updateCollectHud();
     setVidas(this.vidas.vidas);
-    this.input_.setEnabled(true);
+    this.input_.setEnabled(!this.girando);
     announce('Vamos lá! A fase recomeçou.', 4000);
   }
 

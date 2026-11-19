@@ -32,7 +32,8 @@ export function mountHud(container: HTMLElement): void {
     getState().updateSettings({ apoio: apoioSelect!.value as Apoio });
     apoioSelect!.blur(); // devolve as setas ao jogo
   });
-  const pause = button('⏸ Pausar (Esc)', () => pauseHandler?.(), 'btn small hud-pause');
+  const pause = button('⏸ ', () => pauseHandler?.(), 'btn small hud-pause', { 'aria-label': 'Pausar (Esc)' });
+  pause.append(el('span', { className: 'hud-pause-texto', textContent: 'Pausar (Esc)' }));
   statusEl = el('p', { className: 'hud-status', id: 'hud-status', role: 'status', attrs: { 'aria-live': 'polite' } });
   container.replaceChildren(
     el(
