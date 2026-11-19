@@ -66,6 +66,26 @@ function installTestHooks(): void {
     apexReset: () => lvl().testApexReset(),
     cair: () => lvl().testCair(),
     leoNaTela: () => lvl().testLeoNaTela(),
+    vazamentosDialogo: () => {
+      const fora: string[] = [];
+      const dlg = document.querySelector<HTMLElement>('[role=dialog] .dlg, .dlg[role=dialog]');
+      if (!dlg) return ['sem janela de desafio aberta'];
+      const d = dlg.getBoundingClientRect();
+      if (d.left < -1 || d.right > window.innerWidth + 1) fora.push('a janela passa da largura da tela');
+      for (const cartao of dlg.querySelectorAll<HTMLElement>('.opt, .ord-card')) {
+        const c = cartao.getBoundingClientRect();
+        for (const filho of cartao.querySelectorAll<HTMLElement>('*')) {
+          const r = filho.getBoundingClientRect();
+          if (r.width === 0 || r.height === 0) continue;
+          if (r.left < c.left - 1 || r.right > c.right + 1 || r.top < c.top - 1 || r.bottom > c.bottom + 1) {
+            const nomeCartao = cartao.getAttribute('aria-label') ?? cartao.textContent?.trim() ?? '';
+            fora.push(`${nomeCartao}: <${filho.tagName.toLowerCase()} class="${filho.getAttribute('class') ?? ''}"> sai do cartão`);
+            break;
+          }
+        }
+      }
+      return fora;
+    },
     canvasRect: () => {
       const r = game.canvas.getBoundingClientRect();
       return { x: r.x, y: r.y, w: r.width, h: r.height };

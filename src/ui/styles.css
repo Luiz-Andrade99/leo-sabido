@@ -1146,16 +1146,28 @@ body {
   background: #fff;
   border: 2px solid #d9c9a3;
 }
+/* Grupos de figuras: sempre 5 por linha (ajuda a contar), mas as figuras encolhem para caber no cartão. */
 .icon-group {
   display: grid;
-  grid-template-columns: repeat(5, 32px);
-  gap: 6px;
+  grid-template-columns: repeat(5, minmax(0, 32px));
+  gap: clamp(2px, 1.2vw, 6px);
+  max-width: 100%;
+  min-width: 0;
 }
 .ic {
   position: relative;
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 100%;
+  max-width: 32px;
+  aspect-ratio: 1;
+}
+.ic svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.opt {
+  min-width: 0;
 }
 .ic.crossed::after {
   content: "";

@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Locator, type Page } from '@playwright/test';
-import { EVID, answerCorrectly, open, state, steps, teleport } from './helpers';
+import { EVID, answerCorrectly, open, openPanel, state, steps, teleport } from './helpers';
 
 /**
  * Celulares e tablets (emulados): tela, botões de toque e um desafio resolvido só com toques.
@@ -127,6 +127,31 @@ test('jogo em celular/tablet: menus cabem na tela, botões de toque andam, pulam
   await expect(dialog).toBeHidden();
   await page.waitForFunction(() => window.__leo!.state().panels.find((x) => x.painel === '1')?.activated);
   expect(errors).toEqual([]);
+});
+
+test('1º ano: nas janelas de escolha por imagem nenhuma figura sai do cartão', async ({ page }, info) => {
+  test.skip(!info.project.use.hasTouch, 'só em dispositivos de toque');
+  await open(page);
+  await page.evaluate(() => window.__leo!.startLevel('f1', 1));
+  await page.waitForFunction(() => window.__leo!.levelActive());
+  const paineis = (await page.evaluate(() => window.__leo!.points())).panels.map((p) => p.painel);
+  let vistos = 0;
+  for (const painel of paineis) {
+    const sol = await page.evaluate((p) => window.__leo!.solution(p), painel);
+    if (sol?.formato !== 'escolha') continue;
+    const emPe = celularEmPe(info.project.name);
+    if (emPe) await girar(page); // abre o painel deitado...
+    await openPanel(page, painel);
+    const dialog = page.getByRole('dialog');
+    if (emPe) await girar(page); // ...e confere a janela em pé
+    await expect(dialog).toBeVisible();
+    expect(await page.evaluate(() => window.__leo!.vazamentosDialogo()), `painel ${painel}`).toEqual([]);
+    await page.screenshot({ path: `${EVID}/disp-${info.project.name}-escolha-${painel}.png` });
+    await page.keyboard.press('Escape');
+    await expect(dialog).toBeHidden();
+    vistos++;
+  }
+  expect(vistos, 'a fase tem desafios de escolha por imagem').toBeGreaterThan(0);
 });
 
 test('1º ano em celular/tablet: desafio de ordenar só com toques', async ({ page }, info) => {

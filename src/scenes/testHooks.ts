@@ -87,6 +87,8 @@ export interface LeoTestHooks {
   cair(): void;
   /** Retângulo do Leo na página, em pixels CSS. */
   leoNaTela(): { x: number; y: number; w: number; h: number };
+  /** Elementos da janela de desafio que saem do próprio cartão (ou a janela, se passar da tela). */
+  vazamentosDialogo(): string[];
   /** Retângulo do canvas do jogo na página, em pixels CSS. */
   canvasRect(): { x: number; y: number; w: number; h: number };
   /** Voz Faber, só com ?teste=1&voz=faber. */
