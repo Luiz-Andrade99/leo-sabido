@@ -10,6 +10,7 @@ import { button, el } from './dom';
 let root: HTMLElement | null = null;
 let titleEl: HTMLElement | null = null;
 let crystalsEl: HTMLElement | null = null;
+let vidasEl: HTMLElement | null = null;
 let statusEl: HTMLElement | null = null;
 let apoioSelect: HTMLSelectElement | null = null;
 let pauseHandler: (() => void) | null = null;
@@ -19,6 +20,7 @@ export function mountHud(container: HTMLElement): void {
   root = container;
   titleEl = el('strong', { className: 'hud-title' });
   crystalsEl = el('span', { className: 'hud-crystals' });
+  vidasEl = el('span', { className: 'hud-vidas', attrs: { role: 'img' } });
   apoioSelect = el(
     'select',
     { id: 'apoio' },
@@ -38,6 +40,7 @@ export function mountHud(container: HTMLElement): void {
       { className: 'hud-bar' },
       titleEl,
       crystalsEl,
+      vidasEl,
       el('span', { className: 'hud-help', attrs: { 'aria-hidden': 'true' }, textContent: '← → andar · Espaço pular · E examinar · Esc pausa' }),
       el('label', { className: 'hud-apoio' }, 'Apoio ', apoioSelect),
       pause,
@@ -64,6 +67,14 @@ export function setCrystals(n: number, total: number, icon = '◆', plural = 'cr
   if (!crystalsEl) return;
   crystalsEl.textContent = total > 0 ? `${icon} ${n}/${total}` : '';
   crystalsEl.setAttribute('aria-label', `${n} de ${total} ${plural}`);
+}
+
+/** Vidas da fase: um número, ou Infinity no modo assistido. */
+export function setVidas(n: number): void {
+  if (!vidasEl) return;
+  const sem = !Number.isFinite(n);
+  vidasEl.textContent = `❤️ ${sem ? '∞' : n}`;
+  vidasEl.setAttribute('aria-label', sem ? 'vidas sem limite' : n === 1 ? '1 vida' : `${n} vidas`);
 }
 
 export function getApoio(): Apoio {

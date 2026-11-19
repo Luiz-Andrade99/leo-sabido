@@ -31,13 +31,16 @@ export interface LeoTestState {
   cristais: number;
   cristaisTotal: number;
   assist: boolean;
+  /** Vidas restantes na fase (-1 = sem limite, modo assistido). */
+  vidas: number;
   panels: PanelPoint[];
 }
 
 export interface LevelPoints {
   spawn: { x: number; y: number };
   goal: { x: number; y: number };
-  crystals: { x: number; y: number }[];
+  crystals: { x: number; y: number; coletado: boolean }[];
+  checkpoints: { x: number; y: number; ativa: boolean }[];
   panels: PanelPoint[];
 }
 
@@ -80,6 +83,8 @@ export interface LeoTestHooks {
   /** Sorteia (se preciso) o desafio do painel e devolve a resposta. */
   solution(painel: string): TestSolution | null;
   save(): Save;
+  /** Faz o Leo cair (vai para baixo do mundo). */
+  cair(): void;
   /** Voz Faber, só com ?teste=1&voz=faber. */
   faber?: import('../voz/faber').FaberCliente;
   /** Quantas frases o narrador já tem geradas e guardadas. */

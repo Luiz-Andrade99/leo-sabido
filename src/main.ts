@@ -63,6 +63,7 @@ function installTestHooks(): void {
     points: () => lvl().testPoints(),
     teleport: (x, y) => lvl().testTeleport(x, y),
     apexReset: () => lvl().testApexReset(),
+    cair: () => lvl().testCair(),
     solution: (painel) => lvl().testSolution(painel),
     save: () => structuredClone(getState().save),
     faber: options.vozFaber ? (faberCliente() ?? undefined) : undefined,

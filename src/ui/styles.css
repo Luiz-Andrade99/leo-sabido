@@ -130,6 +130,12 @@ body {
   font-weight: 700;
   color: var(--crystal);
 }
+.hud-vidas {
+  font-size: calc(18px * var(--ui));
+  font-weight: 700;
+  color: #ffb3c1;
+  white-space: nowrap;
+}
 .hud-help {
   font-size: 15px;
   opacity: 0.85;
@@ -1436,4 +1442,17 @@ body {
   color: var(--paper);
   font-size: 0.9rem;
   pointer-events: none;
+}
+
+/* Vidas zeradas: janela gentil de recomeço */
+.recomeco {
+  text-align: center;
+  max-width: 420px;
+}
+.recomeco .recomeco-leo {
+  display: block;
+  margin: 0 auto 8px;
+}
+.recomeco .dlg-actions {
+  justify-content: center;
 }

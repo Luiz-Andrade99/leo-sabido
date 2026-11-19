@@ -71,6 +71,12 @@ export class Checkpoint {
     this.image.setTexture('bandeira-on');
     return true;
   }
+
+  /** Volta a bandeira ao estado inicial (recomeço da fase). */
+  desativar(): void {
+    this.active = false;
+    this.image.setTexture('bandeira-off');
+  }
 }
 
 /** Caixa empurrável. Volta ao lugar de origem se cair num buraco. */
@@ -119,5 +125,15 @@ export class Crystal {
     if (this.reducedMotion) this.image.setVisible(false);
     else this.scene.tweens.add({ targets: this.image, y: this.image.y - 30, alpha: 0, scale: 1.4, duration: 300, onComplete: () => this.image.setVisible(false) });
     return true;
+  }
+
+  /** O coletável volta para o lugar (queda depois da última bandeira, ou recomeço da fase). */
+  devolver(): void {
+    if (!this.collected) return;
+    this.collected = false;
+    this.scene.tweens.killTweensOf(this.image);
+    this.image.setPosition(this.x, this.y).setAlpha(1).setScale(1).setVisible(true);
+    if (!this.reducedMotion) this.scene.tweens.add({ targets: this.image, y: this.y - 5, duration: 1300, yoyo: true, repeat: -1, ease: 'Sine.easeInOut' });
+    (this.zone.body as Phaser.Physics.Arcade.StaticBody).enable = true;
   }
 }

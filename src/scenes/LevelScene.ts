@@ -14,7 +14,9 @@ import { Checkpoint, Crystal, MovingPlatform, PushBox } from '../interactions/ob
 import type { MechanismType } from '../levels/ascii';
 import { getProp } from '../levels/tiled';
 import { Leo } from '../player/Leo';
-import { announce, setCrystals, showHud } from '../ui/hud';
+import { announce, setCrystals, setVidas, showHud } from '../ui/hud';
+import { abrirRecomeco } from '../ui/recomeco';
+import { ControleVidas, textoQueda } from '../core/vidas';
 import { speak } from '../ui/speech';
 import { narrador } from '../voz/narrador';
 import { mountTouch, textoParaToque, touchWanted } from '../ui/touch';
@@ -91,6 +93,8 @@ export class LevelScene extends Phaser.Scene {
   private minY = Number.POSITIVE_INFINITY;
   private destroyTouch: (() => void) | null = null;
   private ready = false;
+  private vidas = new ControleVidas(false);
+  private recomeco: { fechar(): void } | null = null;
 
   constructor() {
     super('level');
@@ -115,6 +119,7 @@ export class LevelScene extends Phaser.Scene {
     this.respawning = false;
     this.activeMs = 0;
     this.minY = Number.POSITIVE_INFINITY;
+    this.recomeco = null;
   }
 
   create(): void {
@@ -123,6 +128,8 @@ export class LevelScene extends Phaser.Scene {
     this.rng = createRng(opts.seed);
     this.reduced = reducedMotion();
     this.assist = st.settings.modoAssistido;
+    // 3 vidas por fase; no modo assistido, sem limite.
+    this.vidas = new ControleVidas(this.assist);
     const slow = this.assist ? ASSIST_SLOWDOWN : 1;
 
     const map = this.make.tilemap({ key: this.data_.mapa });
@@ -261,14 +268,16 @@ export class LevelScene extends Phaser.Scene {
       this.physics.add.overlap(this.leo, cp.zone, () => {
         if (cp.activate()) {
           this.respawnPoint = { x: cp.x, y: cp.y };
+          this.vidas.ativouBandeira();
           audio.play('checkpoint');
-          announce('🚩 Ponto de controle! Se cair, você volta para cá.');
+          announce(`🚩 Bandeira! Seus ${this.theme.collectibleName[1]} estão guardados. Se cair, você volta para cá.`);
         }
       });
     }
-    for (const c of this.crystals) {
+    this.crystals.forEach((c, i) => {
       this.physics.add.overlap(this.leo, c.zone, () => {
         if (c.collect()) {
+          this.vidas.coletou(i);
           audio.play('collect');
           const n = this.collectedCount();
           this.updateCollectHud();
@@ -278,7 +287,7 @@ export class LevelScene extends Phaser.Scene {
           announce(n === this.crystals.length ? `${icon} Coleção completa: ${n} de ${n} ${plural}!` : `${icon} ${nome}! ${n} de ${this.crystals.length}.`);
         }
       });
-    }
+    });
 
     // Lógica de jogo nos passos fixos da física (independe da taxa de quadros).
     this.physics.world.on(Phaser.Physics.Arcade.Events.WORLD_STEP, (delta: number) => {
@@ -303,6 +312,7 @@ export class LevelScene extends Phaser.Scene {
 
     showHud(this.data_.titulo, () => this.game.events.emit(EV.pauseRequest));
     this.updateCollectHud();
+    setVidas(this.vidas.vidas);
     this.mountTouchIfWanted();
     announce(`${this.data_.titulo}${this.assist ? ' · modo assistido' : ''}`, 4000);
     // Voz Faber: gera antes as falas das placas (só quando a narração está ligada).
@@ -325,7 +335,7 @@ export class LevelScene extends Phaser.Scene {
     if (document.visibilityState === 'visible') this.activeMs += delta;
 
     // Queda: volta ao último ponto de controle, sem punição.
-    if (!this.respawning && this.leo.y > this.worldBottom + 48) this.respawn();
+    if (!this.respawning && !this.recomeco && this.leo.y > this.worldBottom + 48) this.respawn();
     for (const b of this.boxes) if (b.sprite.y > this.worldBottom + 48) b.resetHome();
 
     for (const s of this.signs) {
@@ -445,11 +455,25 @@ export class LevelScene extends Phaser.Scene {
     this.respawning = true;
     this.respawns++;
     audio.play('respawn');
+    // Vidas: os coletáveis pegos depois da última bandeira voltam para o lugar.
+    const queda = this.vidas.caiu();
+    for (const i of queda.devolver) this.crystals[i]?.devolver();
+    this.updateCollectHud();
+    setVidas(this.vidas.vidas);
+    if (queda.resultado === 'acabou') {
+      this.leo.arcadeBody.setVelocity(0, 0);
+      this.input_.setEnabled(false);
+      this.leo.respawn(this.respawnPoint.x, this.respawnPoint.y);
+      this.respawning = false;
+      announce('As vidas acabaram!', 0);
+      this.recomeco = abrirRecomeco(document.getElementById('overlay')!, () => this.recomecarFase());
+      return;
+    }
     const done = (): void => {
       this.leo.respawn(this.respawnPoint.x, this.respawnPoint.y);
       this.respawning = false;
     };
-    announce('Opa! Vamos tentar de novo daqui.');
+    announce(textoQueda(this.vidas.vidas, queda.devolver.length, this.theme.collectibleName[1]), 5000);
     if (this.reduced) {
       done();
       return;
@@ -459,6 +483,21 @@ export class LevelScene extends Phaser.Scene {
       done();
       this.cameras.main.fadeIn(220, 30, 29, 58);
     });
+  }
+
+/** Vidas zeradas: a fase volta ao início, mas desafios resolvidos e mecanismos ativados continuam como estão. */
+  private recomecarFase(): void {
+    this.recomeco = null;
+    for (const i of this.vidas.recomecar().devolver) this.crystals[i]?.devolver();
+    for (const c of this.crystals) c.devolver();
+    for (const cp of this.checkpoints) cp.desativar();
+    for (const b of this.boxes) b.resetHome();
+    this.respawnPoint = { ...this.spawnPoint };
+    this.leo.respawn(this.spawnPoint.x, this.spawnPoint.y);
+    this.updateCollectHud();
+    setVidas(this.vidas.vidas);
+    this.input_.setEnabled(true);
+    announce('Vamos lá! A fase recomeçou.', 4000);
   }
 
   private finish(): void {
@@ -529,6 +568,7 @@ export class LevelScene extends Phaser.Scene {
       cristais: this.collectedCount(),
       cristaisTotal: this.crystals.length,
       assist: this.assist,
+      vidas: Number.isFinite(this.vidas.vidas) ? this.vidas.vidas : -1,
       panels: this.panelPoints(),
     };
   }
@@ -537,13 +577,19 @@ export class LevelScene extends Phaser.Scene {
     return {
       spawn: { ...this.spawnPoint },
       goal: { ...this.goalPoint },
-      crystals: this.crystals.map((c) => ({ x: c.x, y: c.y })),
+      crystals: this.crystals.map((c) => ({ x: c.x, y: c.y, coletado: c.collected })),
+      checkpoints: this.checkpoints.map((c) => ({ x: c.x, y: c.y, ativa: c.active })),
       panels: this.panelPoints(),
     };
   }
 
   testTeleport(x: number, y: number): void {
     this.leo.respawn(x, y);
+  }
+
+  /** Leva o Leo para baixo do mundo (queda). */
+  testCair(): void {
+    this.leo.respawn(this.leo.x, this.worldBottom + 200);
   }
 
   testApexReset(): void {

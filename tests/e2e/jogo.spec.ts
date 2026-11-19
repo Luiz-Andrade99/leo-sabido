@@ -35,7 +35,7 @@ test.describe('física e movimento', () => {
     expect(Math.abs(apexes[0]! - apexes[1]!)).toBeLessThanOrEqual(1);
   });
 
-  test('cair num buraco leva ao último ponto de controle, sem perder nada', async ({ page }) => {
+  test('cair num buraco gasta uma vida e leva ao último ponto de controle', async ({ page }) => {
     await open(page);
     await startLevel(page, 'f1');
     const spawn = (await page.evaluate(() => window.__leo!.points())).spawn;
@@ -43,6 +43,7 @@ test.describe('física e movimento', () => {
     await page.waitForFunction(() => window.__leo!.state().respawns === 1);
     await steps(page, 20);
     expect(Math.abs((await state(page)).x - spawn.x)).toBeLessThan(4);
+    expect((await state(page)).vidas).toBe(2);
   });
 
   test('ponto de controle ativado vira o lugar de reaparecimento', async ({ page }) => {
